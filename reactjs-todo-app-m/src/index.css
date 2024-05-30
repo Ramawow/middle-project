@@ -1,0 +1,227 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,600;0,700;1,300&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Nunito", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: hsl(235, 21%, 11%);
+  color: #fff;
+  line-height: 1.5;
+  font-size: 1.6rem;
+}
+
+.App {
+  width: min(98%, 55rem);
+  margin: 0 auto;
+  padding: 3rem 1.5rem;
+}
+
+button,
+label,
+img {
+  user-select: none;
+}
+
+button {
+  display: inline-block;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  color: #fff;
+  cursor: pointer;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header h1 {
+  color: #61dafb;
+}
+
+header .logo {
+  display: block;
+  width: 7rem;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  header .logo {
+    animation: logo-spin 13s linear infinite;
+  }
+}
+
+.todo-list-content {
+  margin-top: 2rem;
+}
+
+.todo-list-content .panel {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.amount {
+  font-size: 1.4rem;
+}
+
+.amount span {
+  color: #61dafb;
+  font-weight: 600;
+}
+
+.todo-list-content .clear {
+  color: #61dafb;
+  font-size: 1.3rem;
+}
+
+.todo-list-content .clear:hover {
+  text-decoration: underline;
+}
+
+.todo-list {
+  list-style-type: none;
+  background-color: hsl(0, 0%, 25%);
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-top: 1rem;
+}
+
+.todo-item {
+  padding: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.todo-item:not(:last-child) {
+  border-bottom: 1px solid hsl(0, 0%, 35%);
+}
+
+.todo-item:hover {
+  background-color: hsl(0, 0%, 35%);
+}
+
+.todo-item input[type="checkbox"] {
+  display: none;
+}
+
+.todo-item .toggle-done {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.todo-item .custom-checkbox {
+  display: inline-flex;
+  background-color: #fff;
+  width: 1.4rem;
+  height: 1.4rem;
+  border-radius: 3px;
+  align-items: center;
+  justify-content: center;
+  margin-right: 1.5rem;
+}
+
+.todo-item input[type="checkbox"]:checked + .custom-checkbox {
+  background-color: #007bff;
+}
+
+.todo-item input[type="checkbox"]:checked ~ .todo-name {
+  text-decoration: line-through;
+}
+
+.todo-item .todo-name {
+  font-size: clamp(1.3rem, 3vw, 1.5rem);
+}
+
+.btn-close {
+  cursor: pointer;
+  line-height: 0;
+  outline: 0;
+  border: 0;
+  background: transparent;
+  display: none;
+}
+
+.btn-close .times {
+  color: #eee;
+}
+
+.btn-close .times:hover {
+  color: #61dafb;
+}
+
+.todo-item:hover .btn-close {
+  display: inline-block;
+}
+
+form {
+  display: flex;
+  margin-top: 3rem;
+}
+
+form label {
+  flex: 1;
+}
+
+form input {
+  display: inline-block;
+  width: 100%;
+  background-color: hsl(0, 0%, 25%);
+  outline: none;
+  border: 1px solid transparent;
+  padding: 1rem 1.3rem;
+  font-family: inherit;
+  color: #fff;
+  caret-color: #61dafb;
+  border-radius: 3px;
+}
+
+form input::placeholder {
+  color: hsl(0, 0%, 75%);
+}
+
+form input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 0 0.2rem hsla(193, 95%, 68%, 0.1);
+}
+
+form button {
+  background-color: #007bff;
+  padding: 0.8rem 1.6rem;
+  line-height: 1;
+  border-radius: 3px;
+  margin-left: 1rem;
+}
+
+form button:hover {
+  background-color: hsl(211, 100%, 43%);
+  color: #fff;
+}
+
+.empty {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: clamp(1.2rem, 2vw, 1.3rem);
+  color: #61dafb;
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

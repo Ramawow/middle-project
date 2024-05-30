@@ -1,0 +1,6 @@
+{
+  "env": {
+    "PETFINDER_KEY": "@petfinder-key",
+    "PETFINDER_SECRET": "@petfinder-secret"
+  }
+}

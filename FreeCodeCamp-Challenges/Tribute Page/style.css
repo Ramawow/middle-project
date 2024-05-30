@@ -1,0 +1,189 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  line-height: 36px;
+}
+
+.container {
+
+  width: 95%;
+  background-color: #ddd;
+  margin: 50px auto;
+  border-radius: 5px;
+
+}
+
+#title h1{
+  text-align: center;
+  padding-top: 50px;
+  font-size: 3em;
+}
+
+#title p {
+  margin-top: -10px;
+  font-family: monospace;
+  text-align: center;
+}
+
+#img-div {
+  margin: 10px;
+  background-color: white;
+  text-align: center;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+#image {
+  display: block;
+  filter: grayscale(1);
+  width: 100%;
+  max-width: 1280px;
+  height: auto;
+  border-radius: 5px;
+}
+
+#img-div #img-caption ul li {
+  display: inline;
+}
+
+#img-caption ul li:nth-child(1)::after,
+#img-caption ul li:nth-child(2)::after{
+  content: " | ";
+}
+
+#tribute-info {
+  text-align: center;
+}
+
+#tribute-info .content {
+  background-color: white;
+  display: grid;
+  margin: auto 10px;
+  grid-template-areas: "card1 card2 card3";
+  column-gap: 5px;
+  border-radius: 5px;
+}
+
+.content .card {
+  margin: 10px;
+  width: auto;
+  height: 300px;
+  transition: 300ms;
+}
+
+.content .card .picture {
+  border-radius: 5px;
+  width: 100%;
+  height: 200px;
+  filter: grayscale(1);
+  background-position: center;
+  background-size: cover;
+}
+
+.content .card1:hover,
+.content .card2:hover,
+.content .card3:hover {
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+  transform: scale(1.01);
+}
+
+.content .card1 .picture{
+  background-image: url(https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-15/e35/p1080x1080/121090110_447931239519369_7659360588163879330_n.jpg?_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=109&_nc_ohc=ejiTxhCa4LUAX_DsCHS&tp=1&oh=6b3954bf3497a83d9ac7419199dfdf6c&oe=6057CD60);
+}
+
+.card .role {
+  font-family: monospace;
+  margin-top: -30px;
+  margin-bottom: 0;
+  font-weight:lighter;
+}
+.content .card2 .picture{
+  background-image: url(https://instagram.fbom26-1.fna.fbcdn.net/v/t51.2885-15/e35/p1080x1080/134477080_124325082839741_7724261309017984632_n.jpg?_nc_ht=instagram.fbom26-1.fna.fbcdn.net&_nc_cat=105&_nc_ohc=ckfMoL38tbgAX-7SCnM&tp=1&oh=cf46e040797d9c9ec15419111a6fa943&oe=6056DB83);
+}
+.content .card3 .picture{
+  background-image: url(https://instagram.fcgk27-1.fna.fbcdn.net/v/t51.2885-15/e35/s1080x1080/141131737_415933586415201_3588545304756446087_n.jpg?_nc_ht=instagram.fcgk27-1.fna.fbcdn.net&_nc_cat=109&_nc_ohc=VPSNiZM2mk0AX8mohkU&tp=1&oh=6c5a37aba25d82e84941a51b286f7717&oe=605550EB);
+}
+
+.album {
+  text-align: center;
+  margin: 10px;
+}
+
+.video {
+  width: 100%;
+  padding: 10px;
+  display: grid;
+  justify-items: center;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.video iframe {
+  border-radius: 5px;
+}
+
+.content {
+  background-color: white;
+  border-radius: 5px;
+}
+
+.subscribe {
+  padding: 10px;
+}
+
+.social-media h2 {
+  text-align: center;
+}
+
+.social-media ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.social-media li a{
+  font-size: 30px;
+  color: black;
+}
+
+footer {
+  font-family: monospace;
+  border-radius: 5px;
+  padding: 15px;
+  text-align: center;
+}
+
+
+
+
+
+/* Responsive */
+
+@media (max-width: 576px){
+  #img-div #img-caption ul li {
+    font-size: 0.7em;
+  }
+  #tribute-info .content {
+    grid-template-areas: "card1" "card2" "card3";
+  }
+
+  .content .card {
+    height: 400px;
+  }
+
+  .content .card .picture {
+    height: 300px;
+  }
+
+  .video {
+    grid-template-columns: 1fr;
+  }
+
+  .video iframe {
+    margin-bottom: 10px;
+    width: 400px;
+    height: 210px;
+  }
+}

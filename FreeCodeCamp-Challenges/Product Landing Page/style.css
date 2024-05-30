@@ -1,0 +1,255 @@
+html {
+  scroll-behavior: smooth;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font : 18px/36px 'Oswald', sans-serif;
+  background-color: rgb(255, 166, 0);
+}
+
+.nav-head {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgba(134, 134, 134, 0.3);
+  color: white;
+  padding: 20px;
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 99999;
+}
+
+.brand {
+  font-family: 'Quattrocento', serif;
+}
+
+.nav-head li {
+  display: inline-block;
+  box-sizing: border-box;
+}
+
+.nav-head li a {
+  text-decoration: none;
+  color: white;
+  padding: 20px;
+}
+
+#header-img {
+  filter: brightness(0.5);
+}
+
+.jumbotron {
+  position: relative;
+}
+
+.jumbotron .branding {
+  font-family: 'Roboto', sans-serif;
+  width: 60%;
+  position: absolute;
+  margin: auto;
+  top: 20%;
+  left: 0;
+  right: 0;
+  text-align: center;
+  color: white;
+}
+
+.branding h1 {
+  text-transform: uppercase;
+  line-height: 50px;
+  font-size: 50px;
+  text-align: center;
+  color: rgb(255, 166, 0);
+  text-shadow: 2px 2px 2px rgb(85, 85, 85);
+}
+
+.branding p {
+  padding: 10px;
+  font-weight: lighter;
+  line-height: 20px;
+  text-align: center;
+}
+
+#form {
+  position: absolute;
+  margin: auto;
+  top: 60%;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+#form input[type=email] {
+  width: 30%;
+  padding: 5px;
+  border-radius: 5px;
+  border: none;
+}
+
+#form #submit {
+  font-size: 15px;
+  margin-top: 10px;
+  background-color: rgb(255, 166, 0);
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  font-weight: bold;
+}
+
+.demo-img {
+  background-color: black;
+}
+
+.title {
+  color:  white;
+  padding: 50px;
+  text-align: center;
+}
+
+.demo-img .img {
+  margin: 20px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.description h1 {
+  color: rgb(255, 166, 0);
+}
+
+.description p {
+  font-family: roboto;
+  margin-top: 10px;
+  line-height: 25px;
+  color: white;
+  font-weight: lighter;
+}
+
+
+.first,
+.second {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+
+.img.img-1 {
+  width: 80%;
+  height: 300px;
+  background-image: url(https://images.unsplash.com/photo-1503341455253-b2e723bb3dbb?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80);
+}
+
+.img.img-2 {
+  width: 80%;
+  height: 300px;
+  background-image: url(https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80);
+}
+
+.video {
+  background-color: black;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.video iframe {
+  width: 852px;
+  height: 480px;
+  margin: 20px auto;
+  border: 2px solid rgba(255, 166, 0, 0.5);
+}
+
+.pricing {
+  background-color: black;
+  margin-top: 10px;
+}
+
+.pricing .content {
+  font-family: 'Roboto', sans-serif;
+  background-color: black;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  justify-items: center;
+}
+
+.pricing .card {
+  margin: 20px;
+  background-image: url(https://images.unsplash.com/photo-1503341703022-e7836bfb04e6?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDl8fHxlbnwwfHx8&auto=format&fit=crop&w=400&q=60);
+  background-size: cover;
+  color: white;
+  width: 300px;
+  height: 400px;
+  text-align: center;
+  position: relative;
+  filter: brightness(0.6);
+}
+
+.card .variant {
+  text-transform: uppercase;
+  width: 100%;
+  height: 20%;
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+}
+
+.card h1 {
+  padding: 20px;
+  font-weight: lighter;
+}
+
+.card input {
+  margin-top: 50px;
+  padding: 10px 30px;
+  background-color: rgb(255, 166, 0);
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  font-family: 'Roboto', sans-serif;
+}
+
+footer li {
+  display: inline-block;
+  margin: 0 30px;
+}
+
+footer li a {
+  text-decoration: none;
+  color: black;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+
+
+
+/* Responsive */
+
+@media (max-width: 576px) {
+  .branding h1{
+    font-size: 25px;
+  }
+
+  .branding p {
+    font-size: 10px;
+  }
+
+  .video iframe {
+    width: 426px;
+    height: 240px;
+  }
+
+  .demo-img .img {
+    background-position: -120px 0;
+  }
+}

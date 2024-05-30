@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+}
+body {
+  font-family: monospace,Arial, Helvetica;
+  color: white;
+  background: url(https://images.unsplash.com/photo-1562813733-b31f71025d54?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=749&q=80);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+header {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.container {
+  margin: 20px auto;
+  padding: 30px 0;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  max-width: 90%;
+  background-color: rgba(2, 63, 82, 0.5);
+  border-radius: 5px;
+}
+
+input[type=text], 
+input[type=email], 
+input[type=number], 
+select,
+textarea,
+button{
+  width: 100%;
+  font-size: 15px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+button {
+  border-radius: 0;
+  background-color: rgb(53, 182, 106);
+  color: white;
+  font-size: 20px;
+}
+
+textarea {
+  width: 100%;
+  height: 150px;
+}
+
+input[type=radio],
+input[type=checkbox] {
+  transform: scale(1.5);
+}
+
+label h3 {
+  display: inline-block;
+}
+
+select:invalid {
+  color: gray;
+}
+
+form h2 {
+  margin: 10px 0;
+  padding: 0;
+}
+
+form > * {
+  margin: 30px auto;
+  width: 90%;
+}
+
+.opinion,
+.majors {
+  display: flex;
+  flex-direction: column;
+}
+.opinion label,
+.majors label {
+  margin-bottom: 10px;
+}
+
+.opinion label input,
+.majors label input {
+  margin-right: 5px;
+}
+
+
+
+
+

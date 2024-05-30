@@ -1,0 +1,61 @@
+.vaksinasi {
+  padding: 5rem 0;
+  margin: 2.5rem 0;
+
+  .wrapper {
+    display: grid;
+    grid-template-columns: 50% 40%;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 1.5rem;
+
+    @media (max-width: 992px) {
+      & {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+      }
+    }
+
+    .left {
+      @media (max-width: 992px) {
+        & {
+          order: 2;
+        }
+      }
+
+      h6 {
+        margin-bottom: 0.5rem;
+      }
+
+      .value {
+        color: $red;
+        font-weight: 600;
+      }
+    }
+
+    .right {
+      text-align: center;
+
+      @media (max-width: 992px) {
+        & {
+          order: 1;
+          margin-bottom: 1rem;
+        }
+      }
+
+      img {
+        @media (max-width: 992px) {
+          & {
+            width: 500px;
+          }
+        }
+
+        @media (max-width: 768px) {
+          & {
+            width: 400px;
+          }
+        }
+      }
+    }
+  }
+}

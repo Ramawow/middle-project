@@ -1,0 +1,187 @@
+body{
+	margin:0;
+	padding:0;
+}
+.round-img{
+	border-radius: 50%;
+}
+.bg-img{
+	background-image: url("kantor.jpg");
+	background-position: center;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 20px;
+}
+.block-quotes{
+	width: 90%;
+	height: 100px;
+	margin: 5px;
+	background: yellow;
+	transform: translate(0px,-30px);
+}
+.block-quotes::before{
+	content: "";
+	padding: 20px;
+	background: yellow;
+	border-top-right-radius: 120px;
+	border-top-left-radius: 120px;
+	padding: 20px
+}
+.quotes{
+	font-family: sans-serif;
+	font-size: 20px;
+	color: black;
+	text-align: center;
+}
+.card-text{
+	font-family: sans-serif;
+	font-size: 26px
+}
+.card{
+	box-shadow: 2px 1px 5px gray;
+	width: 20%;
+	padding: 20px;
+	border-radius: 30px;
+	margin-bottom: 50px
+}
+.row{
+	justify-content: space-around;
+	margin-top: 80px;
+}
+.navbar, .nav, .jumbotron, .row{
+	display: flex;
+}
+.navbar{
+	padding: 30px;
+}
+.jumbotron{
+	align-items: center;
+	justify-content: space-around;
+}
+.nav{
+	list-style: none;
+	margin-left: auto;
+}
+.nav-item, .brand{
+	text-decoration-line: none;
+	padding: 10px;
+	font-family: sans-serif;
+}
+.nav-item{
+	color: #9B9B9B;
+}
+.nav-item:hover{
+	border-bottom: 1px solid black
+}
+.brand{
+	font-size: 30px;
+	color: black;
+}
+.title,.jText{
+	font-family: sans-serif;
+	color: #F7BC73;
+}
+.title{
+	font-size: 30px;
+	transform: translate(10px,120px);
+}
+.jText{
+	font-size: 160px
+}
+.btn-green{
+	background: #1EFF40;
+	border: none;
+	border-radius: 30px;
+	height: 2rem;
+	width: 6rem;
+	transform: translate(0,-10px);
+	margin-left: 40px;
+	color: white;
+}
+.row{
+	padding: 30px;
+}
+.paragraf{
+	font-family: sans-serif;
+	color: rgb(128, 128, 128);
+	font-size: 18px;
+	margin-bottom: 50px;
+	
+}
+.title2{
+	text-align: center;
+	font-family: sans-serif;
+	color: #F7BC73;
+}
+.prog , .prog1 , .prog2 , .prog3{
+	border-radius: 20px;
+	height: 10px;
+	margin-top: 20px;
+}
+.prog{
+	width: 80%;
+	background: #E797FF;
+}
+.prog1{
+	width: 50%;
+	background: #FD7272 ;
+}
+.prog2{
+	width: 30%;
+	background: #83FF96; 
+}
+.prog3{
+	width: 60%;
+	background: #878787;
+}
+.fText{
+	font-family: Arial, Helvetica, sans-serif;
+	color:white;
+	font-size:35px;
+	text-align:center;
+}
+footer{
+	margin-top:20px;
+	background: rgb(153, 255, 150);
+	padding: 100px;
+}
+@media screen and (max-width: 1050px){
+	.title{
+		font-size: 25px;
+		transform: translate(10px,100px);
+	}
+	.jText{
+		font-size:130px
+	}
+	.title, .jText{
+		text-align: center;
+	}
+}
+@media screen and (max-width: 1000px){
+	.navbar, .jumbotron, .row{
+		flex-direction:column;
+	}
+	.nav{
+		font-size:14spx;
+		justify-content: center;
+	}
+	.card{
+		width: 100%;
+	}
+	img{
+		width:100%
+	}
+	.round-img{
+		width:180px
+	}
+	.card{
+		display:flex;
+		flex-wrap: center;
+		flex-direction:column;
+		align-items: center;
+		box-shadow:none;
+		margin:0;
+		padding:0;
+	}
+}

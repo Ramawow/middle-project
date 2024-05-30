@@ -1,0 +1,300 @@
+.button-up {
+    z-index: 999;
+    position: fixed;
+    background-color: crimson;
+    width:50px; height:50px;
+    right: 30px;
+    bottom: 30px;
+    border-radius: 50%;
+    transition: .7s;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.button-up i {
+    position:fixed;
+    bottom: 40px;
+    margin-left:10px;
+}
+
+
+.navcolor {
+    background-color: #ffb6c5;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+* {
+    padding:0;
+    margin:0;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+    
+}
+
+hr {
+    width: 70%;
+    
+    border-bottom: 2px solid rgba(255, 0, 43, 0.5);
+    margin:0 auto;
+}
+
+/* NAVBAR */
+ .navbar-brand b {
+    padding-top: 5px;
+    font-size: 25px;
+    transition: .3s;
+}
+
+.navbar-brand b:hover {
+    color:crimson;
+}
+
+nav  {
+    padding: 0;
+    /* border-bottom: 2px solid rgba(255, 0, 43, 0.5); */
+    transition: .3s;
+    
+}
+
+nav ul li {
+    transition: .3s;
+    padding:15px 50px;
+    font-size: 18px;
+    /* margin: -36px 0; */
+}
+
+nav .nav-item:hover {
+        font-size: px;
+        background-color: #ffc2d8;
+}
+
+
+
+.linknav {
+    color: crimson;
+}
+
+ a {
+    font-weight: bold;
+}
+
+#jpn {
+    width:50px;
+}
+
+#joindc {
+    transition: .3s;
+}
+
+#joindc:hover {
+    transform: scale(1.2);
+}
+
+/* JUMBOTRON */
+.jumbotron {
+padding-top: 150px;
+height: 640px;
+background-image:url(img/jp1.png);
+background-size: cover;
+border-bottom: 2px solid rgba(255, 0, 43, 0.5);
+}
+
+#element {
+    font-size: 23px;
+}
+
+.display-4 {
+    font-size: 60px;
+}
+
+.text-jumbotron {
+    padding:30px;
+}
+
+
+/* ABOUT US */
+#about-us {
+    margin-top: -30px;
+    padding-top: 130px;  padding-bottom: 130px;
+    border-bottom: 2px solid rgba(255, 0, 43, 0.5);
+}
+
+.about {
+    display: flex;
+}
+
+.aboutdesc {
+    font-size: 17px;
+}
+
+.aboutdesc .col-sm-12 {
+    padding-top: 30px;
+}
+
+
+
+#dc,#game,#user {
+    cursor: pointer;
+    transition: .3s;
+}
+
+#dc:hover,#game:hover,#user:hover {
+    color:crimson;
+}
+
+/* FEATURES */
+#features {
+    padding-top:130px; padding-bottom: 130px;
+    background-image: url(img/japannest1.png);
+    border-bottom: 2px solid rgba(255, 0, 43, 0.5);
+    
+}
+
+#jp {
+    border:2px solid rgba(253, 44, 86, 0.527);
+    display: flex;
+    margin: auto;
+    width: 100%;
+}
+
+#parfeatures {
+    padding-top: 21px;
+}
+
+#taiza {
+    border:2px solid rgba(253, 44, 86, 0.527);
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+#imagemodal1 {
+    width: 100%;
+    border:2px solid rgba(253, 44, 86, 0.527); 
+}
+
+#imagemodal2 {
+    width: 100%;
+    border:2px solid rgba(253, 44, 86, 0.527); 
+}
+
+#nanatsuinfo {
+    padding-top: 0px;
+}
+
+#taiza, #jp {
+    transition: .3s;
+}
+
+#taiza:hover, #jp:hover {
+    box-shadow:0px 0px 8px crimson;
+}
+
+
+#features img {
+    border-radius: 10px;
+}
+
+/* CONTRIBUSI */
+#contribute {
+    padding-top:130px; padding-bottom: 130px;
+    border-bottom: 2px solid rgba(255, 0, 43, 0.5);
+}
+
+
+#girl  {
+    width: 150%;
+    border-bottom:2px solid rgba(253, 44, 86, 0.527); 
+    border-left:2px solid rgba(253, 44, 86, 0.527); ;
+    margin-left:-115px;
+}
+
+
+#textutaha {
+    padding-top: 60px; padding-left: 50px;
+}
+
+
+/* AFFILIATES */
+#affiliates {
+    padding-top:130px; padding-bottom: 130px;
+    border-bottom: 2px solid rgba(255, 0, 43, 0.5);
+}
+
+
+.carousel {
+    transform: scale(.7);
+    transition: .5s;
+    
+}
+
+.carousel-caption {
+    padding-bottom: 100px;
+    transform: scale(1.5);
+}
+
+.backupcap {
+    display: none;
+}
+
+.carousel-item img {
+    border-radius: 10px;
+}
+
+
+/* FOOTER */
+footer {
+    height: 80px;
+    width: 100%;
+    background-color: #272727;
+}
+
+footer p {
+    color: white;
+}
+
+footer .text-center {
+    padding-top:30px;
+}
+
+
+
+
+
+
+
+
+/* MEDIA SCREEN */
+
+@media screen and (max-width:576px) {
+    .display-4 {
+       font-size: 50px;
+       margin-left:0px;
+    }
+    #girl  {
+        padding-left: -5px;
+        width: 100%;
+        border-bottom:2px solid rgba(253, 44, 86, 0.527); 
+        border-left:2px solid rgba(253, 44, 86, 0.527); ;
+        margin-left: -1000px;
+        pos
+    }
+
+    .carousel {
+        transform: scale(1);
+    }
+
+    
+}
+
+@media screen and (max-width:760px) {
+    .backupcap {
+        display: block;
+    }
+}

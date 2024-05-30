@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Haizim.one | Profilenya Wahid</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Primary Meta Tags -->
+    <meta name="title" content="Haizim.one | Profilenya Wahid">
+    <meta name="description" content="Hai, Wahid Disini! ">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Haizim.one | Profilenya Wahid">
+    <meta property="og:description" content="Hai, Wahid Disini! ">
+    <meta property="og:image" content="https://haizim.one/media/screenshot.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="Haizim.one | Profilenya Wahid">
+    <meta property="twitter:description" content="Hai, Wahid Disini! ">
+    <meta property="twitter:image" content="https://haizim.one/media/screenshot.png">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css'
+        integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://haizim.one/cloudme.fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+    <link href="https://haizim.one/cloudme.fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+        rel="stylesheet">
+
+
+    <!--link rel="stylesheet" href="/asset/css/style-modern.css"-->
+    <script src="asset/js/script.js"></script>
+    <style type="text/css" id="setail"></style>
+
+</head>
+
+<body id="body" style="transition: all .5s">
+    <nav class="bar-top" id="bar">
+        <div class="row" style="margin: 0;">
+            <div class="col-4"><span id="waktu">04/12/20 | 11:00</span></div>
+            <div class="col-4" align="center">140.213.160.170 : 40338</div>
+            <div class="col-4" align="right">Tema :
+                <select id="tema" onchange="tema()" class="tema">
+                    <option value="retro" selected>Retro</option>
+                    <option value="glass">Glassy</option>
+                </select>
+            </div>
+        </div>
+    </nav>
+    <center>
+        <nav class="menu" id="menu">
+            <div class="row">
+                <div class="col" onclick="tampil('about')">
+                    <img src="asset/img/about.svg">
+                </div>
+                <div class="col" onclick="tampil('skill')">
+                    <img src="asset/img/skill.svg">
+                </div>
+                <div class="col" onclick="tampil('real')">
+                    <img src="asset/img/real.svg">
+                </div>
+                <div class="col" onclick="tampil('experiment')">
+                    <img src="asset/img/experiment.svg">
+                </div>
+                <!--div class="col" onclick="tampil('blog')"-->
+                <div class="col">
+                    <a href="/blog"><img src="asset/img/blog.svg"></a>
+                </div>
+                <div class="col" onclick="tampil('call')">
+                    <img src="asset/img/call.svg">
+                </div>
+            </div>
+        </nav>
+    </center>
+
+    <div class="window" id="about" style="top:40px; left:350px; z-index: 7;" onclick="atas('about')">
+
+        <div class="row win-title" id="aboutheader">
+            <div class="col-1"></div>
+            <div class="col">
+                <div class="">
+                    Tentang Wahid
+                </div>
+            </div>
+            <div class="col-1" align="center" style="cursor: pointer;" onclick="sembunyi('about')">
+                <h6>x</h6>
+            </div>
+        </div>
+
+        <div class="win-body" id="body-about" style="width: 45em;">
+            <div class="row">
+
+                <div class="col-sm-4">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <img src="asset/img/me.png">
+                        </div>
+                        <div class="col-sm-12">
+                            <hr>
+                            <center>
+                                <h6><span class="txt-yellow">Muhammad</span> Wahid <span
+                                        class="txt-yellow">Hasyim</span></h6>
+                                <a href="https://www.instagram.com/haizim_/" target="_blank"><i
+                                        class="fab fa-instagram social"></i></a> @haizim_ <a
+                                    href="https://www.twitter.com/haizim_/" target="_blank"><i
+                                        class="fab fa-twitter social"></i></a><br>
+                                <a href="mailto:wahihasyim@gmail.com" target="_blank">wahihasyim@gmail.com</a>
+                                <hr>
+                            </center>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm">
+                    <p>Mulai mempelajari pemrograman secara otodidak sejak SMP(2012). Kemudian lulus dari jurusan Teknik
+                        Elektro dengan peminatan Teknik Komputer dan Telekomunikasi. Juga dengan tugas akhir berupa
+                        sebuah aplikasi berbasis web dengan judul <a
+                            href="https://haizim.one/iseng/kantan/sho.php?id=semhas" target="_blank">"Web-based Telegram
+                            Chatbot Management System"</a>. Menunjukkan seberapa saya berminat pada dunia pemrograman
+                        aplikasi web.
+                    </p>
+                    <p>Ketika saya bekerja sebagai PHP Developer, saya mengerjakan berbagai aplikasi web yang dibuat
+                        dengan bahasa PHP. Menggunakan Gitlab sebagai version control system utama juga Sentry sebagai
+                        error tracker, memberikan saya pengalaman bagaimana bekerja sebagai sebuah tim developer web. Di
+                        masa akhir saya bekerja, saya beberapa kali dipercaya untuk menjadi developer utama untuk
+                        menangani bug fixing.</p>
+                    <!--<p>Senang bermain dengan Visual Basic 6 dan pemrograman web dasar sejak kelas 9 SMP hingga SMA awal. Kembali menyentuh C pada masa awal kuliah dan mulai terjun ke dunia Pemrograman Web pada pertengahan masa kuliah.</p>
+                    <p>Belajar mengembangkan diri dengan menjadi Kepala Divisi di Organisasi juga mengasah Kerjasama Tim selagi dipercaya sebagai Koordinator Sie. di beberapa kepanitiaan.</p>
+                    <p>Mengasah nalar dan logika di Universitas Sebelas Maret Surakarta Jurusan Teknik Elektro dengan meusatkan minat di Teknik Komputer dan Telekomunikasi.</p>
+                    <p>Menjalankan amanah magang melalui proyek <a href="https://haizim.one/iseng/kantan/sho.php?id=semkp" target="_blank">TOEFL Test Management System</a> dan menyelesaikan jenjang sarjana dengan Tugas Akhir <a href="https://haizim.one/iseng/kantan/sho.php?id=semhas" target="_blank">Web Based Telegram Chatbot Management System</a> di pertengahan tahun 2020. </p>
+                    <p>Tentunya masih terus belajar mengembangkan diri dan mengasah skill hingga detik ini.</p>
+                    <p>Hingga kini masih mencari tempat bernaung untuk kehidupan pasca kampus ini ehe..</p>-->
+
+                    <!--p>Saya adalah seorang lulusan Teknik Elektro UNS tahun 2020 yang mengambil peminatan ICT terkhusus di bidang <i>web development</i>. Pun untuk projek magang dan tugas akhir juga mengambil tema <i>web devlopment</i> juga. Yaitu <a href="https://haizim.one/iseng/kantan/sho.php?id=semkp" target="_blank">TOEFL Test Management System</a> untuk magang dan <a href="https://haizim.one/iseng/kantan/sho.php?id=semhas" target="_blank">Web Based Telegram Chatbot Management System</a> untuk tugas akhir saya.</p>
+<p>Pertama kali mencoba coding saat kelas IX SMP dengan bahasa pemrograman pertama ialah Visual Basic 6 dan sesekali mempelajari PHP, HTML dan CSS pada saat itu. Kemudian hingga masa SMA awal masih asyik dengan Visual Basic 6. Barulah pada pertengahan masa kuliah kembali mencoba mempelajari kembali <i>web development</i>.</p-->
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="window" id="skill" style="top:48px; left:499px; z-index: 5; display:none;" onclick="atas('skill')">
+        <div class="row win-title" id="skillheader">
+            <div class=""></div>
+            <div class="col">
+                <div>
+                    Skill
+                </div>
+            </div>
+            <div class="col-1" align="center" style="cursor: pointer;" onclick="sembunyi('skill')">
+                <h6>x</h6>
+            </div>
+        </div>
+
+        <div class="win-body" id="body-skill" style="width: 38em;">
+            <center>
+                <div class="row">
+
+
+                    <div class="col-sm-2 col-6">
+                        <img src="asset/img/html.svg" class="ico">
+                        <br><small class="txt-h"><br>HTML<br></small><br>
+                    </div>
+
+                    <div class="col-sm-2 col-6">
+                        <img src="asset/img/css.svg" class="ico">
+                        <br><small class="txt-h"><br>CSS<br></small><br>
+                    </div>
+
+                    <div class="col-sm-2 col-6">
+                        <img src="asset/img/js.svg" class="ico">
+                        <br><small class="txt-h"><br>Java script<br></small><br>
+                    </div>
+
+                    <div class="col-6 mobile">
+                        <img src="asset/img/Bootstrap.svg" class="ico">
+                        <br><small class="txt-h"><br>Boot strap<br></small><br>
+                    </div>
+
+                    <div class="col-sm-4 col-12">
+                        <img src="asset/img/php.svg" class="ico">
+                        <br><small class="txt-h"><br>PHP<br></small><br>
+                    </div>
+
+                    <div class="col-sm-2 desk">
+                        <img src="asset/img/laravel.svg" class="ico">
+                        <br><small class="txt-h"><br>Laravel<br></small><br>
+                    </div>
+                    <!--</div>-->
+
+                    <!--<br>-->
+
+                    <!--<div class="row">-->
+                    <!--<div class="col-sm-1">-->
+                    <!--</div>-->
+
+                    <div class="col-sm-4 col-12">
+                        <img src="asset/img/mysql.svg" class="ico">
+                        <br><small class="txt-h"><br>MySQL<br></small><br>
+                    </div>
+
+                    <div class="col-sm-2 desk">
+                        <img src="asset/img/Bootstrap.svg" class="ico">
+                        <br><small class="txt-h"><br>Boot strap<br></small><br>
+                    </div>
+
+                    <div class="col-sm-4 col-12">
+                        <img src="asset/img/jquery.svg" class="ico">
+                        <br><small class="txt-h"><br>JQuery<br></small><br>
+                    </div>
+
+                    <div class="col-sm-2 col-6">
+                        <img src="asset/img/node.svg" class="ico">
+                        <br><small class="txt-h"><br>NodeJS<br></small><br>
+                    </div>
+
+                    <div class="col-6 mobile">
+                        <img src="asset/img/laravel.svg" class="ico">
+                        <br><small class="txt-h"><br>Laravel<br></small><br>
+                    </div>
+
+                    <!--</div>-->
+
+                    <!--<br>-->
+
+                    <!--<div class="row">-->
+
+
+                    <div class="col-sm-2 col-6">
+                        <img src="asset/img/wp.svg" class="ico">
+                        <br><small class="txt-h"><br>Word press<br></small><br>
+                    </div>
+
+                    <div class="col-sm-2 col-6">
+                        <img src="asset/img/python.svg" class="ico">
+                        <br><small class="txt-h"><br>python<br></small><br>
+                    </div>
+
+                    <div class="col-sm-2 col-6">
+                        <img src="asset/img/selenium.svg" class="ico">
+                        <br><small class="txt-h"><br>Sele nium<br></small><br>
+                    </div>
+
+                    <div class="col-sm-2 col-6">
+                        <img src="asset/img/telegram.svg" class="ico">
+                        <br><small class="txt-h"><br>Tele gram API<br></small><br>
+                    </div>
+
+                    <div class="col-sm-2 col-6">
+                        <img src="asset/img/twit.svg" class="ico">
+                        <br><small class="txt-h"><br>twitter API<br></small><br>
+                    </div>
+
+                    <div class="col-sm-2 col-6">
+                        <img src="asset/img/vue.svg" class="ico">
+                        <br><small class="txt-h"><br>VueJS<br></small><br>
+                    </div>
+
+                    <!--<div class="col-sm-4 col-12">-->
+                    <!--    <img src="/asset/img/express.svg" class="ico">-->
+                    <!--    <br><small class="txt-h"><br>Express JS<br></small><br>-->
+                    <!--</div>-->
+                </div>
+                <br>
+
+            </center>
+        </div>
+    </div>
+
+    <div class="window" id="real" style="top:244px; left:43px; z-index: 4; display:none;" onclick="atas('real')">
+        <div class="row win-title" id="realheader">
+            <div class=""></div>
+            <div class="col">
+                <div>
+                    Real Works
+                </div>
+            </div>
+            <div class="col-1" align="center" style="cursor: pointer;" onclick="sembunyi('real')">
+                <h6>x</h6>
+            </div>
+        </div>
+
+        <div class="win-body-full" id="body-real" style="width: 35em;">
+            <div id="car-real" class="carousel slide" data-ride="carousel">
+                <!-- Indicators >
+                <ol class="carousel-indicators">
+                <li data-target="#car-real" data-slide-to="0" class="active"></li>
+                <li data-target="#car-real" data-slide-to="1"></li>
+                <li data-target="#car-real" data-slide-to="2"></li>
+                <li data-target="#car-real" data-slide-to="3"></li>
+                </ol-->
+
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner">
+
+                    <div class="carousel-item active">
+                        <img src="asset/img/paud.png" alt="Screenshot Web PAUD ABA NH PK 1" class="carousel-img">
+                        <img src="asset/img/paud2.png" alt="Screenshot Web PAUD ABA NH PK 2"
+                            class="carousel-img mobile">
+                        <div class="carousel-caption">
+                            <h6>PAUD Nurul Hidayah PK</h6>
+                            <p>(Company Profile)</p>
+                            <a href="http://paudabanurulhidayahpk.sch.id/"><button class="btn-me">Kunjungi</button></a>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="asset/img/glo.png" alt="Screenshot TOEFL Test Management System 1"
+                            class="carousel-img"><br>
+                        <img src="asset/img/glo2.png" alt="Screenshot TOEFL Test Management System 2"
+                            class="carousel-img mobile">
+                        <div class="carousel-caption">
+                            <h6>Glolingo (magang)</h6>
+                            <p>(TOEFL Test Management System)</p>
+                            <a href="http://haizim.one/demo/glolingo/"><button class="btn-me">Kunjungi</button></a>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="asset/img/organik.png" alt="Screenshot DesaOrganik 1" class="carousel-img mobile">
+                        <img src="asset/img/organik2.png" alt="Screenshot DesaOrganik 2" class="carousel-img">
+                        <div class="carousel-caption">
+                            <h6>DesaOrganik</h6>
+                            <p>(Landing Page)</p>
+                            <a href="http://desaorganik.id/"><button class="btn-me">Kunjungi</button></a>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="asset/img/psikotes.png" alt="Screenshot Areefa Consulting 1"
+                            class="carousel-img mobile">
+                        <img src="asset/img/psikotes2.png" alt="Screenshot Areefa Consulting 2" class="carousel-img">
+                        <div class="carousel-caption">
+                            <h6>Areefa Consulting</h6>
+                            <p>(Psycho Test Managemet System)</p>
+                            <a href="http://haizim.one/demo/areefa/"><button class="btn-me">Kunjungi</button></a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Left and right controls -->
+                <a class="carousel-control-prev" href="#car-real" data-slide="prev">
+                    <span class="txt-h txt-blue">
+                        < </span>
+                </a>
+                <a class="carousel-control-next" href="#car-real" data-slide="next">
+                    <span class="txt-h txt-blue"> > </span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="window" id="experiment" style="top:33px; left:22px; z-index: 3; display:none;"
+        onclick="atas('experiment')">
+
+        <div class="row win-title" id="experimentheader">
+            <div class=""></div>
+            <div class="col">
+                <div>
+                    Experimental Works
+                </div>
+            </div>
+            <div class="col-1" align="center" style="cursor: pointer;" onclick="sembunyi('experiment')">
+                <h6>x</h6>
+            </div>
+        </div>
+
+        <div class="win-body-full no-resize" id="body-experiment" style="width: 35em; ">
+
+            <div class="row" style="height: 100%;">
+
+                <div class="col-4 exp-list" id="exp-list">
+                    <div class="exp-menu" id="exp-tcms" onclick="expShow(0)">
+                        Telegram Chatbot Management System
+                    </div>
+                    <div class="exp-menu" id="exp-pairs" onclick="expShow(1)">
+                        Game Pairs
+                    </div>
+                    <div class="exp-menu" id="exp-typo" onclick="expShow(2)">
+                        Cek Typo Bahasa Indonesia
+                    </div>
+                    <div class="exp-menu" id="exp-tw" onclick="expShow(3)">
+                        Twitter Analytics
+                    </div>
+                    <div class="exp-menu" id="exp-typo" onclick="expShow(4)">
+                        Trending Topic's Category Mining
+                    </div>
+                    <div class="exp-menu" id="exp-typo" onclick="expShow(5)">
+                        Simple Page Builder
+                    </div>
+                    <div class="exp-menu" id="exp-typo" onclick="expShow(6)">
+                        Query Visualizer
+                    </div>
+                    <br />
+                    <a href="iseng" target="_blank">
+                        <!--div class="exp-menu" id="exp-typo"-->
+                        <button class="btn-me btn-block">Projek Lainnya</button>
+                        <!--/div-->
+                    </a>
+                    <br />
+                </div>
+
+                <div class="col cont">
+                    <h6 id="exp-title">Query Visualizer</h6>
+                    <hr>
+                    <div class="over exp-cont" id="exp-cont">
+                        Sebuah sistem yang saya buat karena di server hosting pribadi saya tidak mampu untuk menginstall
+                        Metabase. Sehingga saya memutuskan untuk mencoba membuatnya sendiri dengan bahasa PHP. Memiliki
+                        fitu untuk menambah koneksi database, membuat query, menyusun dashboard visualisasi dari
+                        query.<br />Tools : PHP, Laravel(Laravolt), Livewire, SemanticUI, JQuery,
+                        PostgreSQL<br /><b>Demo</b><br />Email : demo@haizim.one<br />Password : Qwarty1234<br><br><a
+                            href='https://viz.haizim.one' target='_blank'><button class='btn-me'>Lihat</button></a><a
+                            href='https://github.com/haizim/viz' target='_blank'><button
+                                class='btn-me'>Github</button></a>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+    </div>
+
+    <div class="window" id="blog" style="top:200px; left:978px; z-index: 2; display:none;" onmousedown="atas('blog')">
+        <div class="row win-title" id="blogheader">
+            <div class=""></div>
+            <div class="col">
+                <div>
+                    Blog
+                </div>
+            </div>
+            <div class="col-1" align="center" style="cursor: pointer;" onclick="sembunyi('blog')">
+                <h6>x</h6>
+            </div>
+        </div>
+
+        <div class="win-body-full" id="body-blog" style="width: 20em; height: 25em">
+
+            <div class="blog-head">
+                <h6>Postingan Terbaru</h6>
+            </div>
+            <br>
+
+
+        </div>
+    </div>
+
+    <div class="window" id="call" style="top:23px; left:964px; z-index: 1; display:none;" onclick="atas('call')">
+        <div class="row win-title" id="callheader">
+            <div class=""></div>
+            <div class="col">
+                <div>
+                    Hubungi Wahid
+                </div>
+            </div>
+            <div class="col-1" align="center" style="cursor: pointer;" onclick="sembunyi('call')">
+                <h6>x</h6>
+            </div>
+        </div>
+
+        <div class="win-body no-resize" id="body-call" style="width: 20em;">
+
+            <div class="row">
+                <div class="col-3">
+                    <img src="asset/img/call.png">
+                </div>
+                <div class="col">
+                    <h5>Sampaikan <span class="txt-yellow">Disini</span></h5>
+                </div>
+            </div>
+            <hr />
+            <p>
+                Ingin menjalin kerja sama atau sekedar menyapa?<br>
+                Sampaikan disini :
+            </p>
+            <div id="call-cont">
+                <input type="text" id="call-nama" class="form-in" placeholder="Nama"><br><br>
+                <input type="text" id="call-email" class="form-in" placeholder="Email"><br><br>
+                <textarea type="text" id="call-pesan" class="form-in" placeholder="Pesan"
+                    onkeyup='textAreaAdjust(this)'></textarea><br><br>
+                <center><button class="btn-me" onclick="sampaikan()">Sampaikan</button></center>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="window" id="post" style="top:2em; left:15em; z-index: 7; display: none; text-align: justify;"
+        onclick="atas('post')">
+        <div class="row win-title">
+            <div class=""></div>
+            <div class="col">
+                <div id="postheader">
+
+                </div>
+            </div>
+            <div class="col-1" align="center" style="cursor: pointer;" onclick="sembunyi('post')">
+                <h6>x</h6>
+            </div>
+        </div>
+
+        <div class="win-body" id="body-post" style="width: 35em; height: 25em">
+
+        </div>
+    </div>
+
+    <div class="window" id="404" style="top:5em; z-index: 7; display: none;" onclick="atas('404')">
+        <div class="row win-title" id="404header">
+            <div class=""></div>
+            <div class="col">
+                <div>
+                    Err..
+                </div>
+            </div>
+            <div class="col-1" align="center" style="cursor: pointer;" onclick="sembunyi('404')">
+                <h6>x</h6>
+            </div>
+        </div>
+
+        <div class="win-body" id="body-404" style="width: 15em;">
+            <center>
+                <h2>404</h2>
+                kamu tuh nyari apa too?
+            </center>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+
+
+        $(document).ready(function () {
+
+
+        });
+
+
+    </script>
+
+</body>
+
+</html>

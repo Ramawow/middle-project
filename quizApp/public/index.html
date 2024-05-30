@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/6c74545ce9.js" crossorigin="anonymous"></script>
+    <script src="./index.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Quizyu</title>
+</head>
+
+<body id="body">
+    <div id="wrapall">
+        <h1 style="text-align: center;">Feeling smart enough?</h1>
+        <div id="content">
+            <h2 id="ask" class="fas fa-spinner" style="text-align: center;"></h2>
+            <div id="option">
+
+            </div>
+            <h4 id="jawaban">
+                The Asnwer revealed in :
+                <span id="timer"></span>
+            </h4>
+            <span id="judge"></span>
+            <button id="next" onclick="doRequest()">Next Question</button>
+            <div id="currentscore"></div>
+        </div>
+    </div>
+</body>
+
+</html>

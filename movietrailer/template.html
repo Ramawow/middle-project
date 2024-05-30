@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="MovieTrailer is a website for the collection of the latest movie trailers">
+    <title>MovieTrailer</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap" rel="preload" as="style"
+        onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap">
+    </noscript>
+    <link rel="icon" href="https://img.icons8.com/cotton/64/4a90e2/movie-beginning--v1.png" sizes="16x16"
+        type="image/png">
+</head>
+
+<body>
+    <div class="loading-body">
+        <div class="circle"></div>
+    </div>
+    <div class="container">
+        <header>
+            <nav>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <h1>Movie<span>Trailer</span> </h1>
+                <ul>
+                    <li><a href="#">Shows</a></li>
+                    <li><a href="#">Simulcast</a></li>
+                    <li><a href="#">Movies</a></li>
+                    <li><a href="#">Genres</a></li>
+                </ul>
+                <div class="btn-search">
+                    <input type="search" class="input-search" placeholder="Search">
+                    <img class="icon-search" src="<%= require('./src/images/search.png') %>" alt="Serach">
+                </div>
+            </nav>
+
+            <div class="popular-movies">
+                <h2>Popular Movies</h2>
+                <div class="content-popular"></div>
+                <div class="dots">
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+                <div class="next"></div>
+            </div>
+
+            <div class="loading">
+                <div class="circle"></div>
+            </div>
+        </header>
+        
+        <section id="genre">
+            <h3>Browse by Genre</h3>
+            <div class="genre-nav">
+                <ul class="links">
+                    <li data-genre="28" class="active"><a href="#">Action</a></li>
+                    <li data-genre="12"><a href="#">Adventure</a></li>
+                    <li data-genre="27"><a href="#">Horror</a></li>
+                    <li data-genre="10749"><a href="#">Romance</a></li>
+                    <li data-genre="18"><a href="#">Drama</a></li>
+                    <li data-genre="35"><a href="#">Comedy</a></li>
+                </ul>
+            </div>
+            <div class="movies"></div>
+            <div class="page page-genres">
+                <button class="prev-page">Prev</button>
+                <span class="page-currently">Page 1</span>
+                <button class="next-page">Next</button>
+            </div>
+            <div class="loading">
+                <div class="circle"></div>
+            </div>
+        </section>
+
+        <section id="featured">
+            <h3>Featured Movies</h3>
+            <div class="featured-movies"></div>
+            <div class="page page-featured">
+                <button class="prev-page">Prev</button>
+                <span class="page-currently">Page 1</span>
+                <button class="next-page">Next</button>
+            </div>
+            <div class="loading">
+                <div class="circle"></div>
+            </div>
+        </section>
+        
+        <div class="result-search">
+            <h2>Result</h2>
+            <div class="cards">
+            </div>
+            <button><a href="#">Back to Homepage</a></button>
+        </div>
+
+        <footer>
+            <p>This website made by <span>Nazir Bahrul Ulum</span> And Design made by Irvan</p>
+            <img src="<%= require('./src/images/attribution.svg') %>" alt="TMDb API">
+            <p>This product uses the <a href="https://www.themoviedb.org/">TMDb API</a> but is not endorsed or
+                certified by TMDb.</p>
+            <p><a target="_blank" href="https://icons8.com/icons/set/movie-beginning--v1">Movie Beginning icon</a> icon
+                by <a target="_blank" href="https://icons8.com">Icons8</a></p>
+        </footer>
+
+    </div>
+    <div class="trailer-container">
+        <div class="content"></div>
+    </div>
+</body>
+
+</html>

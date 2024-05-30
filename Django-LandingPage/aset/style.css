@@ -1,0 +1,45 @@
+.container {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+}
+.login{
+	border-radius: 20px;
+	background: red;
+	opacity: 0.9;
+	padding: 50px;
+	transform: translate(0%, 40%);
+}
+input{
+	margin-left: 10px
+}
+.inputan{
+	border-style: none;
+	border-bottom: 2px solid yellow;
+	margin-top: 20px;
+	background: transparent;
+	color: white;
+}
+.inputan::-webkit-input-placeholder{
+	color: white;
+	font-family: monospace;
+}
+.button{
+	background: transparent;
+	width: 100px;
+	color: yellow;
+	margin-top: 20px;
+	border: 1px solid yellow;
+	height: 30px
+}
+.button:hover{
+	background: yellow;
+	color: red;
+	box-shadow: 1px 1px 3px white;
+	transition: 0.3s;
+}
+h1{
+	text-align: center;
+	color: white
+}

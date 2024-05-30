@@ -1,0 +1,14 @@
+Halo {{ to_user.username }},
+
+Mohon maaf, proyek yang kamu kerjakan:
+`{{ project.title|title }}`
+
+Yang sebelumnya telah disetujui, statusnya telah diralat menjadi Pending Review.
+
+Klik link dibawah ini untuk mengetahui alasannya:
+{{ domain }}{{ user_project.get_absolute_url }}
+
+--
+Team UpKoding
+https://www.upkoding.com
+https://github.com/upkoding/upkoding

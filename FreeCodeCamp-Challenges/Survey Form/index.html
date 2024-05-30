@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+
+  <title>Survey Form</title>
+</head>
+
+<body>
+
+  <header>
+    <h1 id="title">School Event Survey</h1>
+    <p id="description">Hacked Tutorial</p>
+  </header>
+
+  <div class="container">
+
+    <form action="" id="survey-form">
+
+      <div class="name">
+        <label for="name" id="name-label">
+          <h2>Name</h2>
+        </label>
+        <input type="text" name="name" id="name" required placeholder="Enter your name">
+      </div>
+
+      <div class="email">
+        <label for="email" id="email-label">
+          <h2>Email</h2>
+        </label>
+        <input type="email" name="email" id="email" required placeholder="Enter your email">
+      </div>
+
+      <div class="age">
+        <label for="number" id="number-label">
+          <h2>Age (Optional)</h2>
+        </label>
+        <input type="number" name="age" id="number" placeholder="Age" min="0" max="2">
+      </div>
+
+      <div class="class">
+        <label for="dropdown">
+          <h2>Class</h2>
+        </label>
+        <select name="class" id="dropdown" required>
+          <option value="" disabled selected hidden>Select your class</option>
+          <option value="x">X (Tenth grade)</option>
+          <option value="xi">XI (Eleventh grade)</option>
+          <option value="xii">XII (Twelfth grade)</option>
+          <option value="xiii">XIII (Thirteenth class)</option>
+        </select>
+      </div>
+
+      <div class="opinion">
+        <h2>How interested you in this event?</h2>
+        <label for="very">
+          <input type="radio" name="attribute" value="attribute" id="very">
+          <h3>Very interested</h3>
+        </label>
+        <label for="interested">
+          <input type="radio" name="attribute" value="attribute" id="interested">
+          <h3>Interested</h3>
+        </label>
+        <label for="not">
+          <input type="radio" name="attribute" value="attribute" id="not">
+          <h3>Not interested</h3>
+        </label>
+      </div>
+
+      <div class="majors">
+        <h2>Select Your Majors</h2>
+        <label for="sija">
+          <input type="checkbox" name="sija" id="sija" value="attribute">
+          <h3>SIJA</h3>
+        </label>
+
+        <label for="kjij">
+          <input type="checkbox" name="kjij" id="kjij" value="attribute">
+          <h3>KJIJ</h3>
+        </label>
+
+        <label for="kgsp">
+          <input type="checkbox" name="kgsp" id="kgsp" value="attribute">
+          <h3>KGSP</h3>
+        </label>
+
+        <label for="tmpo">
+          <input type="checkbox" name="tmpo" id="tmpo" value="attribute">
+          <h3>TMPO</h3>
+        </label>
+
+        <label for="tflm">
+          <input type="checkbox" name="tflm" id="tflm" value="attribute">
+          <h3>TFLM</h3>
+        </label>
+
+        <label for="tedk">
+          <input type="checkbox" name="tedk" id="tedk" value="attribute">
+          <h3>TEDK</h3>
+        </label>
+
+        <label for="tme">
+          <input type="checkbox" name="tme" id="tme" value="attribute">
+          <h3>TFLM</h3>
+        </label>
+
+        <label for="ttl">
+          <input type="checkbox" name="ttl" id="ttl" value="attribute">
+          <h3>TTL</h3>
+        </label>
+      </div>
+
+      <div class="comment">
+        <h2>Any comments or suggestions?</h2>
+        <textarea name="comment" id="comment" placeholder="Enter your comment here"></textarea>
+      </div>
+
+      <div class="submit">
+        <button type="submit" id="submit">Submit</button>
+      </div>
+    </form>
+  </div>
+</body>
+
+</html>

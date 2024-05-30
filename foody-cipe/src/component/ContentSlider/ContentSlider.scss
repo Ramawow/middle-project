@@ -1,0 +1,65 @@
+@import "../../color.scss";
+
+.content-slider {
+  margin-bottom: 0.75rem;
+  display: block;
+
+  .header {
+    display: grid;
+    grid-template-columns: 1fr 30px;
+    align-items: center;
+    padding: 0.75rem 1.5rem;
+    cursor: pointer;
+
+    span {
+      width: 100%;
+      font-weight: 600;
+      justify-self: flex-start;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap;
+    }
+
+    img {
+      width: auto;
+      height: 14px;
+      justify-self: flex-end;
+    }
+  }
+
+  .header:active {
+    background-color: darken($color: $bg-white, $amount: 3);
+  }
+
+  .slider {
+    display: flex;
+    justify-content: flex-start;
+    overflow-x: auto;
+    cursor: grab;
+
+    .slider-slide {
+      display: flex;
+
+      .jumbo-card,
+      .loading-jumbo-card {
+        width: 80vw;
+        max-width: 360px;
+        margin-left: 1rem;
+      }
+
+      .jumbo-card:first-child,
+      .loading-jumbo-card:first-child {
+        margin-left: 1.5rem;
+      }
+
+      .jumbo-card:last-child,
+      .loading-jumbo-card:last-child {
+        margin-right: 1.5rem;
+      }
+    }
+  }
+}
+
+.content-slider:nth-child(5) {
+  margin-bottom: 1.5rem;
+}

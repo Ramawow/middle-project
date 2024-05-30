@@ -1,0 +1,1137 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Poppins-Regular */
+
+@font-face {
+    font-family: 'Poppins';
+    src: url("../fonts/Poppins-Regular.ttf");
+}
+
+/* Poppins-Bold */
+
+@font-face {
+    font-family: 'Poppins-Bold';
+    src: url("../fonts/Poppins-Bold.ttf");
+}
+
+body {
+    background-color: #E5E5E5;
+    margin: auto;
+    max-width: 1440px;
+}
+
+.container {
+    width: 100%;
+    background-color: #FFF;
+    font-family: Poppins, arial, 'sans-serif';
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+    background-color: transparent;
+}
+
+/* Header */
+
+header {
+    background-image: linear-gradient(to bottom right, rgba(58, 131, 240, .4), rgba(255, 255, 255, .4));
+    display: grid;
+    height: 800px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "nav nav" "info info";
+    overflow: hidden;
+}
+
+header nav {
+    display: flex;
+    justify-content: center;
+    grid-area: nav;
+    align-items: center;
+    position: relative;
+    height: 110px;
+}
+
+header nav ul {
+    display: flex;
+    width: 70%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+header nav ul li {
+    list-style: none;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #1A1A1A;
+    font-size: 16px;
+}
+
+header nav ul li:last-child a {
+    padding: 10px 25px;
+    border-radius: 10px;
+    border: 1px solid rgba(25, 73, 144, 0.5);
+    color: #194990;
+}
+
+header .tag-line {
+    font-family: Poppins-Bold, arial, 'sans-serif';
+    position: absolute;
+    width: 421px;
+    left: 120px;
+    cursor: default;
+}
+
+header .tag-line h1 {
+    font-size: 48px;
+    line-height: 75px;
+    font-weight: bold;
+    height: 225px;
+    color: #1A1A1A;
+}
+
+header .tag-line .img-download {
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+}
+
+header .tag-line h1 span {
+    color: #194990;
+}
+
+header .tag-line p {
+    letter-spacing: 0.03em;
+    line-height: 35px;
+    font-size: 16px;
+    font-family: Poppins, arial, 'sans-serif';
+    font-style: normal;
+    font-weight: normal;
+    margin-top: 35px;
+    color: rgba(26, 26, 26, 0.8);
+}
+
+header .info {
+    grid-area: info;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+header nav .menu-toggle {
+    display: none;
+    flex-direction: column;
+    height: 28px;
+    width: max-content;
+    justify-content: space-evenly;
+    cursor: pointer;
+}
+
+header nav .menu-toggle span {
+    display: block;
+    width: 28px;
+    margin: auto;
+    height: 3px;
+    background-color: #1A1A1A;
+    transition: transform .5s;
+}
+
+header nav .menu-toggle span:nth-child(2) {
+    width: 20px;
+    margin: auto 0px auto auto;
+}
+
+header nav .menu-toggle span:nth-child(1) {
+    transform-origin: 0 0;
+}
+
+header nav .menu-toggle span:nth-child(3) {
+    transform-origin: 0 100%;
+}
+
+header nav .menu-toggle.close span:nth-child(1) {
+    transform: rotate(45deg) translate(3px, -3px);
+    background-color: #ffffff;
+}
+
+header nav .menu-toggle.close span:nth-child(2) {
+    transform: scale(0);
+    opacity: 0;
+}
+
+header nav .menu-toggle.close span:nth-child(3) {
+    transform: rotate(-45deg) translate(3px, 3px);
+    background-color: #ffffff;
+}
+
+header nav ul.nav-open {
+    opacity: 1;
+    transition: .3s;
+    bottom: 0;
+    z-index: 9999;
+    transform: scale(1.3) translateX(0px);
+}
+
+/* Options CSS for JS */
+
+/* Scrolling Header */
+
+.setNav {
+    position: fixed;
+    left: 0;
+    right: 0;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 2px 0px 2px 1px rgba(0, 0, 0, .3);
+    transition: 0.5s;
+    height: 80px;
+    z-index: 9999;
+}
+
+/* End */
+
+/* Akhir Header */
+
+/* About */
+
+.about .about-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.about .about-container .about-head {
+    grid-area: 1 / 1 / 2 / 4;
+    display: flex;
+    background: rgba(58, 131, 240, 0.05);
+    align-items: center;
+    height: 234px;
+    justify-content: space-evenly;
+}
+
+.about .about-container .about-head .content {
+    text-align: center;
+    position: relative;
+}
+
+.about .about-container .about-head .content:nth-child(2) {
+    width: 357px;
+}
+
+.about .about-container .about-head .content:nth-child(2) p {
+    margin: auto;
+}
+
+.about .about-container .about-head .content:nth-child(2)::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 15px;
+    width: 357px;
+    height: 110px;
+    border-right: 1px solid rgba(0, 0, 0, 0.4);
+    border-left: 1px solid rgba(0, 0, 0, 0.4);
+}
+
+.about .about-container .about-head .content p {
+    width: 287px;
+    height: 70px;
+}
+
+.about .about-container .about-head .content h3 {
+    height: 75px;
+    color: #1A1A1A;
+    font-size: 36px;
+}
+
+.about .about-container .about-head .content h3 span {
+    color: rgb(25, 73, 144);
+}
+
+.about .about-container .about-web {
+    grid-area: 3 / 1 / 4 / 4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about .about-container .about-web .kelas-io {
+    width: max-content;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.about .about-container .about-web .kelas-io picture img, .about .about-container .about-web-dua .kelas-io picture img, .about .about-container .about-web-tiga .kelas-io picture img {
+    display: none;
+}
+
+.about .about-container .about-web .kelas-io h1 {
+    width: 221px;
+    padding-bottom: 20px;
+    color: #1A1A1A;
+    font-size: 48px;
+    align-items: center;
+    font-family: Poppins-Bold, arial, 'sans-serif';
+}
+
+.about .about-container .about-web .kelas-io hr, .about .about-container .about-web-dua .kelas-io hr, .about .about-container .about-web-tiga .kelas-io hr {
+    margin-top: 40px;
+    width: 445px;
+    display: block;
+    border: none;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+}
+
+.about .about-container .about-web .kelas-io p {
+    margin-top: 30px;
+    width: 467px;
+    font-size: 16px;
+    margin: auto;
+}
+
+.about .about-container .about-web .kelas-io h1 span {
+    color: #3A83F0;
+}
+
+.about .about-container .about-web .kelas-io .link {
+    display: flex;
+    width: 445px;
+    margin-top: 30px;
+}
+
+.about .about-container .about-web .kelas-io .link img {
+    width: 24px;
+    margin: auto;
+    background: rgba(58, 131, 240, 0.15);
+    border-radius: 50%;
+    padding: 5px;
+    margin-right: 20px;
+}
+
+.about .about-container .about-web-dua {
+    grid-area: 4 / 1 / 5 / 4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 650px
+}
+
+.about .about-container .about-web .kelas-io {
+    width: max-content;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.about .about-container .about-web-dua .kelas-io h1 {
+    color: #1A1A1A;
+    width: 504px;
+    font-size: 48px;
+    font-family: Poppins-Bold, arial, 'sans-serif';
+    padding-bottom: 30px;
+}
+
+.about .about-container .about-web-dua .kelas-io p {
+    width: 519px;
+    font-size: 16px;
+}
+
+.about .about-container .about-web-dua .kelas-io h1 span {
+    color: #3A83F0;
+}
+
+.about .about-container .about-web-dua .kelas-io .link {
+    display: flex;
+    margin-top: 30px;
+}
+
+.about .about-container .about-web-dua .kelas-io .link img {
+    width: 24px;
+    margin: auto;
+    background: rgba(58, 131, 240, 0.15);
+    border-radius: 50%;
+    padding: 5px;
+    margin-right: 20px;
+}
+
+.about .about-container .about-web-tiga {
+    grid-area: 5 / 1 / 6 / 4;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.about .about-container .about-web-tiga .img {
+    order: 2;
+}
+
+.about .about-container .about-web-tiga .kelas-io {
+    order: 1;
+    width: max-content;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    transform: translateX(90px);
+}
+
+.about .about-container .about-web-tiga .kelas-io h1 {
+    color: #1A1A1A;
+    width: 346px;
+    font-size: 48px;
+    font-family: Poppins-Bold, arial, 'sans-serif';
+    padding-bottom: 30px;
+}
+
+.about .about-container .about-web-tiga .kelas-io p {
+    margin-top: 30px;
+    width: 547px;
+    font-size: 16px;
+    margin: auto;
+}
+
+.about .about-container .about-web-tiga .kelas-io h1 span {
+    color: #3A83F0;
+}
+
+.about .about-container .about-web-tiga .kelas-io .link {
+    display: flex;
+    margin-top: 30px;
+    width: 450px;
+}
+
+.about .about-container .about-web-tiga .kelas-io .link img {
+    width: 24px;
+    margin: auto;
+    background: rgba(58, 131, 240, 0.15);
+    border-radius: 50%;
+    padding: 5px;
+    margin-right: 20px;
+}
+
+.about .about-container .about-web-fitur {
+    grid-area: 6 / 1 / 7 / 4;
+    background-image: linear-gradient(to top, rgba(150, 187, 241, 0.4), white);
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+}
+
+.about .about-container .about-web-fitur .fitur-title {
+    display: flex;
+    justify-content: space-around;
+    height: 150px;
+    margin-top: 100px;
+    align-items: center;
+}
+
+.about .about-container .about-web-fitur .fitur-title h1 {
+    width: 536px;
+    font-size: 40px;
+    font-family: 'Poppins-Bold';
+}
+
+.about .about-container .about-web-fitur .fitur-title h1 span {
+    color: #3A83F0;
+}
+
+.about .about-container .about-web-fitur .fitur-title a {
+    text-decoration: none;
+    color: #194990;
+    position: relative;
+}
+
+.about .about-container .about-web-fitur .fitur-title a::after {
+    content: "";
+    display: block;
+    width: inherit;
+    border: 1px solid #194990;
+}
+
+.about .about-container .about-web-fitur .fitur-title a::before {
+    content: "";
+    display: block;
+    width: 5px;
+    height: 5px;
+    border-right: 2px solid #194990;
+    border-top: 2px solid #194990;
+    transform: rotate(45deg);
+    position: absolute;
+    right: -12px;
+    top: 9px;
+}
+
+.about .about-container .about-web-fitur .fitur-list {
+    display: flex;
+    margin-top: 90px;
+    width: 80%;
+    flex-wrap: wrap;
+    margin: 100px auto 100px;
+    justify-content: center;
+}
+
+.about .about-container .about-web-fitur .fitur-list .kotak {
+    width: 330px;
+    height: 345px;
+    background-color: white;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px;
+    box-sizing: border-box;
+    margin: 15px;
+}
+
+.about .about-container .about-web-fitur .fitur-list .kotak img {
+    width: 15px;
+    padding: 15px;
+    background-color: rgba(58, 131, 240, 0.1);
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.about .about-container .about-web-fitur .fitur-list .kotak h3 {
+    font-size: 24px;
+}
+
+.about .about-container .about-web-fitur .fitur-list .kotak p {
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+.about .about-container .about-web-pengguna {
+    grid-area: 7 / 1 / 8 / 4;
+    display: flex;
+    flex-direction: column;
+    margin: 100px auto;
+    width: 100%;
+}
+
+.about .about-container .about-web-pengguna .title {
+    height: 150px;
+    width: 80%;
+    margin: auto;
+}
+
+.about .about-container .about-web-pengguna .title h1 {
+    color: #1A1A1A;
+    width: 498px;
+    font-size: 48px;
+    font-family: 'Poppins-Bold';
+}
+
+.about .about-container .about-web-pengguna .title h1 span {
+    color: #3A83F0;
+}
+
+.about .about-container .about-web-pengguna .pengguna {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgba(58, 131, 240, 0.05);
+    margin-top: 50px;
+}
+
+.about .about-container .about-web-pengguna .pengguna .kotak {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about .about-container .about-web-pengguna .pengguna .kotak:nth-child(2) {
+    margin-bottom: -40px;
+    margin-top: -250px;
+}
+
+.about .about-container .about-web-pengguna .pengguna .kotak p {
+    width: 512px;
+    transform: translateX(50px);
+    font-size: 20px;
+}
+
+.about .about-container .about-web-pengguna .pengguna .kotak picture {
+    transform: scale(0.9);
+    width: 700px;
+}
+
+.about .about-container .about-web-pengguna .pengguna .kotak:nth-child(1) picture {
+    transform: translateY(-195px);
+}
+
+.about .about-container .about-web-pengguna .pengguna .kotak:nth-child(2) picture {
+    order: 1;
+    transform: scale(0.9) translateX(-200px);
+    width: 700px;
+}
+
+.about .about-container .about-web-pengguna .pengguna .kotak:nth-child(2) p {
+    order: 2;
+    transform: translateX(-50px);
+}
+
+/* Akhir About */
+
+/* Download */
+.download {
+    background-color: white;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.download h1 {
+    font-size: 48px;
+    font-family: 'Poppins-Bold';
+    color: #1A1A1A;
+}
+
+.download h1 span {
+    color: #3A83F0;
+}
+
+.download p {
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.8);
+    margin-top: 20px;
+}
+
+.download .btn {
+    width: 400px;
+    display: flex;
+    margin-top: 40px;
+    justify-content: space-evenly;
+}
+
+.download .btn button {
+    display: block;
+    width: 120px;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    background-color: #3A83F0;
+}
+
+.download .btn button:nth-child(2) {
+    background-color: transparent;
+    border: 1px solid #194990;
+}
+
+.download .btn a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Poppins-Bold';
+    letter-spacing: 3%;
+}
+
+.download .btn button:nth-child(2)  a{
+    color: #194990;
+    font-family: 'Poppins';
+}
+/* Akhir Download */
+
+/* Footer */
+
+footer {
+    background-image: linear-gradient(to top, rgba(58, 131, 240, .4), rgba(255, 255, 255, .4));
+    display: grid;
+    height: 315px;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    position: relative;
+}
+
+footer nav {
+    display: flex;
+    justify-content: space-around;
+    grid-area: 1 / 1 / 2 / 4;
+    align-items: center;
+    height: 110px;
+}
+
+footer nav ul {
+    display: flex;
+    width: 575px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+footer nav ul li {
+    list-style: none;
+}
+
+footer nav ul li a {
+    text-decoration: none;
+    color: #1A1A1A;
+    font-size: 16px;
+}
+
+/* Akhir Footer */
+
+/* Preloader */
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #1A1A1A;
+    z-index: 999999;
+    display: flex;
+}
+
+.overlay .loading {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 5px outset white;
+    margin: auto;
+    animation: animasiLoading 5s ease-out infinite;
+}
+
+@keyframes animasiLoading {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Akhir Preloader */
+
+/* Breakpoint Responsive */
+
+/* Laptop */
+
+@media screen and (min-width:1336px) {
+    .about .about-container .about-web {
+        height: max-content;
+    }
+    .about .about-container .about-web .kelas-io h1 {
+        margin: unset;
+    }
+    .about .about-container .about-web .kelas-io .link {
+        margin-top: 20px;
+    }
+    .about .about-container .about-web .kelas-io .link p {
+        transform: translateX(20px);
+        margin: auto;
+    }
+}
+
+/* Tablet 10inch */
+
+@media screen and (max-width: 968px) {
+    /* Header */
+    header nav {
+        justify-content: space-around;
+        width: 100%;
+    }
+    header nav .logo {
+        z-index: 1;
+        position: absolute;
+        left: 80px;
+    }
+    header nav ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 50vh;
+        overflow-y: scroll !important;
+        position: absolute;
+        background-color: #194990;
+        top: 45px;
+        width: 100%;
+        transform: scale(1.3) translateX(1000px);
+        opacity: 0;
+    }
+    header nav ul li a {
+        font-size: 10px;
+        color: #FFFFFF;
+    }
+    header nav ul li:last-child a {
+        color: #FFFFFF;
+        border-radius: 10px;
+        border: 1px solid #FFFFFF;
+    }
+    header .tag-line {
+        top: 50px;
+        bottom: 0;
+        left: 80px;
+        right: 0;
+        z-index: 1;
+    }
+    header .info .img-header img {
+        transform: scale(0.9) translateX(250px) translateY(50px);
+    }
+    header nav .menu-toggle {
+        display: flex;
+        z-index: 99999;
+        position: absolute;
+        right: 80px;
+    }
+    /* Akhir Header */
+    /* About */
+    .about .about-container .about-head {
+        flex-wrap: wrap;
+        justify-content: center;
+        height: auto;
+    }
+    .about .about-container .about-head .content {
+        margin: 30px 30px;
+    }
+    .about .about-container .about-head .content:nth-child(2)::after {
+        display: none;
+    }
+    .about .about-container .about-web, .about .about-container .about-web-dua, .about .about-container .about-web-tiga {
+        height: 500px;
+    }
+    .about .about-container .about-web .img, .about .about-container .about-web-dua .img, .about .about-container .about-web-tiga .img {
+        display: none;
+    }
+    .about .about-container .about-web .kelas-io, .about .about-container .about-web-dua .kelas-io, .about .about-container .about-web-tiga .kelas-io {
+        justify-content: center;
+        width: 550px;
+    }
+    .about .about-container .about-web-tiga .kelas-io {
+        transform: translateX(0px);
+    }
+    .about .about-container .about-web .kelas-io p {
+        width: inherit;
+    }
+    .about .about-container .about-web .kelas-io .link {
+        width: inherit;
+    }
+    .about .about-container .about-web-fitur .fitur-title {
+        flex-direction: column;
+        position: relative;
+        width: max-content;
+        margin: auto;
+    }
+    .about .about-container .about-web-fitur .fitur-list {
+        width: 100%;
+    }
+    .about .about-container .about-web-fitur .fitur-list .kotak {
+        width: 315px;
+        height: 239px;
+    }
+    .about .about-container .about-web-fitur .fitur-title a {
+        font-size: 12x;
+        align-self: center;
+        position: absolute;
+        left: 0;
+        bottom: -50px;
+    }
+    .about .about-container .about-web-pengguna .pengguna {
+        margin-top: 120px;
+        background-color: rgba(58, 131, 240, 0.05);
+    }
+    .about .about-container .about-web-pengguna .title h1 {
+        margin: auto;
+        font-size: 45px;
+    }
+    .about .about-container .about-web-pengguna .pengguna .kotak {
+        flex-direction: column-reverse;
+        width: 80%;
+        margin: auto;
+    }
+    .about .about-container .about-web-pengguna .pengguna .kotak:nth-child(1) picture {
+        transform: translateX(-120px) scale(0.7) translateY(-328px);
+    }
+    .about .about-container .about-web-pengguna .pengguna .kotak p {
+        transform: translateX(20px) translateY(-280px);
+        font-size: 16px;
+        width: 500px;
+    }
+    .about .about-container .about-web-pengguna .pengguna .kotak:nth-child(2) {
+        flex-direction: column;
+    }
+    .about .about-container .about-web-pengguna .pengguna .kotak:nth-child(2) picture {
+        transform: translateX(80px) scale(0.7) translateY(-200px);
+    }
+    .about .about-container .about-web-pengguna .pengguna .kotak:nth-child(2) p {
+        transform: translateX(20px) translateY(-200px);
+    }
+    /* Akhir About */
+
+    /* Download */
+    .download {
+        width: 80%;
+        margin: auto;
+    }
+    .download h1 {
+        text-align: center;
+        font-size: 40px;
+    }
+    /* Akhir Download */
+    
+    /* Footer */
+    footer nav {
+        flex-direction: column;
+    }
+    footer nav .logo {
+        width: 75%;
+    }
+    /* Akhir Footer */
+}
+
+/* Ponsel */
+
+@media screen and (max-width: 568px) {
+    /* Header */
+    header {
+        height: 765px;
+    }
+    header nav .logo {
+        transform: scale(0.7) translateX(-35px);
+        left: 50px;
+    }
+    header .tag-line {
+        top: -250px;
+        bottom: 0;
+        left: 0px;
+        right: 0;
+        margin: 50px 50px;
+        height: max-content;
+        width: 302px;
+    }
+    header .tag-line p {
+        font-size: 12px;
+        margin-top: 60px;
+    }
+    header .menu-toggle {
+        transform: scale(0.9) translateX(30px);
+    }
+    header .tag-line h1 {
+        font-size: 25px;
+        line-height: 50px;
+        width: 240px;
+        height: 100px;
+    }
+    header .info .img-header img {
+        transform: scale(1);
+        margin-bottom: -120px;
+    }
+    header .info .img-download {
+        width: max-content;
+        flex-wrap: wrap;
+        margin-top: 20px;
+    }
+    header .tag-line a:last-child img {
+        transform: scale(0.91);
+    }
+    header .info {
+        justify-content: center;
+    }
+    /* Akhir Header */
+    /* About */
+    .about .about-container .about-head .content {
+        position: relative;
+    }
+    .about .about-container .about-head .content p {
+        width: 205px;
+    }
+    .about .about-container .about-head .content:nth-child(2)::before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: -40px;
+        border-top: 2px solid rgba(0, 0, 0, 0.25);
+        border-bottom: 1px solid transparent;
+        border-right: 1px solid transparent;
+        border-left: 1px solid transparent;
+        width: 50%;
+        left: 25%;
+    }
+    .about .about-container .about-head .content:nth-child(2)::after {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 30px;
+        border-top: 1px solid transparent;
+        border-bottom: 2px solid rgba(0, 0, 0, 0.25);
+        border-right: 1px solid transparent;
+        border-left: 1px solid transparent;
+        width: 50%;
+        left: 25%;
+    }
+    .about .about-container .about-web .kelas-io h1, .about .about-container .about-web-dua .kelas-io h1, .about .about-container .about-web-tiga .kelas-io h1 {
+        font-size: 24px;
+        text-align: left;
+        margin: auto;
+    }
+    .about .about-container .about-web, .about .about-container .about-web-dua, .about .about-container .about-web-tiga {
+        height: auto;
+        width: 300px;
+        margin: 70px auto;
+    }
+    .about .about-container .about-web .kelas-io picture img, .about .about-container .about-web-dua .kelas-io picture img, .about .about-container .about-web-tiga .kelas-io picture img {
+        display: block;
+        width: 300px;
+        transform: scale(1.2);
+        margin-bottom: 30px !important;
+        margin-top: 30px !important;
+    }
+    .about .about-container .about-web .kelas-io hr {
+        display: block;
+        width: 300px;
+        border: none;
+        margin: 30px auto 0;
+        border: 0.3px solid rgba(0, 0, 0, 0.25);
+    }
+    .about .about-container .about-web .kelas-io hr, .about .about-container .about-web-dua .kelas-io hr, .about .about-container .about-web-tiga .kelas-io hr {
+        display: block;
+        width: 300px;
+        border: none;
+        margin: 30px auto 0;
+        border: 0.3px solid rgba(0, 0, 0, 0.25);
+    }
+    .about .about-container .about-web .kelas-io .link p, .about .about-container .about-web-dua .kelas-io .link p, .about .about-container .about-web-tiga .kelas-io .link p {
+        font-size: 10px;
+    }
+    .about .about-container .about-web .kelas-io .link, .about .about-container .about-web-dua .kelas-io .link, .about .about-container .about-web-tiga .kelas-io .link {
+        margin-top: 15px;
+        width: 300px;
+    }
+    .about .about-container .about-web .kelas-io .link img, .about .about-container .about-web-dua .kelas-io .link img, .about .about-container .about-web-tiga .kelas-io .link img {
+        display: block;
+        width: 15px;
+    }
+    .about .about-container .about-web .kelas-io h1, .about .about-container .about-web-dua .kelas-io h1, .about .about-container .about-web-tiga .kelas-io h1 {
+        width: 300px;
+    }
+    .about .about-container .about-web .kelas-io p, .about .about-container .about-web-dua .kelas-io p, .about .about-container .about-web-tiga .kelas-io p {
+        font-size: 12px;
+        width: 300px;
+        margin: auto;
+    }
+    .about .about-container .about-head .content p {
+        font-size: 12px;
+    }
+    .about .about-container .about-head .content h3 {
+        font-size: 30px;
+        height: 50px;
+    }
+    .about-container .about-web-fitur .fitur-title h1 {
+        width: 300px !important;
+        font-size: 24px !important;
+        margin: auto;
+    }
+    .about-container .about-web-fitur .fitur-title {
+        position: relative;
+        width: 300px;
+        margin: auto;
+    }
+    .about .about-container .about-web-fitur .fitur-title a {
+        font-size: 12px;
+        align-self: center;
+        position: absolute;
+        left: 0;
+        bottom: -20px;
+    }
+    .about .about-container .about-web-fitur .fitur-list .kotak {
+        width: 330px;
+    }
+    .about .about-container .about-web-fitur .fitur-list .kotak h3 {
+        font-size: 16px;
+    }
+    .about .about-container .about-web-fitur .fitur-list .kotak p {
+        font-size: 12px;
+        margin-top: 20px;
+    }
+    .about .about-container .about-web-fitur .fitur-list .kotak img {
+        padding: 5px;
+    }
+    .about .about-container .about-web-pengguna .title {
+        margin-left: 0;
+    }
+    .about .about-container .about-web-pengguna .title h1 {
+        font-size: 20px;
+        width: 249px;
+    }
+    .about .about-container .about-web-pengguna .pengguna {
+        margin-top: 0px;
+    }
+    .about .about-container .about-web-pengguna .pengguna .kotak {
+        flex-direction: column-reverse;
+        margin: auto;
+    }
+    .about .about-container .about-web-pengguna .pengguna .kotak:nth-child(1) picture {
+        transform: translateX(220px) scale(1) translateY(-80px);
+    }
+    .about .about-container .about-web-pengguna .pengguna .kotak p {
+        transform: translateX(0px) translateY(-40px);
+        line-height: 30px;
+        letter-spacing: 3%;
+        font-size: 12px;
+        width: 307px;
+    }
+    .about .about-container .about-web-pengguna .pengguna .kotak:nth-child(2) {
+        flex-direction: column;
+        margin-bottom: 0px;
+        margin-top: 0px;
+    }
+    .about .about-container .about-web-pengguna .pengguna .kotak:nth-child(2) picture {
+        transform: translateX(80px) scale(1) translateY(-40px);
+    }
+    .about .about-container .about-web-pengguna .pengguna .kotak:nth-child(2) p {
+        transform: translateX(0px) translateY(0px);
+    }
+    /* Akhir About */
+
+    /* Download */
+    .download {
+        margin-top: -50px;
+    }
+    .download h1 {
+       width: 276px;
+       font-size: 24px;
+    }
+    .download p {
+        width: 299px;
+        color: rgba(0, 0, 0, 0.8);
+        font-size: 12px;
+        text-align: center;
+    }
+    .download .btn {
+        width: 300px;
+    } 
+    /* Akhir Download */
+    /* Footer */
+    /* footer nav {
+        height: 300px;
+    } */
+    footer nav .logo {
+        transform: scale(0.7);
+        width: 100%;
+    }
+    footer nav ul {
+        /* flex-direction: column; */
+        width: 80%;
+        height: 250px;
+    }
+    footer nav ul li a {
+        font-size: 14px;
+    }
+    /* Akhir */
+}
+
+/* Ponsel Min */
+
+@media screen and (max-width:320px) {
+    header .info .tag-line {
+        width: 200px;
+    }
+    header .info .tag-line .img-download {
+        transform: scale(0.8);
+        margin-left: -30px;
+    }
+}

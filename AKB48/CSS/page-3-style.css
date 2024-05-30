@@ -1,0 +1,88 @@
+*, *::before, *::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+/*font face*/
+@font-face{
+    font-family: 'Acme';
+    src: url(../Fonts/Acme/Acme-Regular.ttf);
+}
+@font-face{
+    font-family: 'Lexend';
+    src: url(../Fonts/Lexend_Mega/LexendMega-Regular.ttf);
+}
+
+
+
+
+.swiper-container{
+    height: 340px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 25px 0;
+}
+.swiper-wrapper{
+    height: 310px;
+}
+.swiper-slide{
+    width: 250px;
+    margin: 0 1px;
+}
+.card{
+    width: 250px;
+    height: 310px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, .7);
+}
+.cardt{
+    box-shadow: 0px 0px 5px rgba(100, 10, 100, .8);
+}
+.card .t-head{
+    /*background: white;*/
+    padding: 10px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.al-cvr{
+    width: 60px;
+    height: 60px;
+}
+.al-cvr img{
+    width: 55px;
+    height: 55px;
+}
+.t-head p{
+    color: rgba(255, 255, 255, 1);
+    font-family: 'Acme';
+    letter-spacing: 5px;
+}
+.body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.body .links{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.links a{
+    font-size: 1.3em;
+    margin: 10px 0;
+    transition: .7s ease-in-out;
+
+}
+.links a:hover{
+    color: rgba(200, 90, 90, 1);
+}

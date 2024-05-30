@@ -1,0 +1,33 @@
+.card {
+  display: flex;
+  flex-flow: row;
+  box-shadow: 0px 8px 2rem rgba(128, 128, 128, 0.1);
+  padding: 1rem;
+  background: white;
+  transition: all 0.2s ease-in-out;
+
+  border-radius: 0.5rem;
+  border-style: solid;
+  border-color: rgb(226, 232, 240);
+  border-width: 1px;
+}
+
+.card:hover {
+  box-shadow: 0px 8px 1rem rgba(128, 128, 128, 0.3);
+}
+
+.card img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.description {
+  flex-flow: column;
+  padding-left: 1rem;
+}
+
+.description h2 {
+  margin-top: 0;
+}

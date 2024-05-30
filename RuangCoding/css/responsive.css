@@ -1,0 +1,146 @@
+/* SECTION RESPONSIVE FOR DESKTOP VERSION */
+
+@media (min-width: 768px) {
+	/* SECTION GLOBAL FOR DESKTOP */
+	.btn {
+		width: 30vw;
+	}
+
+	.h1 {
+		font-size: 4.5vw;
+	}
+
+	.h2 {
+		font-size: 3vw;
+	}
+
+	/* !SECTION GLOBAL FOR DESKTOP END */
+
+	/* SECTION NAV DESKTOP */
+
+	nav .hamburger{
+		display: none;
+	}
+
+	nav .container{
+		position: absolute;
+		top: 10px;
+		height: unset;
+		right: unset;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		align-items: center;
+		width: 100%;
+		background-color: unset;
+	}
+
+	nav .logo{
+		margin-top: 0;
+	}
+
+	nav .logo h1{
+		font-size: 20pt;
+	}
+
+	nav .links a{
+		font-size: 12pt;
+	}
+
+	nav .container .links{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		width: 30%;
+	}
+
+	/* !SECTION NAV DESKTOP END */
+
+	/* SECTION HEADER DESKTOP */
+
+	header {
+		padding-bottom: 300px;
+	}
+
+	/* !SECTION HEADER DESKTOP END */
+
+	/* SECTION ABOUT DESKTOP */
+
+	.case {
+		flex-direction: row;
+		justify-content: space-evenly;
+		align-items: center;
+	}
+
+	.case .message h1 {
+		font-size: 3vw;
+	}
+
+	.case .message h2 {
+		font-size: 2vw;
+	}
+
+	.case .illustration img {
+		width: 40vw;
+	}
+
+	.case:nth-child(2) .illustration {
+		order: 1;
+	}
+
+	.case:nth-child(2) .message {
+		order: 2;
+	}
+
+	/* !SECTION ABOUT DESKTOP END */
+
+	/* SECTION SERVICES DESKTOP */
+
+	main .container .cards {
+		flex-direction: row;
+	}
+
+	.card {
+		flex-direction: column;
+		text-align: center;
+	}
+
+	.card img {
+		order: 1;
+	}
+
+	.card .message {
+		order: 2;
+	}
+	/* !SECTION SERVICES DESKTOP END */
+
+	/* SECTION FOOTER */
+	
+	.footer-title h2 {
+		font-size: 24pt;
+	}
+
+	.footer-title p{
+		font-size: 15pt;
+	}
+
+	.footer-contents{
+		flex-direction: row;
+	}
+
+	.footer-contents .content{
+		margin-right: 40px;
+	}
+
+	.footer-contents .content h2{
+		font-size: 15pt;
+	}
+
+	.footer-contents .content p, a{
+		font-size: 12pt;
+	}
+
+	/* !SECTION FOOTER END */
+}
+
+/* !SECTION RESPONSIVE FOR DESKTOP VERSION END */

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>Quran Json</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+</head>
+
+<body style="background-color: #040c23">
+	<nav class="navbar navbar-expand-lg" style="background-color: #672cbc">
+		<div class="container">
+			<a class="navbar-brand text-white fw-bold" href="#">Quran Json</a>
+			<div class="d-flex align-items-center">
+				<a href="https://github.com/yusupsupriyadi/quran-json"
+					class="text-white fs-5 fw-semibold text-decoration-none"><span class="fw-light">source:</span>
+					Github
+					<i class="bi bi-box-arrow-up-right"></i></a>
+			</div>
+		</div>
+	</nav>
+
+
+	<main class="container">
+		<div class="d-flex justify-content-center">
+			<div class="mt-4">
+				<div>
+					<div class="card" style="background-color: rgb(58, 8, 82)">
+						<div class="card-body text-white">
+							Sumber:
+							<a href="https://quran.kemenag.go.id/" class="fw-bold text-white">quran.kemenag.go.id -
+								v2</a>
+						</div>
+					</div>
+				</div>
+				<table class="table mt-4" style="
+							--bs-table-bg: #040c23;
+							border-color: #7b80ad59;
+							max-width: 500px;
+						">
+					<tbody id="data-surah"></tbody>
+				</table>
+			</div>
+		</div>
+	</main>
+
+	<section class="modal-surah modal fade" style="--bs-modal-bg: #040c23" id="staticBackdrop" data-bs-backdrop="static"
+		data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h1 class="modal-title fs-5 text-white fw-bold" id="surah-title">
+						-
+					</h1>
+					<button type="button" class="btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body" id="surah-detail">
+
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+						Close
+					</button>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+		crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.7.0.min.js"
+		integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+	<script>
+		getSurahList();
+
+		function getSurahList() {
+			$.ajax({
+				url: `Surah List/list-surah.json`,
+				type: "GET",
+				dataType: "json",
+				data: {},
+				beforeSend: function () { },
+				error: function (error) {
+					alert("Gagal memuat data surah");
+				},
+				success: function (response) {
+					renderSurahList(response);
+				},
+			});
+		}
+
+		function renderSurahList(data) {
+			let html = "";
+
+			$.each(data, function (key, item) {
+				html += `
+                    <tr>
+                        <td scope="row" class="text-white align-middle position-relative" style="width: 65px">
+							<div class="position-absolute d-flex align-items-center justify-content-center" style="top: 50%; left: 50%; transform: translate(-50%, -50%); background-image: url('https://res.cloudinary.com/dfff7n5gi/image/upload/v1688366247/muslim_1_1_hr55rg.png'); background-size: cover; background-position: center; width: 50%; height: 50%;">
+								${item.nomor}
+							</div>
+						</td>
+                        <td class="text-white align-middle">
+                            <div class="fs-md-5">${item.namaLatin}</div>
+                            <div class="d-flex align-items-center" style="height: 20px;color: #A19CC5">
+					             <div class="fs-6">${item.tempatTurun}</div>
+					             <i class="bi bi-dot fs-3"></i>
+					             <div class="fs-6">${item.jumlahAyat} Ayat</div>
+					       </div>
+                        </td>
+                        <td class="align-middle fw-bold fs-5" style="color: #A44AFF">${item.nama}</td>
+                        <td>
+                            <button type="button" class="btn text-white open-surah" data-id="${item.nomor}" style="background-color: #A44AFF">Buka</button>
+                        </td>
+                    </tr>
+                    `;
+			});
+
+			return $("#data-surah").html(html);
+		}
+
+		$(document).on("click", ".open-surah", function () {
+			var id = $(this).data("id");
+
+			$.ajax({
+				url: `Surah 1-114/${id}.json`,
+				type: "GET",
+				dataType: "json",
+				data: {},
+				beforeSend: function () { },
+				error: function (error) {
+					alert("Gagal memuat data surah");
+				},
+				success: function (response) {
+					renderSurah(response);
+					$(".modal-surah").modal("show");
+				},
+			});
+		});
+
+		function renderSurah(data) {
+			html = '';
+			htmlTitleSurah = `
+				<div class="d-flex align-items-center">
+					<div class="fs-6 fw-bold text-white">${data.namaLatin}</div>
+					<i class="bi bi-dot fs-3"></i>
+					<div class="fs-6 fw-bold text-white">${data.jumlahAyat} ayat</div>
+				</div>
+			`;
+			$("#surah-title").html(htmlTitleSurah);
+			console.log(data.ayat.length);
+
+			$.each(data.ayat, function (key, item) {
+				html += `
+					<div class="${item.nomorAyat != 1 ? 'mt-4' : ''}">
+						<div class="d-flex justify-content-between align-items-center">
+							<div class="text-white" style="background-image: url('https://res.cloudinary.com/dfff7n5gi/image/upload/v1688366247/muslim_1_1_hr55rg.png'); width: 37px; height: 37px; display: flex; justify-content: center; align-items: center;">
+								${item.nomorAyat}
+							</div>
+							<div class="fs-6 fw-bold text-white text-right" style="max-width: 400px">
+								<p>${item.teksArab}</p>	
+							</div>
+						</div>
+						<div class="fs-6 fw-bold text-white mt-2">${item.teksLatin}</div>
+						<p class="text-white">${item.teksIndonesia}</p>
+						${data.ayat.length == item.nomorAyat ? '' : '<hr class="text-white">'}
+					</div>
+				`;
+			})
+
+			return $("#surah-detail").html(html);
+		}
+
+	</script>
+</body>
+
+</html>

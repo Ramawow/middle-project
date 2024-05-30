@@ -1,0 +1,443 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url("cloud.png");
+    background-size: 58vh;
+    background-repeat: repeat-x;
+    background-attachment: fixed;
+    background-color: #45daff;
+    height: 582vh;
+    width: 100vw;
+    overflow-x: hidden;
+    font-size: 18px;
+    animation-name: kiri;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    /* animation-direction: alternate; */
+    transition: all 1s;
+    font-family: 'Lato', sans-serif;
+    color:#585858;
+} 
+
+h1,h2,h3,h4,h5,h6{
+    font-weight: 800;
+}
+h6{
+    font-size: 1em;
+}
+h5{
+    font-size: 1.25em;   
+}
+h4{
+    font-size: 1.5em;
+}
+h3{
+    font-size: 2em;
+}
+h2{
+    font-size: 2.75em;
+}
+h1{
+    font-size: 4em;
+}
+
+.malam{
+    filter: brightness(0.25) saturate(0.25);
+    /* background-color: #199bbb; */
+    backdrop-filter: brightness(0.25) saturate(0.25);
+}
+
+.text-tengah{
+    text-align: center;
+}
+@keyframes kanan {
+    0% {background-position-x: 0;}
+    50% {background-position-x: 25em;}
+    100% {background-position-x: 0;}
+}
+
+@keyframes kiri {
+    0% {background-position-x: 0;}
+    50% {background-position-x: -25em;}
+    100% {background-position-x: 0;}
+}
+
+@keyframes turun{
+    0% {transform: translateY(.5em);}
+    50% {transform: translateY(4em);}
+    100% {transform: translateY(.5em);}
+}
+@keyframes turun-m{
+    0% {transform: translateY(.5em);}
+    50% {transform: translateY(10.25em);}
+    100% {transform: translateY(.5em);}
+}
+@keyframes lari{
+    0% {transform: translateX(0);}
+    25% {transform: translateX(2em);}
+    100% {transform: translateX(0);}
+}
+body::-webkit-scrollbar {
+	display: none;
+	width: 0;
+}
+
+#root{
+    position: fixed;
+}
+
+#tanah{
+    position: fixed;
+    top:80vh;
+    height: 25vh;
+    width: 100%;
+    background-image: url("tanah.svg");
+    background-size: 5vw;
+    background-repeat: repeat-x;
+    background-color: #a05a2c;
+}
+
+#orang{
+    position:fixed;
+    top: 55vh;
+    left: 5em;
+    height: 25vh;
+    width: max-content;
+    z-index: 25;
+    display: flex;
+    align-items: flex-end;
+}
+#orang img{
+    width:auto;
+    height: 100%;
+}
+#berdiri{
+    width:auto;
+    height: 100%;
+}
+#lari{
+    width:auto;
+    height: 100%;
+    display: none;
+    animation-name: lari;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+.awan{
+    position: fixed;
+    top:0;
+    height: 5em;
+    width: 100%;
+    background-image: url("awan.svg");
+    background-size: 5em;
+    background-repeat: repeat-x;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+#awan-depan{
+    animation-name: kanan;
+}
+#awan-belakang{
+    filter: saturate(8.5) brightness(0.58);
+    animation-name: kiri;
+    /* animation-direction: alternate; */
+}
+
+
+#konten-box{
+    position: fixed;
+    background-image: url("pohon.svg");
+    background-size: auto 70vh;
+    background-position: bottom;
+    background-repeat: repeat-x;
+    /* background-color: #252858; */
+    height:70vh;
+    top:10vh;
+    width:max-content;
+    min-width: 258vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+#blog{
+    position: fixed;
+    top:10vh;
+    height: 100%;
+    width: max-content;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+#semak{
+    width: 100%;
+    height: 12vh;
+    background-image: url(semak.svg);
+    background-size: auto 12vh;
+    background-position: bottom left;
+    background-repeat: repeat-x;
+    position: absolute;
+}
+
+.papan{
+    width: 100%;
+    height: max-content;
+    background-color: #d38d5f;
+    border-radius: 1rem;
+    box-shadow: 0 1.5rem 0 #7b5136;
+    transform: translateY(2em);
+    padding: 1.5rem;
+}
+
+.welcome{
+    width: max-content;
+    height: 100%;
+    padding: 0 8vw;
+    position:relative;
+    left: 4rem;
+    /* transform: translateY(-1.5rem); */
+}
+.papan.p-welcome{
+    width: max-content;
+    padding: 1em;
+    transform: translateY(0);
+    margin-top: .58rem;
+}
+.papan-kuning{
+    background-color: #ffee29;
+    box-shadow: 0 1rem 0 #cabc21;
+    color: #ffab29;
+    text-shadow: 0 .25rem 0 #cc8921;
+}
+.papan-biru{
+    background-color: #2599e6;
+    box-shadow: 0 1rem 0 #1e7bba;
+    color: #1b72ac;
+    text-shadow: 0 0.25rem 0 #124f77;
+}
+.papan-putih{
+    background-color: #eee;
+    box-shadow: 0 1rem 0 #bbb;
+    color: #858585;
+    text-shadow: 0 0.15rem 0 #585858;
+}
+
+.konten{
+    width:58vw;
+    height: 100%;
+    /* background-color: #789123; */
+    padding: 0 8vw;
+    position:relative;
+}
+
+.papan-isi{
+    background-color: #ffb380;
+    padding:1rem;
+    box-shadow: inset 0 .5rem 0 #9d623b;
+    border-radius: .85rem;
+    color:#28170b;
+}
+
+.judul{
+    max-height: 30vh;
+    /* white-space: nowrap; */
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.btn-papan, .btn-me{
+    background-color: #a05a2c;
+    box-shadow: 0 .5rem 0 #65391d;
+    border-radius: .58rem;
+    padding: .5rem 1rem;
+    margin: .5rem;
+    border:none;
+    font-size: larger;
+    font-weight: bold;
+    color:#ffb380;
+    transition: all .25s;
+}
+.btn-papan:hover, .btn-me:hover{
+    box-shadow: 0 .25rem 0 #65391d;
+    transform: translateY(.25rem);
+    cursor: pointer;
+}
+
+
+.tiang{
+    height: 100%;
+    width: 2.5rem;
+    background-color: #c87137;
+    border-radius: .85rem .85rem 0 0;
+    position: absolute;
+    box-shadow: inset 0 .5rem 0 #ffb380;
+}
+.tiang.kanan{
+    right: 12vw;
+}
+.tiang.kiri{
+    left: 12vw;
+}
+
+.bunga-box{
+    width: 25vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-end;
+    align-content: flex-end;
+    height: 20vh;
+    position: absolute;
+    top: 50vh;
+    left: 15vw;
+}
+.bunga{
+    height: 100%;
+    animation-name: turun;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    transform: translateY(.5em);
+}
+.bungaa{
+    animation-delay: 2s;
+}
+.bunga img{
+    height: 100%;
+}
+
+#bacabox{
+    height:100vh;
+    width:100vw;
+    position: fixed;
+    top:-105vh;
+    left:0;
+    padding: 10vh 15vw;
+    z-index:258;
+    transition: all 1s;
+}
+
+#papan-baca{
+    width:100%;
+    height:100%;
+    background-color: #d38d5f;
+    border-radius: 1rem;
+    box-shadow: 0 1.5rem 0 #7b5136;
+    padding: 1.5rem;
+}
+
+#baca{
+    height: 58vh;
+    overflow-y: scroll;
+    text-align : justify;
+}
+
+#baca a{
+    color:#953b00;
+}
+
+#baca a.btn-me , #baca a.btn-papan{
+    color:#ffb380;
+}
+
+#baca img{
+    width:100%;
+}
+
+#baca p, #baca ul, #baca ol{
+    margin:.5rem;
+}
+
+.tali{
+    position: absolute;
+    z-index: -2;
+    top:0;
+    width: 2.5rem;
+    height : 25vh;
+    background-color: #a05a2c;
+}
+.tali-kiri{
+    left: 25vw;
+}
+.tali-kanan{
+    right: 25vw;
+}
+
+#wait{
+    background-color:#ffee29;
+    width: 100vw;
+    height: 100vh;
+    z-index: 528;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    transition: all 1s;
+}
+@media (orientation:portrait){
+    body{
+        font-size: 28pt;
+    }
+    .btn-papan, .btn-me{
+        border-radius: .85rem;
+    }
+    #tanah{
+        background-size: 15vw;
+    }
+    /*#konten-box{*/
+    /*    height: 58vh;*/
+    /*    top:22vh;*/
+    /*}*/
+    .konten{
+        width: 100vw;
+    }
+    .papan{
+        transform: translateY(5vh);
+        padding:3rem;
+        border-radius: 2.5rem;
+        box-shadow: 0 2.5rem 0 ;
+    }
+    .papan-isi{
+        padding:2rem;
+        box-shadow: inset 0 1rem 0;
+        border-radius: 2rem;
+    }
+    .tiang{
+        width: 5rem;
+    }
+    .tiang.kanan{
+        right: 18vw;
+    }
+    .tiang.kiri{
+        left: 18vw;
+    }
+    .bunga-box{
+        width: 75vw;   
+    }
+    .bunga{
+        animation-name: turun-m;
+    }
+
+    #bacabox{
+        padding: 10vh 5vw;
+    }
+    #papan-baca{
+        border-radius: 2rem;
+        padding: 3rem;
+    }
+    #baca{
+        height: 65vh;
+    }
+}

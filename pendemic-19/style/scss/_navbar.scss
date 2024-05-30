@@ -1,0 +1,140 @@
+.navbar {
+  padding: 1rem 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9;
+  transition: 0.3s;
+
+  @media (max-width: 768px) {
+    & {
+      padding: 0.75rem 0;
+    }
+  }
+
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .navbar-logo {
+      font-size: 1.5rem;
+      font-weight: 700;
+      white-space: nowrap;
+      letter-spacing: 1px;
+      display: flex;
+      align-items: center;
+    }
+
+    .navbar-toggler {
+      display: none;
+      width: 16px;
+      height: 12px;
+      padding: 0;
+      margin-right: 0.375rem;
+
+      &::before {
+        content: "";
+        background-image: url(../../image/hamburger-menu.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    .navbar-nav {
+      display: flex;
+      justify-content: space-between;
+      padding: 0;
+      margin: 0;
+      overflow: hidden;
+
+      .nav-item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 1rem;
+
+        .nav-link:hover {
+          text-decoration: underline;
+        }
+
+        .nav-link:active {
+          color: $red;
+        }
+      }
+
+      .nav-item:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    .wrapper {
+      .navbar-toggler {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .navbar-nav {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 100%;
+        display: block;
+        z-index: -1;
+        transition: 0.3s;
+        padding: 0;
+        height: 0;
+        margin: 0;
+
+        .nav-item {
+          width: 540px;
+          max-width: 100%;
+          margin: 0 auto;
+          justify-content: flex-start;
+          position: relative;
+
+          &:active::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba($color: $light, $alpha: 0.1);
+            z-index: 0;
+          }
+
+          .nav-link {
+            display: block;
+            width: 100%;
+            position: relative;
+            z-index: 1;
+            padding: 0.75rem 1.5rem;
+
+            &:active {
+              color: $light;
+            }
+          }
+        }
+
+        .nav-item:last-child {
+          margin: 0 auto;
+        }
+      }
+
+      .navbar-nav.open {
+        padding: 0.5rem 0;
+        height: 267px;
+        border-top: 1px solid $light;
+        box-shadow: 0 0.75rem 0.75rem rgba($color: $dark, $alpha: 0.1);
+      }
+    }
+  }
+}

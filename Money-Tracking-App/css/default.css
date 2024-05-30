@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: 'Victor Mono', monospace;
+  outline: none;
+}
+
+:root {
+  --green: #00798c;
+  --red: #ad343e;
+  --blue: #3a606e;
+  --white: #f4f4f9;
+  --white-bg: #f4f4f9;
+  --black: #171d1c;
+  --white-50: #eceff480;
+  --shadow: 5px 5px var(--black);
+  --transition: 0.3s cubic-bezier(0.7, 0, 0.3, 1);
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  padding: 3px;
+  background: var(--white-bg);
+  border-left: 1px solid var(--black);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--black);
+}
+
+body {
+  background-color: var(--white-bg);
+}

@@ -1,0 +1,245 @@
+html,body{
+	scroll-behavior: smooth;
+	max-width: 100vw; 
+	overflow-x: hidden; 
+	min-height: 100vh
+}
+img,video,audio{
+	width: 100%;
+	transition: .5s all;
+}
+
+p{
+    margin-bottom: .5em;
+}
+
+.note-video-clip{
+    max-width: 100%;
+}
+
+img[act=link]:hover, img[act=detail]:hover{
+    transform: scale(1.1,1.1);
+    cursor: pointer;
+}
+
+.note-editable img:hover{
+    transform: scale(1,1);
+}
+
+h1,h2,h3,h4,h5,h6{
+	font-weight: bold;
+}
+
+.row{
+	margin: unset;
+}
+.preview{
+	box-shadow: 0.5em 0.5em 0.5em rgba(0,0,0,0.25);
+	background-color: #fff;
+}
+.baris{
+	padding: 0 10%;
+	transition: all 1s;
+}
+.preview .baris:hover{
+	background-color: #007bff25;	
+}
+.baris-full{
+    min-height: 100vh;
+    /*align-items:center;*/
+}
+
+.kolom{
+	padding: 1em;
+	transition: all 1s;
+}
+.preview .kolom:hover{
+	background-color: #007bff25;
+}
+
+.tambah{
+	cursor: pointer;
+	font-weight: bold; 
+	text-align: center;
+	padding:.5em;
+	border-radius: 1em;
+	color: #ffc107;
+	background-color: #ffc10758;
+	width: max-content;
+	transition: all .5s;
+}
+
+/*.tambah:hover{*/
+/*    display:block;*/
+/*    z-index:58;*/
+/*}*/
+
+.baris>.tambah{
+    margin-left: -8.333333%;
+}
+
+
+.tambah-ico{
+	transition: all .5s;
+}
+.preview .tambah-ico:hover{
+	color: #007bff;
+}		
+.item{
+	padding: .5em;
+	/*margin: .5em;*/
+	border-radius: .5em;
+	transition: all 1s;
+}
+.preview .item:hover{
+	background-color: #007bff25;
+}
+.item .tambah{
+	display: none;
+}
+.preview .item:hover .tambah{
+	display: block;
+	color: #007bff;
+}
+
+
+.edit{
+	padding: 1em .5em; 
+}
+.hasil{
+	visibility: collapse;
+}
+.kontener{
+	padding: 1em 5em;
+}
+.baris-full{
+	padding: 0;
+}
+.baris-fullh{
+	height: 100vh;
+}
+
+.ico{
+	padding: 5px;
+}
+
+.ikon input{
+	opacity: 0;
+	cursor: pointer;
+	height: 0;
+	width: 0;
+}
+
+.ikon input:checked + .fab{
+	background-color: #858585;
+}
+.ikon input:checked + .fa{
+	background-color: #858585;
+}
+.ikon .fa, .ikon .fab{
+	padding: 5px;
+}
+.icon-cont,#ico{
+	height: 58vh;
+    overflow-y: scroll;
+    border : 1px solid #252858;
+    border-radius: .25em;
+}
+.hilang{
+	display: none;
+}
+.kosong{
+	padding: 5%;
+	border-radius: 1em;
+	border : 5px dotted #aaa;
+	color : #aaa;
+	font-weight: bold;
+	text-align: center;
+	font-size: 2.5em;
+}
+
+#all .btn, #hasil .btn{
+    transition: all .5s;
+}
+#all .btn:hover, #hasil .btn:hover{
+    opacity: 58%;
+}
+.btn-round{
+    border-radius:25em;
+}
+.btn-curve{
+    border-radius: 0;
+}
+
+.foot{
+    width: 100vw;
+    background-color: rgb(37, 37, 37);
+    color: rgb(255, 255, 255);
+    padding: 1em;
+    bottom: 0px;
+}
+
+.editable{
+    position: fixed;
+    background-color: #fff;
+    color: rgb(255, 255, 255);
+    padding: 1em;
+    bottom: 1em;
+    z-index: 258;
+    left: 45%;
+    border-radius: 1em;
+    box-shadow: .35em .35em .35em rgba(44, 137, 160,.5);
+    border: 2.5px solid #bee5eb;
+}
+
+.templateku{
+    max-width: 25em;
+    height: 20em;
+    background-color: #d1ecf1;
+    border : 1px solid #bee5eb;
+    margin: .85em;
+    border-radius: 1em;
+    background-size: cover;
+}
+
+
+.pilih{
+    width: 100%;
+}
+
+.pilih input{
+    opacity: 0;
+	cursor: pointer;
+	height: 0;
+	width: 0;
+}
+
+.pilihan{
+    border-radius: 1em;
+    transition: .5s;
+    padding: .5em;
+    width: 100%;
+}
+
+.pilihan:hover{
+    box-shadow: 0.5em 0.5em 0.5em #bee5eb;
+    transform: scale(1.025);
+}
+
+.pilih input:checked + .pilihan{
+    background-color: #d1ecf1;
+}
+
+.form-control, .custom-select {
+    margin-bottom: .5em;
+}
+
+.input-group-text{
+    background : none;
+}
+
+@media (orientation:portrait){
+    .note-video-clip{
+        height:auto;
+    }   
+}

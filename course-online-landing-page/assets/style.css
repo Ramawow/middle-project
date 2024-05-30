@@ -1,0 +1,70 @@
+body {
+	min-height: 100vh;
+}
+.content {
+	margin-top: 2rem;
+	margin-bottom: 6rem;
+}
+.h-70vh {
+	height: 70vh;
+}
+.circle {
+	display: flex;
+	width: fit-content;
+	align-items: center;
+	aspect-ratio: 1 / 1;
+	border-radius: 100% !important;
+}
+.floating {
+	right: 10px;
+	bottom: 10px;
+}
+.reguler {
+	border-top-width: 5px !important;
+	border-top-color: var(--bs-primary) !important;
+}
+.nav-link {
+	padding: 0.5rem 1rem !important;
+	border-radius: 0.2rem;
+}
+.nav-link:hover {
+	background: rgba(var(--bs-body-color-rgb), 0.2);
+}
+.big-size {
+	font-size: calc(1.25rem + 2.8vw);
+}
+.normal-size {
+	font-size: calc(1rem + 1vw);
+}
+.total-cust {
+	font-size: calc(1.75rem + 3.5vw);
+}
+.service-card-text {
+	font-size: calc(0.55rem + 0.8vw);
+}
+.devider {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+}
+.devider > div {
+	width: 70%;
+	border: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color) !important;
+}
+
+html[data-bs-theme="dark"] .go-up > i {
+	background-color: RGBA(var(--bs-light-rgb),var(--bs-bg-opacity,1))!important;
+	color: var(--bs-dark) !important;
+}
+.go-daftar {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 1.75rem;
+}
+#paymentForm > iframe {
+	height: 864px;
+}

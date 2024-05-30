@@ -1,0 +1,44 @@
+{
+  "name": "wired-elements-repo",
+  "version": "1.0.0",
+  "description": "Collection of hand-drawn sketchy web components",
+  "main": "wired-elements.js",
+  "private": true,
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "bootstrap": "npm install && npm run hoist",
+    "hoist": "lerna bootstrap --hoist",
+    "tsc": "lerna run tsc",
+    "watch": "tsc --build packages/**/tsconfig.json -w",
+    "dev": "polyserve --npm --module-resolution=node",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wiredjs/wired-elements.git"
+  },
+  "keywords": [
+    "webcomponent",
+    "web component",
+    "rough",
+    "sketchy",
+    "hand-drawn",
+    "hand drawn",
+    "wireframe"
+  ],
+  "author": "Preet Shihn <preetshihn@gmail.com> (https://twitter.com/preetster)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wiredjs/wired-elements/issues"
+  },
+  "homepage": "https://github.com/wiredjs/wired-elements#readme",
+  "devDependencies": {
+    "@material/mwc-icon": "^0.10.0",
+    "lerna": "^3.18.1",
+    "polyserve": "^0.27.15",
+    "tslint": "^5.20.0",
+    "typescript": "^3.6.3"
+  }
+}

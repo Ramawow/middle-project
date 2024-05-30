@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <script src="src/js/html2canvas.js"></script>
+    <link rel="stylesheet" type="text/css" href="src/css/app.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Caveat&family=Covered+By+Your+Grace&family=Gloria+Hallelujah&family=Indie+Flower&family=Nanum+Pen+Script&family=Schoolbell&family=Shadows+Into+Light&display=swap"
+        rel="stylesheet">
+    <script src="src/js/lottie.js"></script>
+    <title>MalasNulisBot.com</title>
+</head>
+
+<body onload="autoClick()">
+    <section>
+        <nav class="navbar navbar-expand-lg bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand fw-bold text-light" href="#">MalasNulisBot.com</a>
+                <div id="navbarText">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                    </ul>
+                    <span class="navbar-text fw-bold">
+                        <div class="d-flex align-items-center gap-2">
+                            <div class="text-light">
+                                
+                            </div>
+                            <lottie-player class="" src="https://assets8.lottiefiles.com/packages/lf20_k48hTd.json"
+                                background="transparent" speed="0.5" style="width: 35px; height: 35px;" loop autoplay>
+                            </lottie-player>
+                            <lottie-player class="d-none"
+                                src="https://assets4.lottiefiles.com/packages/lf20_ixuksfyo.json"
+                                background="transparent" speed="1" style="width: 80px; height: 50px;" loop autoplay>
+                            </lottie-player>
+                        </div>
+                    </span>
+                </div>
+            </div>
+        </nav>
+    </section>
+
+    <div class="container pt-4">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="row">
+                    <div class="col-md-6">
+                        <label for="input-nama" class="form-label fw-bold ">Pilih Tulisan</label>
+                        <select class="form-select border-2 border-b-4 border-black" id="select-tulisan">
+                            <option value="Caveat, cursive" selected>Caveat</option>
+                            <option value="Covered By Your Grace, cursive">Covered By Your Grace</option>
+                            <option value="Gloria Hallelujah, cursive">Gloria Hallelujah</option>
+                            <option value="Indie Flower, cursive">Indie Flower</option>
+                            <option value="Nanum Pen Script, cursive">Tulisan kecil</option>
+                            <option value="Schoolbell, cursive">Tulisan Tebal</option>
+                            <option value="Shadows Into Light, cursive">Anak sekolah Rapih</option>
+                            <!-- <option value="ceker-ayam">Ceker Ayam</option> -->
+                        </select>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="input-kelas" class="form-label fw-bold">Pilih Kertas/Buku</label>
+                        <select class="form-select border-2 border-b-4 border-black" id="select-kertas">
+                            <option value="buku-1" selected>Buku 1</option>
+                            <option value="buku-2">buku-2</option>
+                            <option value="buku-3">buku-3</option>
+                            <option value="buku-4">buku-4</option>
+                            <option value="buku-5">buku-5</option>
+                            <option value="hvs">HVS</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-md-6">
+                        <label for="input-nama" class="form-label fw-bold">Nama</label>
+                        <input type="text" class="form-control border-2 border-b-4 border-black" id="input-nama"
+                            placeholder="Nama: Melisa">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="input-kelas" class="form-label fw-bold">Kelas / NIM</label>
+                        <input type="text" class="form-control border-2 border-b-4 border-black" id="input-kelas"
+                            placeholder="Kelas: X1-2">
+                    </div>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-md-6">
+                        <label for="input-jurusan" class="form-label fw-bold">Jurusan</label>
+                        <input type="text" class="form-control border-2 border-b-4 border-black" id="input-jurusan"
+                            placeholder="Jurusan: Multimedia">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="input-tanggal" class="form-label fw-bold">Tanggal</label>
+                        <input type="text" class="form-control border-2 border-b-4 border-black" id="input-tanggal"
+                            placeholder="08-10-2022">
+                    </div>
+                </div>
+                <div class="mt-4">
+                    <label for="input-area" class="form-label fw-bold">Masukan Text</label>
+                    <textarea class="form-control border-2 border-b-4 border-black" id="input" type="text"
+                        style="height: 200px;" name="input-area" placeholder="..."></textarea>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <a id="download" type="button"
+                    class="btn btn-success button mb-2 border-2 border-b-4 border-black">Download
+                    PNG</a>
+                <div id="canvas-render" style="width: 610px; height: 880px;">
+                    <canvas style="background-image: url(src/images/buku-1.png)" class="border" width="610" height="880"
+                        id="canvas"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+    <img class="d-none" />
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+        integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        CanvasRenderingContext2D.prototype.wrapText = function (
+            text,
+            x,
+            y,
+            maxWidth,
+            lineHeight
+        ) {
+            var lines = text.split('\n');
+
+            for (var i = 0; i < lines.length; i++) {
+                var words = lines[i].split(' ');
+                var line = '';
+
+                for (var n = 0; n < words.length; n++) {
+                    var testLine = line + words[n] + ' ';
+                    var metrics = this.measureText(testLine);
+                    var testWidth = metrics.width;
+                    if (testWidth > maxWidth && n > 0) {
+                        this.fillText(line, x, y);
+                        line = words[n] + ' ';
+                        y += lineHeight;
+                    } else {
+                        line = testLine;
+                    }
+                }
+
+                this.fillText(line, x, y);
+                y += lineHeight;
+            }
+        };
+
+        var img = document.getElementsByTagName('img')[0];
+        var canvas = document.getElementsByTagName('canvas')[0];
+        var ctx = canvas.getContext('2d');
+        var canWidth = canvas.width;
+        var canHeight = canvas.height;
+        let elementCanvas = $('#canvas-render');
+        let fontSelect = $('#select-tulisan').val()
+
+        let textName = '';
+        let textArea = '';
+        let textJurusan = '';
+        let textKelas = '';
+        let textTanggal = '';
+
+        let yName = 0;
+        let yKelas = 0;
+        let yJurusan = 0;
+
+        let valueSelectKertas = $('#select-kertas').val();
+        let statusRender = false;
+
+        $(document).on('change', '#select-kertas', function () {
+            valueSelectKertas = $('#select-kertas').val();
+            canvasRender();
+            generateCanvas();
+        })
+
+        $(document).on('change', '#select-tulisan', function () {
+            fontSelect = $('#select-tulisan').val()
+            generateTextArea();
+        })
+
+        function generateCanvas() {
+            canvas = document.getElementsByTagName('canvas')[0];
+            img = document.getElementsByTagName('img')[0];
+            ctx = canvas.getContext('2d');
+            generateTextArea()
+        }
+
+        function autoClick() {
+            $('#download').click();
+        }
+
+        function renderHtml2canvas() {
+            html2canvas(elementCanvas, {
+                onrendered: function (canvas) {
+                    var imageData = canvas.toDataURL("image/png");
+                    var newData = imageData.replace(/^data:image\/png/, "data:application/octet-stream");
+                    $('#download').attr("download", "camera.png").attr("href", newData);
+                }
+            })
+        }
+
+        $(document).on('click', '#download', function () {
+            html2canvas(elementCanvas, {
+                onrendered: function (canvas) {
+                    var imageData = canvas.toDataURL("image/png");
+                    var newData = imageData.replace(/^data:image\/png/, "data:application/octet-stream");
+                    $('#download').attr("download", "image.png").attr("href", newData);
+                }
+            })
+        })
+
+        //Temporary downloadCanvas
+        // function downloadCanvas() {
+        // const imageLink = document.createElement('a');
+        // const canvas = document.getElementById('canvas');
+        // imageLink.download = 'canvas.png';
+        // imageLink.href = canvas.toDataURL('image/png', 1);
+        // imageLink.click();
+        // }
+
+        function canvasRender() {
+            valueSelectKertas = $('#select-kertas').val();
+
+            $('#canvas-render').html(`
+                <canvas style="background-image: url(src/images/${valueSelectKertas}.png)" class="border" width="610" height="880"
+                    id="canvas"></canvas>
+            `)
+        }
+
+        function clearCanvas(cnv) {
+            var ctx = cnv.getContext('2d'); // gets reference to canvas context
+            ctx.beginPath(); // clear existing drawing paths
+            ctx.save(); // store the current transformation matrix
+
+            // Use the identity matrix while clearing the canvas
+            ctx.setTransform(1, 0, 0, 1, 0, 0);
+            ctx.clearRect(0, 0, cnv.width, cnv.height);
+
+            ctx.restore(); // restore the transform
+
+            valueSelectKertas = $('#select-kertas').val();
+
+            var background = new Image();
+            background.setAttribute('crossOrigin', 'anonymous');
+            background.src =
+                `src/images/${valueSelectKertas}.png`;
+
+            // Make sure the image is loaded first otherwise nothing will draw.
+            //background.onload = function(){
+            ctx.drawImage(background, 0, 0);
+            //}
+
+            ctx.restore();
+        }
+
+        $(document).on('keyup', '#input', function () {
+            generateTextArea()
+        })
+
+        $(document).on('keyup', '#input-nama', function () {
+            generateTextName()
+        })
+
+        $(document).on('keyup', '#input-jurusan', function () {
+            generateTextJurusan()
+        })
+
+        $(document).on('keyup', '#input-kelas', function () {
+            generateTextKelas()
+        })
+
+        $(document).on('keyup', '#input-tanggal', function () {
+            generateTextTanggal()
+        })
+
+        function wrapTextResult() {
+            valueSelectKertas = $('#select-kertas').val();
+            switch (valueSelectKertas) {
+                case 'buku-1':
+                    ctx.font = `18px ${fontSelect}`;
+                    ctx.fillStyle = 'black';
+                    ctx.textAlign = 'left';
+                    ctx.wrapText(textArea, canWidth / 10, 135, 530, 25);
+                    ctx.wrapText(textName, canWidth / 10, 30, 530, 25);
+                    ctx.wrapText(textKelas, canWidth / 10, 50, 530, 25);
+                    ctx.wrapText(textJurusan, canWidth / 10, 70, 530, 25);
+                    ctx.wrapText(textTanggal, canWidth / 2, 70, 530, 25);
+                    break;
+                case 'buku-2':
+                    ctx.font = `18px ${fontSelect}`;
+                    ctx.fillStyle = 'black';
+                    ctx.textAlign = 'left';
+                    ctx.wrapText(textArea, canWidth / 10, 113, 530, 25);
+                    ctx.wrapText(textName, canWidth / 10, 30, 530, 25);
+                    ctx.wrapText(textKelas, canWidth / 10, 50, 530, 25);
+                    ctx.wrapText(textJurusan, canWidth / 10, 70, 530, 25);
+                    ctx.wrapText(textTanggal, canWidth / 2, 70, 530, 25);
+                    break;
+                case 'buku-3':
+                    ctx.font = `18px ${fontSelect}`;
+                    ctx.fillStyle = 'black';
+                    ctx.textAlign = 'left';
+                    ctx.wrapText(textArea, canWidth / 5.6, 155, 530, 25);
+                    ctx.wrapText(textName, canWidth / 10, 80, 530, 25);
+                    ctx.wrapText(textKelas, canWidth / 10, 100, 530, 25);
+                    ctx.wrapText(textJurusan, canWidth / 10, 120, 530, 25);
+                    ctx.wrapText(textTanggal, canWidth / 2, 130, 530, 25);
+                    break;
+                case 'buku-4':
+                    ctx.font = `18px ${fontSelect}`;
+                    ctx.fillStyle = 'black';
+                    ctx.textAlign = 'left';
+                    ctx.wrapText(textArea, canWidth / 7, 140, 530, 25);
+                    ctx.wrapText(textName, canWidth / 10, 70, 530, 25);
+                    ctx.wrapText(textKelas, canWidth / 10, 90, 530, 25);
+                    ctx.wrapText(textJurusan, canWidth / 10, 110, 530, 25);
+                    ctx.wrapText(textTanggal, canWidth / 2, 112, 530, 25);
+                    break;
+                case 'buku-5':
+                    ctx.font = `18px ${fontSelect}`;
+                    ctx.fillStyle = 'black';
+                    ctx.textAlign = 'left';
+                    ctx.wrapText(textArea, canWidth / 7, 158, 530, 25);
+                    ctx.wrapText(textName, canWidth / 10, 80, 530, 25);
+                    ctx.wrapText(textKelas, canWidth / 10, 100, 530, 25);
+                    ctx.wrapText(textJurusan, canWidth / 10, 120, 530, 25);
+                    ctx.wrapText(textTanggal, canWidth / 2, 130, 530, 25);
+                    break;
+                case 'hvs':
+                    ctx.font = `18px ${fontSelect}`;
+                    ctx.fillStyle = 'black';
+                    ctx.textAlign = 'left';
+                    ctx.wrapText(textArea, canWidth / 7, 158, 530, 25);
+                    ctx.wrapText(textName, canWidth / 10, 80, 530, 25);
+                    ctx.wrapText(textKelas, canWidth / 10, 100, 530, 25);
+                    ctx.wrapText(textJurusan, canWidth / 10, 120, 530, 25);
+                    ctx.wrapText(textTanggal, canWidth / 2, 70, 530, 25);
+                    break;
+            }
+
+        }
+
+        function generateTextArea() {
+            textArea = $('#input').val();
+            clearCanvas(canvas);
+            wrapTextResult();
+            img.src = canvas.toDataURL();
+            elementCanvas = $('#canvas-render');
+            renderHtml2canvas()
+        }
+
+        function generateTextName() {
+            textName = $('#input-nama').val();
+            clearCanvas(canvas);
+            wrapTextResult();
+
+            // img.src = canvas.toDataURL();
+            elementCanvas = $('#canvas-render');
+            renderHtml2canvas()
+        }
+
+        function generateTextKelas() {
+            textKelas = $('#input-kelas').val();
+            clearCanvas(canvas);
+            wrapTextResult();
+            img.src = canvas.toDataURL();
+            elementCanvas = $('#canvas-render');
+            renderHtml2canvas()
+        }
+
+        function generateTextJurusan() {
+            textJurusan = $('#input-jurusan').val();
+            clearCanvas(canvas);
+            wrapTextResult();
+            elementCanvas = $('#canvas-render');
+            renderHtml2canvas()
+        }
+
+        function generateTextTanggal() {
+            textTanggal = $('#input-tanggal').val();
+            clearCanvas(canvas);
+            wrapTextResult();
+            elementCanvas = $('#canvas-render');
+            renderHtml2canvas()
+        }
+    </script>
+</body>
+
+</html>

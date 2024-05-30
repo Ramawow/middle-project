@@ -1,0 +1,195 @@
+@import url('default.css');
+
+body {
+  background-color: var(--white-bg);
+}
+
+.container-outer {
+  display: flex;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  flex-direction: column;
+  gap: 30px;
+  text-align: center;
+}
+
+.container {
+  text-align: start;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--white);
+  align-items: center;
+  width: 450px;
+  padding: 10px 0 40px 0;
+  border: 1px solid var(--black);
+  gap: 30px;
+  color: var(--black);
+}
+
+.container span {
+  padding: 20px;
+  font-weight: bold;
+  font-size: 1.2rem;
+  text-align: center;
+  color: var(--black);
+}
+
+.container .form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: fit-content;
+}
+
+.container .form-container .form-list {
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  position: relative;
+}
+
+.container .form-container .form-list input {
+  padding: 10px;
+  border: 1px solid var(--black);
+  font-size: 1rem;
+}
+
+.container .form-container .form-list input:focus {
+  outline: 1px solid var(--blue);
+}
+
+.container .form-container .form-list label::after {
+  content: '*';
+  color: var(--red);
+}
+
+.container .form-container .form-list label {
+  font-weight: bold;
+}
+
+.container .form-container .form-list p {
+  margin-top: -5px;
+  font-size: 0.85rem;
+  font-weight: bold;
+  color: var(--red);
+}
+
+.container .form-container button {
+  padding: 10px;
+  font-weight: bold;
+  color: var(--white);
+  font-size: 1rem;
+  background-color: var(--blue);
+  border: 1px solid var(--black);
+  transition: var(--transition);
+  cursor: pointer;
+}
+
+.particle {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+}
+
+.container .error {
+  text-align: center;
+  color: var(--red);
+  font-weight: bold;
+  width: 220px !important;
+  padding: 5px;
+  border: 1px solid var(--red);
+  background-color: var(--white);
+  margin: 20px auto;
+  margin-top: -10px;
+}
+
+.container .form-container button:hover {
+  box-shadow: var(--shadow);
+}
+
+.bg-alert {
+  background-color: var(--white-bg);
+  text-align: center;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  z-index: 1;
+  display: flex;
+  font-weight: bold;
+}
+
+.alert-container {
+  border: 1px solid var(--black);
+  width: fit-content;
+  margin: auto;
+  padding: 20px;
+  line-height: 60px;
+  background-color: var(--white);
+  box-shadow: var(--shadow);
+  position: relative;
+}
+
+.alert-container a {
+  color: var(--white);
+  background-color: var(--blue);
+  padding: 10px;
+  border: 1px solid var(--black);
+  box-shadow: var(--shadow);
+  transition: var(--transition);
+}
+
+.alert-container i {
+  position: absolute;
+  top: -25px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--green);
+  color: var(--white);
+  border: 1px solid var(--white);
+  box-shadow: 5px 5px var(--green);
+}
+
+.alert-container a:hover {
+  padding: 10px 20px;
+}
+
+.form-container .show-pass {
+  display: flex;
+  gap: 5px;
+}
+
+.show-pass input {
+  order: 1;
+  width: 30px;
+  border: 1px solid var(--black);
+  border-radius: 0px;
+}
+
+.show-pass label {
+  order: 2;
+  margin-top: -3px;
+}
+
+@media (max-width: 576px) {
+  .container-outer {
+    width: 80%;
+    margin: auto;
+  }
+
+  .container .error {
+    width: 80%;
+  }
+
+  .container {
+    height: 70% !important;
+    width: 100%;
+  }
+
+  .container .form-container .form-list {
+    width: 250px;
+  }
+}

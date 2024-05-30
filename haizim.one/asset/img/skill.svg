@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   width="19.332001mm"
+   height="19.332001mm"
+   viewBox="0 0 19.332001 19.332001"
+   version="1.1"
+   id="svg85777">
+  <defs
+     id="defs85771" />
+  <metadata
+     id="metadata85774">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     id="layer1">
+    <g
+       id="g9062"
+       transform="matrix(0.97188046,0,0,0.97188046,449.99136,-1318.2986)">
+      <path
+         id="path9028"
+         style="opacity:0.998;fill:#1a2635;fill-opacity:1;stroke:#1a2635;stroke-width:1;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal"
+         d="m -453.20043,1356.4596 c -0.24571,6.6302 -1.9966,9.4908 -6.78868,9.927 4.79208,0.4362 6.54297,3.2971 6.78868,9.9273 0.24572,-6.6302 1.99687,-9.4911 6.78895,-9.9273 -4.79208,-0.4362 -6.54323,-3.2968 -6.78895,-9.927 z" />
+      <path
+         id="path9030"
+         style="opacity:0.998;fill:none;fill-opacity:1;stroke:#1a2635;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal"
+         d="m -448.12851,1359.0854 c -0.0729,1.4595 -0.59273,2.0893 -2.01533,2.1853 1.4226,0.096 1.94238,0.7259 2.01533,2.1854 0.0729,-1.4595 0.5928,-2.0893 2.0154,-2.1854 -1.4226,-0.096 -1.94246,-0.7258 -2.0154,-2.1853 z" />
+      <path
+         id="path9032"
+         style="opacity:0.998;fill:none;fill-opacity:1;stroke:#1a2635;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal"
+         d="m -457.02535,1368.9517 c -0.0619,1.3889 -0.50357,1.9882 -1.71217,2.0795 1.2086,0.091 1.65019,0.6907 1.71217,2.0796 0.0619,-1.3889 0.50363,-1.9882 1.71223,-2.0796 -1.2086,-0.091 -1.65026,-0.6906 -1.71223,-2.0795 z" />
+    </g>
+  </g>
+</svg>

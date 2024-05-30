@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  h1 {
+    @apply text-3xl font-bold dark:text-white md:text-4xl;
+  }
+
+  h2 {
+    @apply text-2xl font-bold dark:text-white md:text-3xl;
+  }
+
+  h3 {
+    @apply text-xl font-bold dark:text-white md:text-2xl;
+  }
+
+  h4 {
+    @apply text-lg font-bold dark:text-white md:text-xl;
+  }
+
+  body {
+    @apply font-primary antialiased dark:bg-dark;
+  }
+
+  :is(a, button) {
+    @apply outline-none;
+  }
+
+  .layout {
+    @apply mx-auto max-w-xl px-5 md:px-0;
+  }
+
+  .star8 {
+    @apply relative inline-flex h-4 w-4 rotate-45 items-center justify-center border-2 border-primary-700 bg-white p-3 text-center before:absolute before:top-0 before:left-0 before:-z-10 before:h-full before:w-full before:rotate-[135deg] before:border-2 before:border-primary-700 before:bg-white before:content-[''] after:absolute after:top-0 after:left-0 after:h-full after:w-full after:bg-white after:content-[''] dark:bg-dark before:dark:bg-dark after:dark:bg-dark;
+  }
+
+  .next-before-button {
+    @apply flex items-center rounded-md bg-primary-600 py-2 px-3 text-sm text-white transition hover:ring hover:ring-primary-300 dark:bg-primary-800 dark:hover:ring-primary-700;
+  }
+
+  @font-face {
+    font-family: 'LPMQ';
+    src: url('/fonts/lpmq.eot');
+    src: url('/fonts/lpmq.eot') format('embedded-opentype'),
+      url('/fonts/lpmq.ttf') format('truetype');
+    font-weight: 400;
+    font-weight: normal;
+    font-display: swap;
+  }
+}
+
+#nprogress .bar {
+  background: #a855f7 !important;
+  height: 4px;
+}
+
+#nprogress .peg {
+  box-shadow: 0 0 10px #ffbb00, 0 0 5px #ffbb00;
+}

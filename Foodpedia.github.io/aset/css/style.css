@@ -1,0 +1,329 @@
+*{
+	margin: 0;padding: 0
+}
+
+
+.navbar{
+	padding: 30px;
+	background: transparent;
+	position: fixed;
+	width: 100%;
+	z-index: 9999;
+	transition: 1s;
+}
+
+
+.card{
+	background: yellow;
+	border-radius: 30px;
+	padding : 20px;
+	text-align: center;
+	margin: 5px;
+	width: 8rem;
+	margin-top: -20%;
+	color: gray;
+
+}
+.mobile-nav{
+	display: none;
+}
+.navbar-rise{
+	background: yellow;
+	transition: 1s;
+	color: black !important;
+}
+
+.nav{
+	display: flex;
+	list-style: none;
+	margin-left: 40px;
+}
+.container{
+	margin-top: 90px;
+}
+
+.banner{
+	background: url('../../img/banner.jpeg');
+	background-size: cover;
+	background-position: center;
+	display: flex;
+	flex-direction: column;
+	height: 90%;
+
+
+}
+
+.nav-item{
+	text-decoration-line: none;
+	padding: 10px;
+	font-family: 'Poppins', sans-serif;
+	color: white;
+	font-size: 18px;
+}
+
+.nav-item:hover{
+	border-bottom: 1px solid yellow;
+}
+
+.text-wrapper{
+	width: 90%;
+	align-self: center;
+	transform: translate(0, 60%);
+}
+
+.banner-text{
+	font-family: 'Poppins', sans-serif;
+	font-size: 5em;
+}
+
+.subbanner-text{
+	font-family: 'Poppins', sans-serif;
+	font-size: 2em;
+	color: white;
+	line-height: 40px
+}
+
+.btn-yellow{
+	margin-top: 20px;
+	background: yellow;
+	height: 50px;
+	width: 200px;
+	border: none;
+	box-shadow: 3px 3px 6px black;
+	border-radius: 50px;
+	font-size: 18px;
+	outline: none;
+}
+
+.btn-yellow:hover{
+	border : 2px solid blue;
+	transition: 1s;
+}
+
+.wrapper{
+	display: flex;
+	justify-content: center;
+}
+
+.card-text{
+	font-family: 'Poppins', sans-serif;
+	font-size: 20px;
+	margin-top: 20px;
+}
+.card-wrapper{
+	display: flex;
+}
+hr{
+	margin-top: 20px;
+}
+
+.contain{
+	padding: 20px;
+	display: grid;
+	grid-template-columns: 3fr 12fr;
+	margin-left: 10vh;
+	margin-right: 10vh;
+	grid-gap: 50px;
+	margin-top: 100px
+}
+.column3{
+
+}
+.column9{
+
+}
+.img{
+	border-radius: 50%;
+	border: 2px solid gray;
+}
+.greeting-text{
+	font-family: 'Poppins', sans-serif;
+	font-size: 30px;
+hr{
+	background: gray;
+}
+
+}.text{
+	margin-top: 50px;
+	font-family: 'Poppins', sans-serif;
+	font-size: 20px;
+}
+
+.text-center{
+	text-align: center !important;
+}
+
+.img-galleri{
+	margin-top: 50px;
+	display: grid;
+	grid-template-columns: 4fr 4fr 4fr;
+	padding-right: 20vh;
+	padding-left: 20vh;
+	grid-template-rows: repeat(2, 1fr);
+	grid-gap: 30px
+}
+.col1{
+	height: 6cm;
+	overflow: hidden;
+}
+
+.swiper-slide{
+	padding: 0;
+}
+
+.testimonial{
+	margin-top: 10vh;
+	background: yellow;
+	padding: 50px;
+	height: 500px;
+	overflow: scroll;
+
+}
+
+.slider{
+	display: grid;
+	grid-template-columns: 4fr 8fr;
+	grid-gap: 30px;
+	margin-left: 20vh;
+	margin-right: 20vh;
+}
+
+.text-testi{
+	font-family: 'Poppins', sans-serif;
+	transform: translate(0, 20%);
+	font-size: 20px
+}
+
+
+.footer{
+	padding: 50px;
+	margin-top: 100px;
+	display: grid;
+	grid-template-columns: 4fr 3fr 3fr;
+	background: orange;
+}
+
+.col-1{
+	padding: 15px
+}
+.col-2{
+	padding: 15px;
+}
+.col-3{
+	padding: 15px;
+}
+
+.update{
+	height: 30px;
+	width: 70%
+}
+
+.list-item{
+	margin-top: 40px;
+	font-size: 1.5em;
+	font-family: 'Poppins', sans-serif;
+}
+.contact{
+	list-style: none;
+	margin-top: 10px;
+}
+.nav-collapse{
+	display: none;
+}
+
+/* Media queries */
+@media screen and (max-width: 800px){
+
+	.banner-text{
+		font-size: 3em
+	}
+
+	.nav-collapse{
+		display: block;
+		margin-right: 100px;
+		text-align: center;
+		line-height: 50%;
+		height: 40px;
+		width: 40px;
+		border-radius: 50px;
+	}
+
+	.subbanner-text{
+		font-size: 1.5em
+	}
+	.nav{
+		display: none;
+	}
+	.mobile-nav{
+		display: block;
+		list-style: none;
+	}
+
+
+	.banner{
+		margin-bottom: 120px;
+	}
+	.card-wrapper{
+		display: block;
+		padding: 0;
+		margin: 0;
+	}
+	.wrapper{
+		padding: 0px;
+	}
+	.card{
+		margin-top:50px;
+		margin:10px;
+		width: 16rem;
+	}
+	.contain, .img-galleri{
+		display: block;
+		padding: 0;
+	}
+	.img-prod{
+		padding: 10px
+	}
+	.container{
+		margin-top: 100px;
+		padding: 20px;
+	}
+	.slider{
+		display: block;
+		padding: 20px;
+		height: 100%;
+		margin: 0;
+	}
+
+	.img{
+		width: 60%;
+		border: none;
+	}
+	.testimonial{
+		height: 900px;
+	}
+	.text-testi{
+		display: block;
+		padding-bottom: 20px;
+	}
+	.banner{
+		height: 60vh
+	}
+	.greeting-text{
+		margin-top: 50px;
+	}
+	.text-center{
+		text-align: center;
+	}
+	.footer{
+		display: block;
+	}
+	.text-wrapper{
+		margin-top: -150px
+	}
+
+	.nav-item{
+		color: black;
+	}
+
+
+}

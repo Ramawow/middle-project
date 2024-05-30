@@ -1,0 +1,679 @@
+*, *::before, *::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+/*font face*/
+@font-face{
+    font-family: 'Acme';
+    src: url(../Fonts/Acme/Acme-Regular.ttf);
+}
+@font-face{
+    font-family: 'Lexend';
+    src: url(../Fonts/Lexend_Mega/LexendMega-Regular.ttf);
+}
+
+/*header*/
+.container{
+    position: relative;
+}
+header{
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+.hdr-blur{
+    backdrop-filter: blur(5px);
+}
+
+/*main*/
+/*members bio*/
+main{
+    margin-top: 100px !important;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main .members-bio{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Acme';
+}
+.members{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+ /*   height: 200px;*/
+}
+/*cards*/
+.mmb{
+    width: 30%;
+    height: 500px;
+    margin: 10px 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, .8);
+    align-items: center;
+}
+/*mmb-toggle*/
+.mmb-tgl{
+   box-shadow: 0px 0px 5px rgba(100, 10, 100, .8);
+}
+.mmb-child{
+    padding: 5px;
+}
+.click-img{
+    cursor: pointer;
+}
+.mmb .avatar{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mmb .footer{
+    display: flex;
+    justify-content: center;
+}
+.mmb .footer a{
+    font-size: 1.6em;
+    margin: 0 5px;
+}
+.mmb .footer a:hover{
+    animation: sosmed .5s forwards;
+}
+.a-icon{
+    animation: sosmed2 .5s forwards;
+}
+
+/*window img*/
+.window-img{
+    display: none;
+    /*background-color: rgba(0, 0, 0, .6);
+    backdrop-filter: blur(10px);
+    position: fixed;
+    width: 80%;
+    min-height: 75vh;
+    top: 0;
+    left: 0;*/
+}
+/*for images 1*/
+.window-img.wd{
+    display: block;
+    background-color: rgba(0, 0, 0, .6);
+    backdrop-filter: blur(10px);
+    position: fixed;
+    width: 80%;
+    min-height: 75vh;
+    top: 0;
+    left: 0;
+    animation: window 1s forwards;
+}
+.window-img.wd2{
+    display: block;
+    background-color: rgba(0, 0, 0, .6);
+    backdrop-filter: blur(10px);
+    position: fixed;
+    width: 80%;
+    min-height: 75vh;
+    top: 0;
+    left: 0;
+    animation: window 1s forwards;
+}
+.window-img.wd3{
+    display: block;
+    background-color: rgba(0, 0, 0, .6);
+    backdrop-filter: blur(10px);
+    position: fixed;
+    width: 80%;
+    min-height: 75vh;
+    top: 0;
+    left: 0;
+    animation: window 1s forwards;
+}
+.window-img.wd4{
+    display: block;
+    background-color: rgba(0, 0, 0, .6);
+    backdrop-filter: blur(10px);
+    position: fixed;
+    width: 80%;
+    min-height: 75vh;
+    top: 0;
+    left: 0;
+    animation: window 1s forwards;
+}
+.window-img.wd5{
+    display: block;
+    background-color: rgba(0, 0, 0, .6);
+    backdrop-filter: blur(10px);
+    position: fixed;
+    width: 80%;
+    min-height: 75vh;
+    top: 0;
+    left: 0;
+    animation: window 1s forwards;
+}
+.window-img.wd6{
+    display: block;
+    background-color: rgba(0, 0, 0, .6);
+    backdrop-filter: blur(10px);
+    position: fixed;
+    width: 80%;
+    min-height: 75vh;
+    top: 0;
+    left: 0;
+    animation: window 1s forwards;
+}
+.window-img.wd7{
+    display: block;
+    background-color: rgba(0, 0, 0, .6);
+    backdrop-filter: blur(10px);
+    position: fixed;
+    width: 80%;
+    min-height: 75vh;
+    top: 0;
+    left: 0;
+    animation: window 1s forwards;
+}
+.window-img.wd8{
+    display: block;
+    background-color: rgba(0, 0, 0, .6);
+    backdrop-filter: blur(10px);
+    position: fixed;
+    width: 80%;
+    min-height: 75vh;
+    top: 0;
+    left: 0;
+    animation: window 1s forwards;
+}
+.window-img.wd9{
+    display: block;
+    background-color: rgba(0, 0, 0, .6);
+    backdrop-filter: blur(10px);
+    position: fixed;
+    width: 80%;
+    min-height: 75vh;
+    top: 0;
+    left: 0;
+    animation: window 1s forwards;
+}
+.window-img.wd10{
+    display: block;
+    background-color: rgba(0, 0, 0, .6);
+    backdrop-filter: blur(10px);
+    position: fixed;
+    width: 80%;
+    min-height: 75vh;
+    top: 0;
+    left: 0;
+    animation: window 1s forwards;
+}
+.window-img.wd11{
+    display: block;
+    background-color: rgba(0, 0, 0, .6);
+    backdrop-filter: blur(10px);
+    position: fixed;
+    width: 80%;
+    min-height: 75vh;
+    top: 0;
+    left: 0;
+    animation: window 1s forwards;
+}
+.window-img.wd12{
+    display: block;
+    background-color: rgba(0, 0, 0, .6);
+    backdrop-filter: blur(10px);
+    position: fixed;
+    width: 80%;
+    min-height: 75vh;
+    top: 0;
+    left: 0;
+    animation: window 1s forwards;
+}
+
+
+
+
+/*window animation*/
+/*wa 1*/
+@keyframes window{
+    from{
+        transform:
+            translateX(-1000px)
+            translateY(20%);
+    }
+    to{
+        transform:
+            translateX(15%)
+            translateY(20%);
+    }
+}
+
+
+
+
+
+
+
+
+/*window close button*/
+.window-close{
+    position: absolute;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    font-size: 1.3em;
+    transition: 1s;
+}
+.window-close:hover{
+    color: red;
+}
+/*--*/
+/*conten of window*/
+.one{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 470px;
+    overflow: auto;
+}
+.one .pic{
+    /*border: 1px solid white;*/
+    width: 30%;
+    height: 200px;
+}
+.sakura1{
+    background-image: url(../images/Members/06/f443a4df40e0f3eb32bad193d70a5dd0.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.sakura2{
+    background-image: url(../images/Members/06/Sakura-1.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+/*eunbi*/
+.eunbi{
+    background-image: url(../images/Members/01/Eunbi-1-533x800.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+/*chaewon*/
+.chaewon1{
+     background-image: url(../images/Members/02/Chaewon_Twelve.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.chaewon2{
+    background-image: url(../images/Members/02/D-D-DANCE_Chaewon.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+/*hyewon*/
+.hyewon1{
+     background-image: url(../images/Members/03/557744b870fe1599f8d3da10d8b7a0eb%20%281%29.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+/*minju*/
+.minju1{
+     background-image: url(../images/Members/04/1547482741952.jpeg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.minju2{
+     background-image: url(../images/Members/04/ddd1d2f341f5110b105d918498485c91.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.minju3{
+     background-image: url(../images/Members/04/IMG-20201028-WA0022.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.minju4{
+     background-image: url(../images/Members/04/IMG-20201028-WA0023.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.minju5{
+     background-image: url(../images/Members/04/IMG-20201028-WA0024.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.minju6{
+     background-image: url(../images/Members/04/IMG-20201028-WA0025.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.minju7{
+     background-image: url(../images/Members/04/IMG-20201028-WA0026.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.minju8{
+     background-image: url(../images/Members/04/IMG-20201028-WA0027.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.minju9{
+     background-image: url(../images/Members/04/IMG-20201028-WA0029.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.minju10{
+     background-image: url(../images/Members/04/IMG-20201028-WA0030.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.minju11{
+     background-image: url(../images/Members/04/IMG-20201028-WA0031.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.minju12{
+     background-image: url(../images/Members/04/Minju-2.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+/*yena*/
+.yena1{
+     background-image: url(../images/Members/05/Yena-1.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+/*yujin*/
+.yujin1{
+    background-image: url(../images/Members/07/IMG-20200818-WA0002.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.yujin2{
+    background-image: url(../images/Members/07/IMG-20200818-WA0003.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.yujin3{
+    background-image: url(../images/Members/07/IMG-20200818-WA0004.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.yujin4{
+    background-image: url(../images/Members/07/IMG-20200818-WA0005.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.yujin5{
+    background-image: url(../images/Members/07/IMG-20200818-WA0006.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.yujin6{
+    background-image: url(../images/Members/07/IMG-20200818-WA0007.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.yujin7{
+    background-image: url(../images/Members/07/IMG-20201028-WA0038.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.yujin8{
+    background-image: url(../images/Members/07/IMG-20201028-WA0039.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.yujin9{
+    background-image: url(../images/Members/07/IMG-20201028-WA0040.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.yujin10{
+    background-image: url(../images/Members/07/IZ_ONE--FOREVER--%20on%20Instagram_%20_----%EF%BB%BF%EF%BB%BF%EF%BB%BF%EF%BB%BF%EF%BB%BF%EF%BB%BF%EF%BB%BF%EF%BB%BF%EF%BB%BF%20_Fi_0%28JPG%29.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.yujin11{
+    background-image: url(../images/Members/07/IZ_ONE--FOREVER--%20on%20Instagram_%20_----%EF%BB%BF%EF%BB%BF%EF%BB%BF%EF%BB%BF%EF%BB%BF%EF%BB%BF%EF%BB%BF%EF%BB%BF%EF%BB%BF%20_Fi_1%28JPG%29.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.yujin12{
+    background-image: url(../images/Members/07/IZ_ONE--FOREVER--%20on%20Instagram_%20_----%EF%BB%BF%EF%BB%BF%EF%BB%BF%EF%BB%BF%EF%BB%BF%EF%BB%BF%EF%BB%BF%EF%BB%BF%EF%BB%BF%20_Fi_2%28JPG%29.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.yujin13{
+    background-image: url(../images/Members/07/IZ_ONE--FOREVER--%20on%20Instagram_%20_----%EF%BB%BF%EF%BB%BF%EF%BB%BF%EF%BB%BF%EF%BB%BF%EF%BB%BF%EF%BB%BF%EF%BB%BF%EF%BB%BF%EF%BB%BF%20_F_0%28JPG%29.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.yujin14{
+    background-image: url(../images/Members/07/IZ_ONE--FOREVER--%20on%20Instagram_%20_----%EF%BB%BF%EF%BB%BF%EF%BB%BF%EF%BB%BF%EF%BB%BF%EF%BB%BF%EF%BB%BF%EF%BB%BF%EF%BB%BF%EF%BB%BF%20_F_1%28JPG%29.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.yujin15{
+    background-image: url(../images/Members/07/IZONE%20AHN%20YUJIN%20%EC%95%88%EC%9C%A0%EC%A7%84%20on%20Instagram_%20_%EB%B6%88%ED%9B%84%EC%9D%98%20%EB%AA%85%EA%B3%A1__--%20%E4%B8%8D%E6%9C%BD%E3%81%AE%E5%90%8D_0%28JPG%29.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.yujin16{
+    background-image: url(../images/Members/07/IZONE%20AHN%20YUJIN%20%EC%95%88%EC%9C%A0%EC%A7%84%20on%20Instagram_%20_%EB%B6%88%ED%9B%84%EC%9D%98%20%EB%AA%85%EA%B3%A1__--%20%E4%B8%8D%E6%9C%BD%E3%81%AE%E5%90%8D_1%28JPG%29.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+/*wonyoung*/
+.won1{
+    background-image: url(../images/Members/08/61ec87dab136c007b8c338780ce26829%20%281%29.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.won2{
+    background-image: url(../images/Members/08/90341360_902467140188321_6424821428217284058_n-e1584971996169-768x399.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.won3{
+    background-image: url(../images/Members/08/Wonyoung-1-533x800.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+/*yuri*/
+.yuri1{
+    background-image: url(../images/Members/09/41cbe8bfd14f744b51950414685024b0%20%281%29.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.yuri2{
+    background-image: url(../images/Members/09/IZONE%20JO%20YURI%20%EC%95%84%EC%9D%B4%EC%A6%88%EC%9B%90%20%EC%A1%B0%EC%9C%A0%EB%A6%AC_s%20Instagram%20profile%20post_%20__0%28JPG%29.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.yuri3{
+    background-image: url(../images/Members/09/IZONE%20JO%20YURI%20%EC%95%84%EC%9D%B4%EC%A6%88%EC%9B%90%20%EC%A1%B0%EC%9C%A0%EB%A6%AC_s%20Instagram%20profile%20post_%20__1%28JPG%29.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.yuri4{
+    background-image: url(../images/Members/09/IZONE%20JO%20YURI%20%EC%95%84%EC%9D%B4%EC%A6%88%EC%9B%90%20%EC%A1%B0%EC%9C%A0%EB%A6%AC_s%20Instagram%20profile%20post_%20__2%28JPG%29.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.yuri5{
+    background-image: url(../images/Members/09/IZONE%20JO%20YURI%20%EC%95%84%EC%9D%B4%EC%A6%88%EC%9B%90%20%EC%A1%B0%EC%9C%A0%EB%A6%AC_s%20Instagram%20profile%20post_%20__3%28JPG%29.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.yuri6{
+    background-image: url(../images/Members/09/JO%20YURI%20%28%EC%A1%B0%EC%9C%A0%EB%A6%AC%29%20on%20Instagram_%20_%5B%20181014%20%5D%20IZ_ONE%20Fac_0%28JPG%29.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.yuri7{
+    background-image: url(../images/Members/09/JO%20YURI%20%28%EC%A1%B0%EC%9C%A0%EB%A6%AC%29%20on%20Instagram_%20_%5B%20181014%20%5D%20IZ_ONE%20Fac_1%28JPG%29.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.yuri8{
+    background-image: url(../images/Members/09/JO%20YURI%20%28%EC%A1%B0%EC%9C%A0%EB%A6%AC%29%20on%20Instagram_%20_%5B%20181014%20%5D%20IZ_ONE%20Fac_2%28JPG%29.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.yuri9{
+    background-image: url(../images/Members/09/JO%20YURI%20IZONE%20_%20%EC%A1%B0%EC%9C%A0%EB%A6%AC%20on%20Instagram_%20_%E1%84%8B%E1%85%A1%E1%86%AB%E1%84%82%E1%85%A7%E1%86%BC%20%5BSCAN%5D%20Y_0%28JPG%29.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.yuri10{
+    background-image: url(../images/Members/09/JO%20YURI%20IZONE%20_%20%EC%A1%B0%EC%9C%A0%EB%A6%AC_s%20Instagram%20photo_%20_%EC%95%88%EB%85%95%20%EC%9C%84%EC%A6%88%EC%9B%90%20%EB%AD%90%ED%95%B4%EC%97%AC_1%28JPG%29.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.yuri11{
+    background-image: url(../images/Members/09/Yuri-1.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+/*hitomi*/
+.hito1{
+     background-image: url(../images/Members/10/f6f2aa3421317de730c95cd43910d7f8%20%281%29.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.hito2{
+     background-image: url(../images/Members/10/Hitomi-1-533x800.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+/*chaeyeon*/
+.chaey1{
+    background-image: url(../images/Members/11/7d7a508616a19ace4a98319ebbacc9bd%20%281%29.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.chaey2{
+    background-image: url(../images/Members/11/Chaeyeon-1-533x800.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+/*nako*/
+.nako1{
+    background-image: url(../images/Members/12/e2c80dfee940927ebc6ccefabdd32c94.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.nako2{
+    background-image: url(../images/Members/12/Nako-1.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+
+
+
+/*sosmed animation*/
+@keyframes sosmed {
+    0%{
+        transform: rotate(10deg);
+    }
+    25%{
+        transform: rotate(25deg);
+    }
+    50%{
+        transform: rotate(30deg);
+    }
+    75%{
+        transform: rotate(45deg);
+    }
+    100%{
+        transform: rotate(180deg);
+    }
+}
+/*sosmed animation*/
+@keyframes sosmed2 {
+    0%{
+        transform: rotate(190deg);
+    }
+    25%{
+        transform: rotate(205deg);
+    }
+    50%{
+        transform: rotate(235deg);
+    }
+    75%{
+        transform: rotate(280deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+
+
+
+.click-img{
+   border: 3px solid white;
+   border-radius: 2em;
+}
+
+
+/*for responsive*/
+@media (max-width: 600px){
+
+    .mmb{
+        width: 40%;
+    }
+    .window-img .window-ctn .one{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: space-between;
+    }
+    .one .pic{
+        width: 50%;
+        margin: 10px 0px;
+    }
+}
+@media (max-width: 458px){
+    .mmb{
+        width: 60%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+/*close members bio*/
+/*close main*/

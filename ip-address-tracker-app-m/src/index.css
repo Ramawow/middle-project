@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.info-list li {
+  @apply text-center md:flex-1 md:text-left;
+}
+
+.info-list li:not(:first-child) {
+  @apply md:pl-7;
+}
+
+.info-list li:not(:last-child) {
+  @apply mb-[10px] md:mb-0 md:border-r-2 md:border-gray-200;
+}
+
+.info-list .info-name {
+  @apply text-[#969696] font-medium text-[12px] tracking-wide;
+}
+
+.info-list .info-detail {
+  @apply text-[#2b2b2b] font-medium mt-1 text-lg;
+}
+
+.leaflet-container {
+  width: 100%;
+  min-height: 100vh;
+  object-fit: cover;
+}

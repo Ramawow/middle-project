@@ -1,0 +1,8 @@
+{
+  "short_name": "Foody Cipe",
+  "name": "Foody Cipe - Make Your Kitchen Cool",
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#fff7f5",
+  "background_color": "#fff7f5"
+}

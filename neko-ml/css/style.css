@@ -1,0 +1,241 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+* {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+}
+/* Basic */
+body {
+  scroll-behavior: smooth;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 500;
+}
+/* Background awal */
+.bg-awal {
+  background: rgb(77, 124, 138);
+  background: linear-gradient(180deg, rgba(77, 124, 138, 1) 0%, rgba(143, 173, 136, 1) 100%);
+}
+/* Main */
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 93vh;
+}
+.hero-img {
+  animation: MoveUpDown 8s linear infinite;
+  float: right;
+}
+@keyframes MoveUpDown {
+  0%,
+  100% {
+    transform: translateY(-50px);
+  }
+  50% {
+    transform: translateY(0);
+  }
+}
+/* Button WA */
+.btn-wa {
+  background: #4d7c8a;
+  padding: 10px 12px;
+  border-radius: 10px;
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+  margin: 10px 0;
+}
+.btn-wa:hover {
+  opacity: 0.75;
+  color: white;
+}
+.btn-wa img {
+  width: 40px;
+}
+
+/* Batas */
+.batas {
+  position: relative;
+  width: 100%;
+}
+.batas::before {
+  content: "";
+  background: white;
+  position: absolute;
+  width: 100%;
+  height: 25px;
+  border-radius: 30px 30px 0 0;
+  top: -23px;
+}
+/* Harga */
+
+.box-harga {
+  background: rgb(52, 91, 99);
+  background: linear-gradient(180deg, rgba(52, 91, 99, 1) 0%, rgba(21, 45, 53, 1) 100%);
+  border-radius: 10px;
+  padding-top: 10px;
+  box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.5);
+  transition: 0.4s all;
+}
+.box-harga:hover {
+  transform: translateY(-10px);
+}
+.box-harga p {
+  line-height: 25px;
+  font-size: 14px;
+}
+.box-harga img {
+  width: 80px;
+}
+.box-harga span {
+  font-weight: 500;
+}
+.box-harga h2 {
+  font-size: 23px;
+}
+.harga .title {
+  color: #152d35;
+  font-size: 30px;
+}
+.harga .cap {
+  font-size: 15px;
+}
+/* Pembayaran */
+.pembayaran {
+  background: #345b63;
+  padding: 20px 0 50px 0;
+}
+.pembayaran .title {
+  font-size: 30px;
+}
+.pembayaran .cap {
+  font-size: 15px;
+}
+.pembayaran img {
+  width: 150px;
+}
+/* Slik */
+.slick-next {
+  position: absolute;
+  top: 110;
+  right: 0;
+}
+.slick-prev {
+  position: absolute;
+  top: 110;
+  left: 0;
+  z-index: 1;
+}
+.slick-arrow {
+  border: none;
+  background: transparent;
+  color: #152d35;
+}
+.slider img {
+  margin: auto;
+}
+/* Testi */
+.testi .cap {
+  font-size: 15px;
+}
+.testi img {
+  width: 350px;
+}
+.testi .title {
+  color: #152d35;
+  font-size: 30px;
+}
+
+/* Ketentuan */
+.ketentuan .title {
+  font-size: 30px;
+}
+.ketentuan .cap {
+  font-size: 15px;
+}
+.bg-ketentuan {
+  background-color: #112031;
+}
+.ketentuan img {
+  transition: 0.4s all;
+}
+.ketentuan img:hover {
+  transform: translateY(-20px);
+}
+/* Hubungi Kami */
+.hubungi-kami .title {
+  color: #152d35;
+  font-size: 30px;
+}
+.hubungi-kami img {
+  transition: 0.3s all;
+}
+.hubungi-kami img:hover {
+  transform: translateY(-10px);
+}
+/* Footer */
+.footer {
+  display: flex;
+  padding-top: 20px;
+  height: 13vh;
+  background: #152d35;
+  align-items: center;
+  font-size: 15px;
+}
+.footer .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Mobile responsive */
+@media only screen and (max-width: 768px) {
+  /* Main */
+  .main {
+    text-align: center;
+    flex-direction: column;
+  }
+
+  .main h1 {
+    font-size: 38px;
+  }
+  .main p {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  /* Hero */
+  .hero-img {
+    float: none;
+    margin: auto;
+    width: 280px;
+  }
+  /* Testi */
+  .testi img {
+    width: 260px;
+  }
+  /* Slick */
+  .slick-next {
+    right: -15;
+  }
+  .slick-prev {
+    left: -15;
+  }
+  .footer .container {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+  @keyframes MoveUpDown {
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(50px);
+    }
+  }
+}

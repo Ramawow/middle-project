@@ -1,0 +1,60 @@
+.card {
+  display: flex;
+  flex-flow: column;
+  box-shadow: 0px 8px 2rem rgba(128, 128, 128, 0.1);
+  padding: 1rem;
+  background: white;
+  transition: all 0.2s ease-in-out;
+  line-height: 1.5;
+  color: rgb(26, 32, 44);
+  box-sizing: border-box;
+  border-radius: 0.5rem;
+  border-style: solid;
+  border-color: rgb(226, 232, 240);
+  border-width: 1px;
+  padding: 1.5rem;
+  flex: 1;
+}
+
+.card:hover {
+  box-shadow: 0px 8px 1rem rgba(128, 128, 128, 0.3);
+}
+
+.wideBox {
+  position: relative;
+}
+
+.wideBox::after {
+  display: block;
+  content: "";
+  /* 16:9 aspect ratio */
+  padding-bottom: 56.25%;
+}
+
+.wideBox img {
+  /* Image should match parent box size */
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.content {
+  flex-flow: column;
+  padding-top: 1rem;
+}
+
+.title,
+.description {
+  margin-top: 1rem;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}

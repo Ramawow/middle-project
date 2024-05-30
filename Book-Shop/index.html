@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+
+    <title>CASE STUDY</title>
+
+    <!-- CSS only -->
+
+    <link
+
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+
+      rel="stylesheet"
+
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+
+      crossorigin="anonymous"
+
+    />
+
+<!-- Adding dependency for fontawesome -->
+
+    <link
+
+      href="https://use.fontawesome.com/releases/v5.0.4/css/all.css"
+
+      rel="stylesheet"/>
+
+  </head>
+
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+        <div class="container-fluid">
+        
+          <a class="navbar-brand" href="#">LIBRARY</a>
+        
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        
+            <span class="navbar-toggler-icon"></span>
+        
+          </button>
+        
+          <div class="collapse navbar-collapse" id="navbarNav">
+        
+            <ul class="navbar-nav">
+        
+              <li class="nav-item">
+        
+                <a class="nav-link active" aria-current="page" href="#insane">HOME</a>
+        
+              </li>
+        
+              <li class="nav-item">
+        
+                <a class="nav-link " aria-current="page"href="#">FEATURES</a>
+        
+              </li>
+        
+              <li class="nav-item">
+        
+                <a class="nav-link " href="#">PRICING</a>
+        
+              </li>
+        
+            </ul>
+        
+          </div>
+        
+        </div>
+        
+        </nav>
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+
+    <div class="carousel-indicators">
+
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+
+    </div>
+
+    <div class="carousel-inner">
+
+      <div class="carousel-item active" style="height:600px;">
+
+        <img src="https://images2.alphacoders.com/261/thumb-1920-26102.jpg" class="d-block w-100" alt="Image not fetched">
+
+          <div class="carousel-caption d-none d-md-block">
+
+          <h5>HURRAHHHHH!!!!!</h5>
+
+          <p>Welcome to our website.</p>
+
+        </div>
+
+      </div>
+
+      <div class="carousel-item" style="height:600px;">
+
+        <img src="https://source.unsplash.com/random/1920×1200/?library" class="d-block w-100" alt="Image not fetched">
+
+      </div>
+
+      <div class="carousel-item" style="height:600px;">
+
+        <img src="https://source.unsplash.com/random/1920×1200/?books" class="d-block w-100" alt="Image not fetched">
+
+      </div>
+      <div class = "carousel-item" style="height:600px;">
+        <img src="https://th.bing.com/th/id/OIP.27kbSEM-QAzxfwE9BiN0rwHaE8?pid=ImgDet&w=915&h=610&rs=1" class ="d-block w-100" alt="Image not fetched">
+    
+    </div>
+
+    </div>
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+
+      <span class="visually-hidden">Previous</span>
+
+    </button>
+
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+
+      <span class="visually-hidden">Next</span>
+
+    </button>
+
+  </div>
+  <div class="col text-center">
+
+    <button type="button" class="btn btn-success btn-lg m-5" data-bs-toggle="button"  onclick="getTheBooks()">Click here to see our library</button>
+
+</div>
+
+   
+
+ <!-- This is the block of element which will modify when button is clicked! -->
+
+<div class="row" id="bookLibrary">  </div> 
+        
+
+    <!-- YOUR CODE GOES HERE !!! -->
+
+    <!-- JavaScript Bundle with Popper -->
+    <script>
+
+        //this is a JSON response from API
+      
+        const arrayOfObjects = [
+      
+          {
+      
+            id: 1,
+      
+            name: "The Alchemist",
+      
+            price: 199,
+      
+            image: "https://images-na.ssl-images-amazon.com/images/I/71aFt4+OTOL.jpg",
+      
+          },
+      
+          {
+      
+            id: 2,
+      
+            name: "Lord of the Rings",
+      
+            price: 200,
+      
+            image:
+      
+              "https://kbimages1-a.akamaihd.net/47047012-399c-4ae3-aade-cd4c2a10e8e7/1200/1200/False/the-fellowship-of-the-ring-the-lord-of-the-rings-book-1-1.jpg",
+      
+          },
+      
+          {
+      
+            id: 3,
+      
+            name: "Fault in our starts",
+      
+            price: 200,
+      
+            image:
+      
+              "https://kbimages1-a.akamaihd.net/d81f220e-01bb-4b6c-84cb-8eb7f147699d/1200/1200/False/the-fault-in-our-stars-black-edition.jpg",
+      
+          },
+      
+          {
+      
+            id: 4,
+      
+            name: "Murder on Orient express",
+      
+            price: 499,
+      
+            image: "https://images-na.ssl-images-amazon.com/images/I/81jDO3gBdCL.jpg",
+      
+          },
+      
+          {
+      
+            id: 6,
+      
+            name: "Harry Potter and the cursed child",
+      
+            price: 499,
+      
+            image: "https://images-na.ssl-images-amazon.com/images/I/71TQ+NcQQTL.jpg",
+      
+          },
+      
+          {
+      
+            id: 7,
+      
+            name: "A Thousand splendid suns",
+      
+            price: 499,
+      
+            image: "https://images-na.ssl-images-amazon.com/images/I/81DFcrQgjrL.jpg",
+      
+          },
+      
+          {
+      
+            id: 8,
+      
+            name: "The Hobbit",
+      
+            price: 899,
+      
+            image: "https://images-na.ssl-images-amazon.com/images/I/710+HcoP38L.jpg",
+      
+          },
+      
+          {
+      
+            id: 9,
+      
+            name: "Harry Potter & chamber of secrets",
+      
+            price: 599,
+      
+            image:
+      
+              "https://bestlifeonline.com/wp-content/uploads/sites/3/2020/10/Harry-Potter-and-the-Chamber-of-Secrets-book-cover.jpg",
+      
+          },
+      
+          {
+      
+            id: 5,
+      
+            name: "RICH DAD POOR DAD",
+      
+            price: 1000,
+      
+            image:
+      
+              "https://kbimages1-a.akamaihd.net/ddf8d53d-7df5-4560-8fbd-43915f4f6a03/1200/1200/False/rich-dad-poor-dad-24.jpg",
+      
+          },
+      
+        ];
+      
+       
+      
+        const getTheBooks = () => {
+      
+          arrayOfObjects.map((i) => {
+      
+            let target = document.getElementById("bookLibrary");
+      
+            target.innerHTML += `<div class="card m-5" style="width: 18rem;">
+      
+      <img src=${i.image} class="card-img-top" alt="...">
+      
+      <div class="card-body">
+      
+      <h5 class="card-title">${i.name}</h5>
+      
+      <p class="card-text">${i.price}$</p>
+      
+      <a href="#" class="btn btn-primary">ADD TO CART</a>
+      
+      </div>
+      
+      </div>  `;
+      
+          });
+      
+        };
+      
+      </script>
+
+    <script
+
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+
+      crossorigin="anonymous"
+
+    >
+ 
+
+</script>
+<footer class="bg-dark text-center text-white">
+
+    <!-- Grid container -->
+
+    <div class="container p-4 pb-0">
+
+      <!-- Section: Social media -->
+
+      <section class="mb-4">
+
+        <!-- Facebook -->
+
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+
+          ><i class="fab fa-facebook-f"></i
+
+        ></a>
+
+ 
+
+        <!-- Twitter -->
+
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+
+          ><i class="fab fa-twitter"></i
+
+        ></a>
+
+ 
+
+        <!-- Google -->
+
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+
+          ><i class="fab fa-google"></i
+
+        ></a>
+
+ 
+
+        <!-- Instagram -->
+
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+
+          ><i class="fab fa-instagram"></i
+
+        ></a>
+
+ 
+
+        <!-- Linkedin -->
+
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+
+          ><i class="fab fa-linkedin-in"></i
+
+        ></a>
+
+ 
+
+        <!-- Github -->
+
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+
+          ><i class="fab fa-github"></i
+
+        ></a>
+
+      </section>
+
+      <!-- Section: Social media -->
+
+    </div>
+
+    <!-- Grid container -->
+
+ 
+
+    <!-- Copyright -->
+
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+
+      © 2022 Copyright:
+
+      <a class="text-white" href="https://mdbootstrap.com/">Made with curiosity!</a>
+
+    </div>
+
+    <!-- Copyright -->
+
+  </footer>
+
+  </body>
+
+</html>
