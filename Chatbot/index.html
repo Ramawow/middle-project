@@ -1,73 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Chatbot Project</title>
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-      crossorigin="anonymous"
-    />
 
-    <link rel="stylesheet" href="style.css" />
-    <script
-      src="https://code.jquery.com/jquery-3.4.1.min.js"
-      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-      crossorigin="anonymous"
-    ></script>
-    <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
-    <script
-      src="https://kit.fontawesome.com/5548f5ed00.js"
-      crossorigin="anonymous"
-    ></script>
-    <script src="script.js"></script>
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chatbot Project</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
 
-  <body>
-    <nav id="navbar" class="navbar">
-      The Chatbot Project
-    </nav>
-    <div id="maindiv">
-      <div id="chatdiv">
-        <div class="container clearfix">
-          <div class="chat">
-            <div class="chat-header clearfix">
-              <img src="bot.png" height="45" alt="avatar" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+  <script src="https://kit.fontawesome.com/5548f5ed00.js" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+</head>
 
-              <div class="chat-about">
-                <div class="chat-with">Chat with Bot</div>
-                <div class="chat-num-messages">Code your way to Success</div>
-              </div>
+<!-- return false Tidak bisa klik kanan, ctrl A & C -->
+
+<body class="bg-gray-600" oncontextmenu="return false" onselectstart="return false"
+  onkeydown="if ((arguments[0] || window.event).ctrlKey) return false">
+
+  <!-- End -->
+
+  <nav id="navbar" class="navbar">
+    The Chatbot Project
+  </nav>
+  <div id="maindiv">
+    <div id="chatdiv">
+      <div class="container clearfix">
+        <div class="chat">
+          <div class="chat-header clearfix">
+            <img src="bot.png" height="45" alt="avatar" />
+
+            <div class="chat-about">
+              <div class="chat-with">Chat with Bot</div>
+              <div class="chat-num-messages">Code your way to Success</div>
             </div>
-            <!-- end chat-header -->
-
-            <div class="chat-history">
-              <ul style="list-style-type: none;"></ul>
-            </div>
-            <!-- end chat-history -->
-
-            <div class="chat-message clearfix">
-              <textarea
-                name="message-to-send"
-                id="message-to-send"
-                placeholder="Type your message"
-                rows="3"
-              ></textarea>
-
-              <i class="fa fa-file-o"></i> &nbsp;&nbsp;&nbsp;
-              <i class="fa fa-file-image-o"></i>
-
-              <button>Send</button>
-            </div>
-            <!-- end chat-message -->
           </div>
-          <!-- end chat -->
-        </div>
-        <!-- end container -->
+          <!-- end chat-header -->
 
-        <script id="message-template" type="text/x-handlebars-template">
+          <div class="chat-history">
+            <ul style="list-style-type: none;"></ul>
+          </div>
+          <!-- end chat-history -->
+
+          <div class="chat-message clearfix">
+            <textarea name="message-to-send" id="message-to-send" placeholder="Type your message" rows="3"></textarea>
+
+            <i class="fa fa-file-o"></i> &nbsp;&nbsp;&nbsp;
+            <i class="fa fa-file-image-o"></i>
+
+            <button>Send</button>
+          </div>
+          <!-- end chat-message -->
+        </div>
+        <!-- end chat -->
+      </div>
+      <!-- end container -->
+
+      <script id="message-template" type="text/x-handlebars-template">
           <li class="clearfix">
             <div class="message-data align-right">
               <span class="message-data-time">
@@ -86,10 +78,7 @@
           </li>
         </script>
 
-        <script
-          id="message-response-template"
-          type="text/x-handlebars-template"
-        >
+      <script id="message-response-template" type="text/x-handlebars-template">
           <li>
             <div class="message-data">
               <span class="message-data-name">
@@ -105,25 +94,38 @@
             </div>
           </li>
         </script>
-      </div>
-      <div id="chatdiv2">
-        <span
-          style="
+    </div>
+    <div id="chatdiv2">
+      <span style="
             width: 100%;
             text-align: center;
             font-size: x-large;
             padding: 40px;
-          "
-        >
-          Hey there friends !<br />
-          This is a simple yet amazing chatbot tutorial<br />
-          You'll learn about JSON, Javascript promises and APIs<br />
-          After this tutorial you can even feed your own data to the bot and
-          have fun with it !<br />
-          So let's begin interacting with the ChatBot.<br />
-          <b>Send a simple hello message to begin</b>
-        </span>
-      </div>
+          ">
+        Hey there friends !<br />
+        This is a simple yet amazing chatbot tutorial<br />
+        You'll learn about JSON, Javascript promises and APIs<br />
+        After this tutorial you can even feed your own data to the bot and
+        have fun with it !<br />
+        So let's begin interacting with the ChatBot.<br />
+        <b>Send a simple hello message to begin</b>
+      </span>
     </div>
-  </body>
+  </div>
+
+  <!-- Java enable copas text -->
+  <script>
+    document.addEventListener('contextmenu', function (e) {
+      e.preventDefault();
+    });
+    document.addEventListener('keydown', function (e) {
+      if (e.ctrlKey && (e.key === 'a' || e.key === 'c')) {
+        e.preventDefault();
+      }
+    });
+  </script>
+
+  <!-- End Java -->
+</body>
+
 </html>

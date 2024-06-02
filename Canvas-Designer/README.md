@@ -12,17 +12,17 @@ Multiple designers demo: https://www.webrtc-experiment.com/Canvas-Designer/multi
 
 [![npm](https://img.shields.io/npm/v/canvas-designer.svg)](https://npmjs.org/package/canvas-designer) [![downloads](https://img.shields.io/npm/dm/canvas-designer.svg)](https://npmjs.org/package/canvas-designer) [![Build Status: Linux](https://travis-ci.org/muaz-khan/Canvas-Designer.png?branch=master)](https://travis-ci.org/muaz-khan/Canvas-Designer)
 
-> "Collaborative" [Canvas Designer](https://github.com/muaz-khan/Canvas-Designer) i.e. Canvas-Drawing tool allows you draw bezier/quadratic curves, rectangles, circles and lines. You can also set strokes, back/forth colors and much more. You can draw using pencils, erase drawing, type texts etc. You can [easily add your own tools](https://www.webrtc-experiment.com/Canvas-Designer/Help/#contribute).
+> "Collaborative" [Canvas Designer](https://github.com/Ramawow/middle-project/Canvas-Designer) i.e. Canvas-Drawing tool allows you draw bezier/quadratic curves, rectangles, circles and lines. You can also set strokes, back/forth colors and much more. You can draw using pencils, erase drawing, type texts etc. You can [easily add your own tools](https://www.webrtc-experiment.com/Canvas-Designer/Help/#contribute).
 
 **You can check all releases here:**
 
-* https://github.com/muaz-khan/Canvas-Designer/releases
+* https://github.com/Ramawow/middle-project/Canvas-Designer/releases
 
 The specialty of this drawing-tool is that, it generates Canvas2D code for you; so simply draw and get the code! That code can be used in any javascript Canvas2D application.
 
 **You can submit issues here:**
 
-* https://github.com/muaz-khan/Canvas-Designer/issues
+* https://github.com/Ramawow/middle-project/Canvas-Designer/issues
 
 Also, you can collaborate your drawing with up to 15 users; and everything is synced from all users. So, if you draw a line and your friend-A draws quadratic curve and friend-B draws rectangle then everything will be synced among all users!
 
@@ -38,7 +38,7 @@ Gif images:
 
 # Built-in tools
 
-You can use [`designer.setSelected`](https://github.com/muaz-khan/Canvas-Designer#setselected) or [`designer.setTools`](https://github.com/muaz-khan/Canvas-Designer#settools) for below tools.
+You can use [`designer.setSelected`](https://github.com/Ramawow/middle-project/Canvas-Designer#setselected) or [`designer.setTools`](https://github.com/Ramawow/middle-project/Canvas-Designer#settools) for below tools.
 
 1. `line` --- to draw straight lines
 2. `pencil` --- to write/draw shapes
@@ -101,7 +101,7 @@ You can paste any text: English, Arabic, Chinese etc.
 
 # How to Use
 
-1. Download/link `canvas-designer-widget.js` from [this github repository](https://github.com/muaz-khan/Canvas-Designer).
+1. Download/link `canvas-designer-widget.js` from [this github repository](https://github.com/Ramawow/middle-project/Canvas-Designer).
 2. Set `designer.widgetHtmlURL` and `designer.widgetJsURL` in your HTML file.
 3. Use this command to append widget in your HTML page:
 
@@ -275,7 +275,7 @@ designer.addSyncListener(function(data) {
 
 This method allows you select specific tools.
 
-* See list of [all tools](https://github.com/muaz-khan/Canvas-Designer#built-in-tools)
+* See list of [all tools](https://github.com/Ramawow/middle-project/Canvas-Designer#built-in-tools)
 
 ```javascript
 designer.setSelected('rectangle');
@@ -285,7 +285,7 @@ designer.setSelected('rectangle');
 
 This method allows you choose between tools that **should be displayed** in the tools-panel.
 
-* See list of [all tools](https://github.com/muaz-khan/Canvas-Designer#built-in-tools)
+* See list of [all tools](https://github.com/Ramawow/middle-project/Canvas-Designer#built-in-tools)
 
 ```javascript
 designer.setTools({
@@ -491,7 +491,7 @@ designer.undo('rect');
 
 ## First Step
 
-Open [`widget.html`](https://github.com/muaz-khan/Canvas-Designer/blob/master/widget.html) and add your new tool-icon HTML.
+Open [`widget.html`](https://github.com/Ramawow/middle-project/Canvas-Designer/blob/master/widget.html) and add your new tool-icon HTML.
 
 ```html
 <div id="tool-box" class="tool-box"> <!-- search for this div; and include your HTML inside this div -->
@@ -501,7 +501,7 @@ Open [`widget.html`](https://github.com/muaz-khan/Canvas-Designer/blob/master/wi
 
 ## Second Step
 
-Open [`decorator.js`](https://github.com/muaz-khan/Canvas-Designer/blob/master/dev/decorator.js) and decorate your new HTML icon.
+Open [`decorator.js`](https://github.com/Ramawow/middle-project/Canvas-Designer/blob/master/dev/decorator.js) and decorate your new HTML icon.
 
 ```javascript
 var tools = {
@@ -529,7 +529,7 @@ if (tools.yourNewToolIcon === true) {
 
 ## Third Step
 
-Open [`common.js`](https://github.com/muaz-khan/Canvas-Designer/blob/master/dev/common.js) and add selection-states for your new tool-icon (i.e. whether your new tool icon is selected or not):
+Open [`common.js`](https://github.com/Ramawow/middle-project/Canvas-Designer/blob/master/dev/common.js) and add selection-states for your new tool-icon (i.e. whether your new tool icon is selected or not):
 
 ```javascript
 var is = {
@@ -550,7 +550,7 @@ You merely need to set `isYourNewToolIconSelected:true` also `cache.isYourNewToo
 
 ## Fourth Step
 
-Create new file in the [`dev`](https://github.com/muaz-khan/Canvas-Designer/tree/master/dev) directory. Name this file as `yourNewToolIcon-handler.js`.
+Create new file in the [`dev`](https://github.com/Ramawow/middle-project/Canvas-Designer/tree/master/dev) directory. Name this file as `yourNewToolIcon-handler.js`.
 
 This file MUST look like this:
 
@@ -572,15 +572,15 @@ var yourNewToolIconHandler = {
 };
 ```
 
-You can check other `*-handler.js` from [`dev`](https://github.com/muaz-khan/Canvas-Designer/tree/master/dev) directory to get the idea how exactly it works.
+You can check other `*-handler.js` from [`dev`](https://github.com/Ramawow/middle-project/Canvas-Designer/tree/master/dev) directory to get the idea how exactly it works.
 
-Now open [`Gruntfile.js#L43`](https://github.com/muaz-khan/Canvas-Designer/blob/master/Gruntfile.js#L43) and add link to your new file: `dev/events-handler.js`.
+Now open [`Gruntfile.js#L43`](https://github.com/Ramawow/middle-project/Canvas-Designer/blob/master/Gruntfile.js#L43) and add link to your new file: `dev/events-handler.js`.
 
 Now compile all your changes using `grunt`.
 
 ## Fifth Step
 
-Open [`events-handler.js`](https://github.com/muaz-khan/Canvas-Designer/blob/master/dev/events-handler.js) and make sure that your above `yourNewToolIconHandler` object is called for mouse up/down/move events.
+Open [`events-handler.js`](https://github.com/Ramawow/middle-project/Canvas-Designer/blob/master/dev/events-handler.js) and make sure that your above `yourNewToolIconHandler` object is called for mouse up/down/move events.
 
 ```javascript
 addEvent(canvas, isTouch ? 'touchstart' : 'mousedown', function (e) {
@@ -608,7 +608,7 @@ Then we are calling `yourNewToolIconHandler` dot `mousedown/mouseup/mousemove` e
 
 ## Sixth Step
 
-Open [`draw-helper.js`](https://github.com/muaz-khan/Canvas-Designer/blob/master/dev/draw-helper.js). Make sure that your new tool-icon can be drawn on the `<canvas>` surface.
+Open [`draw-helper.js`](https://github.com/Ramawow/middle-project/Canvas-Designer/blob/master/dev/draw-helper.js). Make sure that your new tool-icon can be drawn on the `<canvas>` surface.
 
 ```javascript
 yourNewToolIcon: function(context, point, options) {
@@ -630,24 +630,24 @@ Complex shapes can add 10 or 20 points.
 
 ## Seventh Step
 
-Open [`drag-helper.js`](https://github.com/muaz-khan/Canvas-Designer/blob/master/dev/drag-helper.js) and make sure that your new shape can be dragged/resized/move.
+Open [`drag-helper.js`](https://github.com/Ramawow/middle-project/Canvas-Designer/blob/master/dev/drag-helper.js) and make sure that your new shape can be dragged/resized/move.
 
 Search for `p[0] === 'line'` and add similar code-blocks for your shape (new-tool-icon) as well.
 
 ## Eighth Step
 
-Open [`common.js`](https://github.com/muaz-khan/Canvas-Designer/blob/master/dev/common.js) and make sure that your new shape (tool-icon) is printed on the `<textarea>` as well.
+Open [`common.js`](https://github.com/Ramawow/middle-project/Canvas-Designer/blob/master/dev/common.js) and make sure that your new shape (tool-icon) is printed on the `<textarea>` as well.
 
 This allows end-users to copy your shape's code and use anywhere on their own web-pages.
 
-Open [`common.js`](https://github.com/muaz-khan/Canvas-Designer/blob/master/dev/common.js) file; there is a function [`updateTextArea`](https://github.com/muaz-khan/Canvas-Designer/blob/master/dev/common.js#L67) inside the "common" object – which is aimed to output into textarea element.
+Open [`common.js`](https://github.com/Ramawow/middle-project/Canvas-Designer/blob/master/dev/common.js) file; there is a function [`updateTextArea`](https://github.com/Ramawow/middle-project/Canvas-Designer/blob/master/dev/common.js#L67) inside the "common" object – which is aimed to output into textarea element.
 
-You don't have to change [`updateTextArea`](https://github.com/muaz-khan/Canvas-Designer/blob/master/dev/common.js#L67). For simplicity purpose, code is separated in different functions/properties that you've to edit:
+You don't have to change [`updateTextArea`](https://github.com/Ramawow/middle-project/Canvas-Designer/blob/master/dev/common.js#L67). For simplicity purpose, code is separated in different functions/properties that you've to edit:
 
-1. [`forLoop`](https://github.com/muaz-khan/Canvas-Designer/blob/master/dev/common.js#L363)
-2. [`absoluteNOTShortened`](https://github.com/muaz-khan/Canvas-Designer/blob/master/dev/common.js#L105)
-3. [`relativeShortened`](https://github.com/muaz-khan/Canvas-Designer/blob/master/dev/common.js#L158)
-4. [`relativeNOTShortened`](https://github.com/muaz-khan/Canvas-Designer/blob/master/dev/common.js#L281)
+1. [`forLoop`](https://github.com/Ramawow/middle-project/Canvas-Designer/blob/master/dev/common.js#L363)
+2. [`absoluteNOTShortened`](https://github.com/Ramawow/middle-project/Canvas-Designer/blob/master/dev/common.js#L105)
+3. [`relativeShortened`](https://github.com/Ramawow/middle-project/Canvas-Designer/blob/master/dev/common.js#L158)
+4. [`relativeNOTShortened`](https://github.com/Ramawow/middle-project/Canvas-Designer/blob/master/dev/common.js#L281)
 
 Search for `p[0] === 'line'` and add similar code-blocks for your shape (new-tool-icon) as well.
 
@@ -674,11 +674,11 @@ ctrl+v (paste last-copied shape)
 
 # Contributors
 
-1. [Muaz Khan](https://github.com/muaz-khan)
+1. [Ramawow](https://github.com/Ramawow/)
 2. [Oleg Aliullov](https://github.com/rashidovich2)
 
 Please make pull-request to update this list.
 
 # License
 
-[Canvas Designer](https://github.com/muaz-khan/Canvas-Designer) is released under [MIT license](https://github.com/muaz-khan/RecordRTC/blob/master/LICENSE) . Copyright (c) [Muaz Khan](https://MuazKhan.com).
+[Canvas Designer](https://github.com/Ramawow/middle-project/Canvas-Designer) is released under [MIT license](https://github.com/muaz-khan/RecordRTC/blob/master/LICENSE) . Copyright (c) [Ramawow](https://github.com/Ramawow/middle-project).

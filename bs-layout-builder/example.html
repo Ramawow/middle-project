@@ -17,7 +17,12 @@
   </style>
 </head>
 
-<body>
+<!-- return false Tidak bisa klik kanan, ctrl A & C -->
+
+<body class="bg-gray-600" oncontextmenu="return false" onselectstart="return false"
+  onkeydown="if ((arguments[0] || window.event).ctrlKey) return false">
+
+  <!-- End -->
 
   <div class="container pt-3 pb-5">
     <div class="d-flex align-items-center">
@@ -42,11 +47,11 @@
           class="fa fa-fw fa-plus mr-2 text-danger"></i>Add Panel</button>
     </div>
   </div>
-  
+
 
   <!-- Github link -->
-  <a class="github-fork-ribbon" href="https://github.com/mnhjddn/bs-layout-builder" data-ribbon="Fork me on GitHub"
-    title="Fork me on GitHub">Fork me on GitHub</a>
+  <a class="github-fork-ribbon" href="https://github.com/Ramawow/middle-project/bs-layout-builder"
+    data-ribbon="Fork me on GitHub" title="Fork me on GitHub">Fork me on GitHub</a>
 
   <!-- Dependencies -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
@@ -69,8 +74,8 @@
     let pageStructure = [];
 
     MnhBuilder.init({
-      layout_data: pageStructure, 
-      container: 'builderPreview', 
+      layout_data: pageStructure,
+      container: 'builderPreview',
       add_button: 'addPanel',
       save_button: 'saveJSON',
       load_button: 'loadJSON',
@@ -78,6 +83,20 @@
     });
 
   </script>
+
+  <!-- Java enable copas text -->
+  <script>
+    document.addEventListener('contextmenu', function (e) {
+      e.preventDefault();
+    });
+    document.addEventListener('keydown', function (e) {
+      if (e.ctrlKey && (e.key === 'a' || e.key === 'c')) {
+        e.preventDefault();
+      }
+    });
+  </script>
+
+  <!-- End Java -->
 
 </body>
 

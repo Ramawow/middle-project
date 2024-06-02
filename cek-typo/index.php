@@ -466,7 +466,14 @@ let root = document.documentElement;
 </script>
 
 </head>
-<body>
+
+<!-- return false Tidak bisa klik kanan, ctrl A & C -->
+
+<body class="bg-gray-600" oncontextmenu="return false" onselectstart="return false"
+  onkeydown="if ((arguments[0] || window.event).ctrlKey) return false">
+
+  <!-- End -->
+
     <div class="chgh">
     <div class="row">    
         <div class="col-2">
@@ -719,5 +726,19 @@ function salin(){
         Kantan Web Presentation | oleh <a href="https://haizim.one" target="_blank">Haizim</a> 2020
     </center-->
 </footer>
+
+<!-- Java enable copas text -->
+<script>
+    document.addEventListener('contextmenu', function (e) {
+      e.preventDefault();
+    });
+    document.addEventListener('keydown', function (e) {
+      if (e.ctrlKey && (e.key === 'a' || e.key === 'c')) {
+        e.preventDefault();
+      }
+    });
+  </script>
+
+  <!-- End Java -->
 </body>
 </html>

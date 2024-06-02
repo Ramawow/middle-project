@@ -11,4 +11,4 @@ Untuk API bisa di lihat di [sini](https://docs.binderbyte.com/api/cek-resi)
 
 Masa aktif API_key hanya 30 hari dan 300 hit, jika sudah habis kamu bisa membuatnya [disini](https://binderbyte.com/) dengan cara mendaftar terlebih dahulu
 
-[Demo](https://ridhoadtyaa.github.io/cek-resi/)
+[Demo](https://middle-project-ramawow.vercel.app/cek-resi/)
