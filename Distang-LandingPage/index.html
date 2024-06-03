@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<meta name="viewport" content="width=device-width, initial-scal=1">
 	<meta charset="utf-8">
@@ -10,48 +11,61 @@
 	<link rel="stylesheet" type="text/css" href="aset/bootstrap/font-awesome/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="aset/bootstrap/css/style.css">
 </head>
-<body>
+
+<!-- return false Tidak bisa klik kanan, ctrl A & C -->
+
+<body oncontextmenu="return false" onselectstart="return false"
+	onkeydown="if ((arguments[0] || window.event).ctrlKey) return false">
+
+	<!-- End -->
 
 	<!-- Awal Navbar -->
 	<nav class="navbar navbar-expand-lg navbar-ungu fixed-top ">
-	  <div class="container">
-	  	<a class="navbar-brand page-scroll" href="#jumb"><img src="aset/image/DISTANG2.png" width="100px"></a>
-		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-		    <h4 class="text-light"><i class="fa fa-bars"></i></h4>
-		  </button>
-		  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-		    <div class="navbar-nav ml-auto">
-		      <a class="nav-item nav-link active page-scroll" href="#tentang">TENTANG</a>
-		      <a class="nav-item nav-link active page-scroll" href="#galeri">GALERI</a>
-		      <a class="nav-item nav-link active page-scroll" href="#kesenian">KESENIAN</a>
-		      <a class="nav-item nav-link active page-scroll" href="#wisata">WISATA</a>
-		      <a class="nav-item nav-link active page-scroll" href="#kuliner">KULINER</a>
-		    </div>
-		  </div>
-	  </div>
+		<div class="container">
+			<a class="navbar-brand page-scroll" href="#jumb"><img src="aset/image/DISTANG2.png" width="100px"></a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+				aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+				<h4 class="text-light"><i class="fa fa-bars"></i></h4>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+				<div class="navbar-nav ml-auto">
+					<a class="nav-item nav-link active page-scroll" href="#tentang">TENTANG</a>
+					<a class="nav-item nav-link active page-scroll" href="#galeri">GALERI</a>
+					<a class="nav-item nav-link active page-scroll" href="#kesenian">KESENIAN</a>
+					<a class="nav-item nav-link active page-scroll" href="#wisata">WISATA</a>
+					<a class="nav-item nav-link active page-scroll" href="#kuliner">KULINER</a>
+				</div>
+			</div>
+		</div>
 	</nav>
 	<!-- Akhir Navbar -->
 
 	<!-- Awal Jumbotron -->
 	<section id="jumb">
 		<div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
-		  <div class="carousel-inner">
-		    <div class="carousel-item active">
-		    	<div class="Jumbotron" style="background: url('aset/image/jumbotron2.jpg'); background-attachment: fixed; background-size: cover; background-position: center; height: 500px">
-		    		<img src="aset/image/logotangerang.png" width="45%" style="position: absolute; top: 150px; left: 50%">
-		    	</div>
-		    </div>
-		    <div class="carousel-item">
-		    	<div class="Jumbotron" style="background: url('aset/image/bmx1.jpg'); background-attachment: fixed; background-size: cover; background-position: center; height: 500px">
-		    		<img src="aset/image/logotangerang.png" width="45%" style="position: absolute; top: 150px; left: 50%">
-		    	</div>
-		    </div>
-		    <div class="carousel-item">
-		    	<div class="Jumbotron" style="background: url('aset/image/kotaurbanTangerang.jpg'); background-attachment: fixed; background-size: cover; background-position: center; height: 500px">
-		    		<img src="aset/image/logotangerang.png" width="45%" style="position: absolute; top: 150px; left: 50%">
-		    	</div>
-		    </div>
-		  </div>
+			<div class="carousel-inner">
+				<div class="carousel-item active">
+					<div class="Jumbotron"
+						style="background: url('aset/image/jumbotron2.jpg'); background-attachment: fixed; background-size: cover; background-position: center; height: 500px">
+						<img src="aset/image/logotangerang.png" width="45%"
+							style="position: absolute; top: 150px; left: 50%">
+					</div>
+				</div>
+				<div class="carousel-item">
+					<div class="Jumbotron"
+						style="background: url('aset/image/bmx1.jpg'); background-attachment: fixed; background-size: cover; background-position: center; height: 500px">
+						<img src="aset/image/logotangerang.png" width="45%"
+							style="position: absolute; top: 150px; left: 50%">
+					</div>
+				</div>
+				<div class="carousel-item">
+					<div class="Jumbotron"
+						style="background: url('aset/image/kotaurbanTangerang.jpg'); background-attachment: fixed; background-size: cover; background-position: center; height: 500px">
+						<img src="aset/image/logotangerang.png" width="45%"
+							style="position: absolute; top: 150px; left: 50%">
+					</div>
+				</div>
+			</div>
 		</div>
 	</section>
 	<!-- Akhir Jumbotron -->
@@ -87,9 +101,12 @@
 		<div class="row">
 			<div class="col-md ttng-show">
 				<h1>Tentang Tangerang</h1>
-				<p class="lead">Tangerang adalah sebuah daerah yang terletak di provinsi Banten. Tangerang terbagi menjadi 3 yaitu : Kota Tangerang, Kota Tangerang Selatan dan Kabupaten Tangerang. Luas keseluruhan ketiga tersebut adalah 1.260,7‬km².</p>
+				<p class="lead">Tangerang adalah sebuah daerah yang terletak di provinsi Banten. Tangerang terbagi
+					menjadi 3 yaitu : Kota Tangerang, Kota Tangerang Selatan dan Kabupaten Tangerang. Luas keseluruhan
+					ketiga tersebut adalah 1.260,7‬km².</p>
 				<h1>Apa yang menarik ?</h1>
-				<p class="lead">Tangerang merupakan daerah yang menarik untuk dikunjungi karena mempunyai berbagai macam kuliner, tempat wisata, dan juga kesenian</p>
+				<p class="lead">Tangerang merupakan daerah yang menarik untuk dikunjungi karena mempunyai berbagai macam
+					kuliner, tempat wisata, dan juga kesenian</p>
 			</div>
 			<div class="col-md">
 				<img src="aset/image/hore.jpg" width="100%">
@@ -102,8 +119,10 @@
 			<div class="col-md bg-ungu p-4 text-light">
 				<div class="ttng-show1">
 					<h1>Tangerang Daerah Modernisasi</h1>
-					<p class="lead">Tangerang adalah daerah berkembang yang padat penduduk dan memiliki kegiatan perekonomian yang besar pula.
-					Tangerang memiliki banyak daerah destinasi wisata, kuliner, dan kesenian budaya yang beraneka raga dan tidak kalah bagusnya dengan kesenian daerah daerah lain</p>
+					<p class="lead">Tangerang adalah daerah berkembang yang padat penduduk dan memiliki kegiatan
+						perekonomian yang besar pula.
+						Tangerang memiliki banyak daerah destinasi wisata, kuliner, dan kesenian budaya yang beraneka
+						raga dan tidak kalah bagusnya dengan kesenian daerah daerah lain</p>
 				</div>
 			</div>
 		</div>
@@ -121,22 +140,24 @@
 						<img src="aset/image/tugu.jpg" class="glr-show">
 					</a>
 					<!-- Modal -->
-					<div class="modal fade" id="exampleModalScrollable" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
-					  <div class="modal-dialog modal-dialog-scrollable" role="document">
-					    <div class="modal-content">
-					      <div class="modal-header">
-					        <h5 class="modal-title" id="exampleModalScrollableTitle">Senam bersama di alun alun kota</h5>
-					        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-					          <span aria-hidden="true">&times;</span>
-					        </button>
-					      </div>
-					      <div class="modal-body">
-					        <img src="aset/image/tugu.jpg" class="glr-show" width="100%">
-					      </div>
-					      <div class="modal-footer">
-					      </div>
-					    </div>
-					  </div>
+					<div class="modal fade" id="exampleModalScrollable" tabindex="-1" role="dialog"
+						aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+						<div class="modal-dialog modal-dialog-scrollable" role="document">
+							<div class="modal-content">
+								<div class="modal-header">
+									<h5 class="modal-title" id="exampleModalScrollableTitle">Senam bersama di alun alun
+										kota</h5>
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+										<span aria-hidden="true">&times;</span>
+									</button>
+								</div>
+								<div class="modal-body">
+									<img src="aset/image/tugu.jpg" class="glr-show" width="100%">
+								</div>
+								<div class="modal-footer">
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 				<div class="col-md mt-2">
@@ -145,43 +166,48 @@
 						<img src="aset/image/quran.jpg" class="glr-show" width="100%">
 					</a>
 					<!-- Modal -->
-					<div class="modal fade" id="exampleModalScrollable1" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
-					  <div class="modal-dialog modal-dialog-scrollable" role="document">
-					    <div class="modal-content">
-					      <div class="modal-header">
-					        <h5 class="modal-title" id="exampleModalScrollableTitle">Al-Qur'an raksasa di Masjid Al-azom</h5>
-					        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-					          <span aria-hidden="true">&times;</span>
-					        </button>
-					      </div>
-					      <div class="modal-body">
-					      	<!-- Button trigger modal -->
-							<a data-toggle="modal" href="#exampleModalScrollable3">
-								<img src="aset/image/quran.jpg" class="glr-show">
-							</a>
-							<!-- Modal -->
-							<div class="modal fade" id="exampleModalScrollable3" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
-							  <div class="modal-dialog modal-dialog-scrollable" role="document">
-							    <div class="modal-content">
-							      <div class="modal-header">
-							        <h5 class="modal-title" id="exampleModalScrollableTitle">Pasar lama</h5>
-							        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-							          <span aria-hidden="true">&times;</span>
-							        </button>
-							      </div>
-							      <div class="modal-body">
-							        <img src="aset/image/paslam.jpg" class="glr-show" width="100%">
-							      </div>
-							      <div class="modal-footer">
-							      </div>
-							    </div>
-							  </div>
+					<div class="modal fade" id="exampleModalScrollable1" tabindex="-1" role="dialog"
+						aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+						<div class="modal-dialog modal-dialog-scrollable" role="document">
+							<div class="modal-content">
+								<div class="modal-header">
+									<h5 class="modal-title" id="exampleModalScrollableTitle">Al-Qur'an raksasa di Masjid
+										Al-azom</h5>
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+										<span aria-hidden="true">&times;</span>
+									</button>
+								</div>
+								<div class="modal-body">
+									<!-- Button trigger modal -->
+									<a data-toggle="modal" href="#exampleModalScrollable3">
+										<img src="aset/image/quran.jpg" class="glr-show">
+									</a>
+									<!-- Modal -->
+									<div class="modal fade" id="exampleModalScrollable3" tabindex="-1" role="dialog"
+										aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+										<div class="modal-dialog modal-dialog-scrollable" role="document">
+											<div class="modal-content">
+												<div class="modal-header">
+													<h5 class="modal-title" id="exampleModalScrollableTitle">Pasar lama
+													</h5>
+													<button type="button" class="close" data-dismiss="modal"
+														aria-label="Close">
+														<span aria-hidden="true">&times;</span>
+													</button>
+												</div>
+												<div class="modal-body">
+													<img src="aset/image/paslam.jpg" class="glr-show" width="100%">
+												</div>
+												<div class="modal-footer">
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="modal-footer">
+								</div>
 							</div>
-					      </div>
-					      <div class="modal-footer">
-					      </div>
-					    </div>
-					  </div>
+						</div>
 					</div>
 				</div>
 				<div class="col-md mt-2">
@@ -190,22 +216,23 @@
 						<img src="aset/image/apem.jpg" class="glr-show" width="100%">
 					</a>
 					<!-- Modal -->
-					<div class="modal fade" id="exampleModalScrollable2" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
-					  <div class="modal-dialog modal-dialog-scrollable" role="document">
-					    <div class="modal-content">
-					      <div class="modal-header">
-					        <h5 class="modal-title" id="exampleModalScrollableTitle">Kue Apem</h5>
-					        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-					          <span aria-hidden="true">&times;</span>
-					        </button>
-					      </div>
-					      <div class="modal-body">
-					        <img src="aset/image/apem.jpg" class="glr-show" width="100%">
-					      </div>
-					      <div class="modal-footer">
-					      </div>
-					    </div>
-					  </div>
+					<div class="modal fade" id="exampleModalScrollable2" tabindex="-1" role="dialog"
+						aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+						<div class="modal-dialog modal-dialog-scrollable" role="document">
+							<div class="modal-content">
+								<div class="modal-header">
+									<h5 class="modal-title" id="exampleModalScrollableTitle">Kue Apem</h5>
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+										<span aria-hidden="true">&times;</span>
+									</button>
+								</div>
+								<div class="modal-body">
+									<img src="aset/image/apem.jpg" class="glr-show" width="100%">
+								</div>
+								<div class="modal-footer">
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -217,22 +244,23 @@
 						<img src="aset/image/oceanpark.jpg" class="glr-show" width="100%">
 					</a>
 					<!-- Modal -->
-					<div class="modal fade" id="exampleModalScrollable9" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
-					  <div class="modal-dialog modal-dialog-scrollable" role="document">
-					    <div class="modal-content">
-					      <div class="modal-header">
-					        <h5 class="modal-title" id="exampleModalScrollableTitle">Ocean park Tangerang</h5>
-					        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-					          <span aria-hidden="true">&times;</span>
-					        </button>
-					      </div>
-					      <div class="modal-body">
-					        <img src="aset/image/oceanpark.jpg" class="glr-show" width="100%">
-					      </div>
-					      <div class="modal-footer">
-					      </div>
-					    </div>
-					  </div>
+					<div class="modal fade" id="exampleModalScrollable9" tabindex="-1" role="dialog"
+						aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+						<div class="modal-dialog modal-dialog-scrollable" role="document">
+							<div class="modal-content">
+								<div class="modal-header">
+									<h5 class="modal-title" id="exampleModalScrollableTitle">Ocean park Tangerang</h5>
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+										<span aria-hidden="true">&times;</span>
+									</button>
+								</div>
+								<div class="modal-body">
+									<img src="aset/image/oceanpark.jpg" class="glr-show" width="100%">
+								</div>
+								<div class="modal-footer">
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 				<div class="col-md mt-2">
@@ -241,22 +269,24 @@
 						<img src="aset/image/citra.jpg" class="glr-show" width="100%">
 					</a>
 					<!-- Modal -->
-					<div class="modal fade" id="exampleModalScrollabley" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
-					  <div class="modal-dialog modal-dialog-scrollable" role="document">
-					    <div class="modal-content">
-					      <div class="modal-header">
-					        <h5 class="modal-title" id="exampleModalScrollableTitle">World Of Wonder Citra Raya</h5>
-					        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-					          <span aria-hidden="true">&times;</span>
-					        </button>
-					      </div>
-					      <div class="modal-body">
-					        <img src="aset/image/citra.jpg" class="glr-show" width="100%">
-					      </div>
-					      <div class="modal-footer">
-					      </div>
-					    </div>
-					  </div>
+					<div class="modal fade" id="exampleModalScrollabley" tabindex="-1" role="dialog"
+						aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+						<div class="modal-dialog modal-dialog-scrollable" role="document">
+							<div class="modal-content">
+								<div class="modal-header">
+									<h5 class="modal-title" id="exampleModalScrollableTitle">World Of Wonder Citra Raya
+									</h5>
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+										<span aria-hidden="true">&times;</span>
+									</button>
+								</div>
+								<div class="modal-body">
+									<img src="aset/image/citra.jpg" class="glr-show" width="100%">
+								</div>
+								<div class="modal-footer">
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 				<div class="col-md mt-2">
@@ -265,22 +295,24 @@
 						<img src="aset/image/gokartbalekota.jpg" class="glr-show" width="100%">
 					</a>
 					<!-- Modal -->
-					<div class="modal fade" id="exampleModalScrollable5" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
-					  <div class="modal-dialog modal-dialog-scrollable" role="document">
-					    <div class="modal-content">
-					      <div class="modal-header">
-					        <h5 class="modal-title" id="exampleModalScrollableTitle">Arena Gokart Balai kota</h5>
-					        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-					          <span aria-hidden="true">&times;</span>
-					        </button>
-					      </div>
-					      <div class="modal-body">
-					        <img src="aset/image/gokartbalekota.jpg" class="glr-show" width="100%">
-					      </div>
-					      <div class="modal-footer">
-					      </div>
-					    </div>
-					  </div>
+					<div class="modal fade" id="exampleModalScrollable5" tabindex="-1" role="dialog"
+						aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+						<div class="modal-dialog modal-dialog-scrollable" role="document">
+							<div class="modal-content">
+								<div class="modal-header">
+									<h5 class="modal-title" id="exampleModalScrollableTitle">Arena Gokart Balai kota
+									</h5>
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+										<span aria-hidden="true">&times;</span>
+									</button>
+								</div>
+								<div class="modal-body">
+									<img src="aset/image/gokartbalekota.jpg" class="glr-show" width="100%">
+								</div>
+								<div class="modal-footer">
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -301,7 +333,11 @@
 				</div>
 				<div class="col-md text-light p-4">
 					<h2><i>Tari Barongsai</i></h2>
-					<p>Kebudayaan ini berasal dari cina, tapi juga berkembang di tangerang Sebab banyaknya Etnis Tionghoa yang tingggal dan menetap di tangerang yang membuat kota ini menjadi kota yang ramai akan kebudayaan dan perayaan hari besar cina. Barongsai sendiri merupakan salah satu kesenian yang khas yang dimainkan saat Tahun Baru Imlek. Menurut kepercayaan masyarakat Tionghoa, kehadiran barongsai dapat mengusir aura-aura yang buruk dan membawa keberuntungan.</p>
+					<p>Kebudayaan ini berasal dari cina, tapi juga berkembang di tangerang Sebab banyaknya Etnis
+						Tionghoa yang tingggal dan menetap di tangerang yang membuat kota ini menjadi kota yang ramai
+						akan kebudayaan dan perayaan hari besar cina. Barongsai sendiri merupakan salah satu kesenian
+						yang khas yang dimainkan saat Tahun Baru Imlek. Menurut kepercayaan masyarakat Tionghoa,
+						kehadiran barongsai dapat mengusir aura-aura yang buruk dan membawa keberuntungan.</p>
 				</div>
 			</div>
 			<div class="row mt-4">
@@ -309,19 +345,27 @@
 					<!-- https://www.bacatangerang.com/mengenal-tari-cokek-dari-tangerang/. -->
 					<img src="aset/image/cokek.jpg" width="100%" class="img-kesenian">
 					<h3 class="mt-3"><i>Seni Tari Cokek</i></h3>
-					<p>Menurut informasi yang dihimpun dari Komunitas. Tari Cokek merupakan tarian perpaduan antara tari tradisional Tiongkok, Sunda-Betawi, dan Pencak Silat yang diiringi oleh musik Gambang Kromong..</p>
+					<p>Menurut informasi yang dihimpun dari Komunitas. Tari Cokek merupakan tarian perpaduan antara tari
+						tradisional Tiongkok, Sunda-Betawi, dan Pencak Silat yang diiringi oleh musik Gambang Kromong..
+					</p>
 				</div>
 				<div class="col-md text-light">
 					<!-- https://lensapena.id/2019/10/tari-cukin-simbol-harmonisasi-dalam-bingkai-budaya/. -->
 					<img src="aset/image/Cukin.png" width="100%" class="img-kesenian">
 					<h3 class="mt-3"><i>Seni Tari Cukin</i></h3>
-					<p>Kebudayaan Tari Cukin atau “Tarian Selendang ala Betawi” khas Tangerang merupakan hasil kreasi seni daerah dari Kabupaten Tangerang. Tarian ini diciptakan untuk mewakili kebudayaan 4 etnis yang ada di wilayah Kabupaten Tangerang, yaitu Jawa, Sunda, Cina, dan Betawi.</p>
+					<p>Kebudayaan Tari Cukin atau “Tarian Selendang ala Betawi” khas Tangerang merupakan hasil kreasi
+						seni daerah dari Kabupaten Tangerang. Tarian ini diciptakan untuk mewakili kebudayaan 4 etnis
+						yang ada di wilayah Kabupaten Tangerang, yaitu Jawa, Sunda, Cina, dan Betawi.</p>
 				</div>
 				<div class="col-md text-light">
 					<!-- https://budayajawa.id/nilai-nilai-budaya-tari-lenggang-cisadane-dari-tangerang-banten/. -->
 					<img src="aset/image/lengangCisadane.jpg" width="100%" class="img-kesenian">
 					<h4 class="mt-3"><i>Seni Tari Lenggang Cisadane</i></h4>
-					<p>Tari Lenggang Cisadane sendiri merupakan perpaduan unsur budaya yang ada di Kota Tangerang seperti budaya Sunda, Jawa, Betawi, Cina, Arab dan budaya lainnya. Tak heran jika tarian ini gerakannya menyerupai tari jali-jali dan jaipong. Selain itu alat musik pengiring tarian ini ada berbagai jenis, seperti satu set gamelan salendro, gambang kromong, dan satu set marawis, lengkap dengan lagu-lagu marawisnya.</p>
+					<p>Tari Lenggang Cisadane sendiri merupakan perpaduan unsur budaya yang ada di Kota Tangerang
+						seperti budaya Sunda, Jawa, Betawi, Cina, Arab dan budaya lainnya. Tak heran jika tarian ini
+						gerakannya menyerupai tari jali-jali dan jaipong. Selain itu alat musik pengiring tarian ini ada
+						berbagai jenis, seperti satu set gamelan salendro, gambang kromong, dan satu set marawis,
+						lengkap dengan lagu-lagu marawisnya.</p>
 				</div>
 			</div>
 			<div class="row text-light p-5">
@@ -329,13 +373,17 @@
 					<!-- https://metaonline.id/tangerang-selatan-kembangkan-kesenian-tari-jalaprang/. -->
 					<img src="aset/image/tariJalaprang.jpeg" class="img-kesenian mb-3" width="100%">
 					<h3><i>Tari Jalaprang</i></h3>
-					<p>Tari jalaprang adalah tari yang dimainkan enam penari ini hanya ada di Kota Tangsel. Namun kesenian belujm banyak diketahui masyarakat. Tarian ini adalahb tarian asli betawi yang dimunculkan dan dikembangkan oleh Dinas Pariwisata.</p>
+					<p>Tari jalaprang adalah tari yang dimainkan enam penari ini hanya ada di Kota Tangsel. Namun
+						kesenian belujm banyak diketahui masyarakat. Tarian ini adalahb tarian asli betawi yang
+						dimunculkan dan dikembangkan oleh Dinas Pariwisata.</p>
 				</div>
 				<div class="col-md">
 					<img src="aset/image/lenongWartajas.jpg" class="img-kesenian" width="100%">
 					<h3 class="mt-2"><i>Seni Lenong Tunah</i></h3>
 					<!-- https://tangselmedia.com/budaya-seni-lenong-di-tangerang-selatan.html. -->
-					<p>Lenong Tunah merupakan kesenian asal Pekayon, Kecamatan Mauk, Kabupaten Tangerang. Dalam sejarahnya, Lenong Tunah sudah ada sejak zaman penjajahan Belanda. Kesenian itu kemudian dikembangkan oleh pasangan suami istri, Hj. Tunah dan Jampang, pada tahun 1951.</p>
+					<p>Lenong Tunah merupakan kesenian asal Pekayon, Kecamatan Mauk, Kabupaten Tangerang. Dalam
+						sejarahnya, Lenong Tunah sudah ada sejak zaman penjajahan Belanda. Kesenian itu kemudian
+						dikembangkan oleh pasangan suami istri, Hj. Tunah dan Jampang, pada tahun 1951.</p>
 				</div>
 			</div>
 		</div>
@@ -344,58 +392,79 @@
 
 	<!-- Awal Wisata -->
 	<section id="wisata">
-			<div class="mt-super p-5" style="background: url('aset/image/kotaurbanTangerang.jpg'); background-attachment: fixed; background-size: cover; background-position: center;">
-				<div class="container text-light">
-					<h2>Wisata</h2>
-					<p class="lead"><i>Explore yourself in Tangerang</i></p>
-					<div class="row bg-ungu p-5">
-						<div class="col-md">
-							<!-- http://jakarta.panduanwisata.id/beyond-jakarta/tangerang/masjid-raya-al-azhom-kebanggaan-masyarakat-tangerang/ -->
-							<img src="aset/image/masjid.jpg" width="100%">
-						</div>
-						<div class="col-md">
-							<h3>Wisata Religi di masjid al-azom</h3>
-							<p>Masjid Raya Al A’zhom termasuk salah satu masjid kebanggan bagi warga Kota Tangerang. Desain yang unik karena memiliki lima kubah besar menjadi ciri khas dari masjid ini. Kemegahan dan keunikannya juga menjadikan masjid ini termasuk salah satu landmark di Kota Tangerang. Bangunan masjid ini berada di atas lahan 2,25 hektare dan luas bangunan hingga 5.775 meter persegi ditambah lahan parkirnya seluas 14.000 meter persegi. Dengan ukuran tersebut, masjid yang bergaya timur tengah ini tergolong sebagai masjid terbesar yang berada di Kota Tangerang. Masjid yang warnanya dominan biru langit tersebut juga mampu menampung jamaah hingga 15.000 orang.</p>
-						</div>
+		<div class="mt-super p-5"
+			style="background: url('aset/image/kotaurbanTangerang.jpg'); background-attachment: fixed; background-size: cover; background-position: center;">
+			<div class="container text-light">
+				<h2>Wisata</h2>
+				<p class="lead"><i>Explore yourself in Tangerang</i></p>
+				<div class="row bg-ungu p-5">
+					<div class="col-md">
+						<!-- http://jakarta.panduanwisata.id/beyond-jakarta/tangerang/masjid-raya-al-azhom-kebanggaan-masyarakat-tangerang/ -->
+						<img src="aset/image/masjid.jpg" width="100%">
 					</div>
-					<div class="row mt-4">
-						<div class="col-md">
-							<img src="aset/image/branchisto.jpg" width="100%">
-						</div>
-						<div class="col-md">
-							<h4>Menunggang Kuda Di Branchisto</h4>
-							<p>Branchsto adalah sebuah Ranch berkuda dan memanah yang dipadukan dengan Urban Environment Resto dan Cafe. Tempat favorit ini bisa dijadikan spot seru untuk keluarga, terutama anak-anak.</p>
-						</div>
-						<div class="col-md">
-							<img src="aset/image/bx-rink.jpg" width="100%">
-						</div>
-						<div class="col-md">
-							<h4>Bertanding hoki es di Bx-Rink</h4>
-							<p>BX Rink adalah tempat terbaik untuk menghabiskan hari-hari Anda bersama keluarga. Terletak di Tangerang Selatan, Banten. Bergabunglah bersama kami sekarang dan rasakan suasananya</p>
-						</div>
+					<div class="col-md">
+						<h3>Wisata Religi di masjid al-azom</h3>
+						<p>Masjid Raya Al A’zhom termasuk salah satu masjid kebanggan bagi warga Kota Tangerang. Desain
+							yang unik karena memiliki lima kubah besar menjadi ciri khas dari masjid ini. Kemegahan dan
+							keunikannya juga menjadikan masjid ini termasuk salah satu landmark di Kota Tangerang.
+							Bangunan masjid ini berada di atas lahan 2,25 hektare dan luas bangunan hingga 5.775 meter
+							persegi ditambah lahan parkirnya seluas 14.000 meter persegi. Dengan ukuran tersebut, masjid
+							yang bergaya timur tengah ini tergolong sebagai masjid terbesar yang berada di Kota
+							Tangerang. Masjid yang warnanya dominan biru langit tersebut juga mampu menampung jamaah
+							hingga 15.000 orang.</p>
 					</div>
-					<div class="row mt-3 bg-warning p-5">
-						<div class="col-md">
-							<!--  https://www.tripzilla.id/tempat-wisata-di-tangerang/12755. -->
-							<img src="aset/image/tamankunci.jpg" width="100%">
-						</div>
-						<div class="col-md">
-							<h3>Taman Kunci Yang INSTAGRAMMABLE</h3>
-							<p>Taman Kunci merupakan salah satu destinasi wisata edukatif yang menarik. Berada di Jl. MH Thamrin, Cikokol, taman ini terletak di seberang Taman Potret dan Tangcity Mall. Dengan luas mencapai 8.000 meter persegi, taman ini menawarkan suasana asri dengan pohon-pohon rindang dan beberapa tempat duduk tempat bersantai. Taman Kunci membuat suasana kota sedikit lebih hijau dengan ekosistem taman yang seperti itu.</p>
-						</div>
+				</div>
+				<div class="row mt-4">
+					<div class="col-md">
+						<img src="aset/image/branchisto.jpg" width="100%">
 					</div>
-					<div class="row mt-3 p-5 ">
-						<div class="col-md">
-							<h3>Taman Potret Yang Ikonik</h3>
-							<p>Taman ini merupakan 1 dari 26 taman yang ada di dalam kota tangerang. Taman ini sangat aktif di kunjungi pengunjung lokal mulai dari anak-anak, keluarga, muda mudi dan lansia. Taman biasanya mulai rame pengunjung pada sore hari.Taman Potret adalah taman tematik yang penuh ikon spot untuk foto agar terlihat Instagramable Di Taman indah ini pengunjung di sambut oleh patung penari lenggang dengan dominasi warna merah. Patung ini sekaligus sebagai penanda area taman ini. Tepat di depan penari Lenggang tersebut terdapat sederet huruf yang bertuliskan Taman Potret.bp</p>
-						</div>
-						<div class="col-md">
-							<!--  https://www.tribunnews.com/metropolitan/2019/11/24/7-destinasi-wisata-kota-tangerang-yang-tak-boleh-kamu-lewati. -->
-							<img src="aset/image/tamanpotret.jfif" width="100%">
-						</div>
+					<div class="col-md">
+						<h4>Menunggang Kuda Di Branchisto</h4>
+						<p>Branchsto adalah sebuah Ranch berkuda dan memanah yang dipadukan dengan Urban Environment
+							Resto dan Cafe. Tempat favorit ini bisa dijadikan spot seru untuk keluarga, terutama
+							anak-anak.</p>
+					</div>
+					<div class="col-md">
+						<img src="aset/image/bx-rink.jpg" width="100%">
+					</div>
+					<div class="col-md">
+						<h4>Bertanding hoki es di Bx-Rink</h4>
+						<p>BX Rink adalah tempat terbaik untuk menghabiskan hari-hari Anda bersama keluarga. Terletak di
+							Tangerang Selatan, Banten. Bergabunglah bersama kami sekarang dan rasakan suasananya</p>
+					</div>
+				</div>
+				<div class="row mt-3 bg-warning p-5">
+					<div class="col-md">
+						<!--  https://www.tripzilla.id/tempat-wisata-di-tangerang/12755. -->
+						<img src="aset/image/tamankunci.jpg" width="100%">
+					</div>
+					<div class="col-md">
+						<h3>Taman Kunci Yang INSTAGRAMMABLE</h3>
+						<p>Taman Kunci merupakan salah satu destinasi wisata edukatif yang menarik. Berada di Jl. MH
+							Thamrin, Cikokol, taman ini terletak di seberang Taman Potret dan Tangcity Mall. Dengan luas
+							mencapai 8.000 meter persegi, taman ini menawarkan suasana asri dengan pohon-pohon rindang
+							dan beberapa tempat duduk tempat bersantai. Taman Kunci membuat suasana kota sedikit lebih
+							hijau dengan ekosistem taman yang seperti itu.</p>
+					</div>
+				</div>
+				<div class="row mt-3 p-5 ">
+					<div class="col-md">
+						<h3>Taman Potret Yang Ikonik</h3>
+						<p>Taman ini merupakan 1 dari 26 taman yang ada di dalam kota tangerang. Taman ini sangat aktif
+							di kunjungi pengunjung lokal mulai dari anak-anak, keluarga, muda mudi dan lansia. Taman
+							biasanya mulai rame pengunjung pada sore hari.Taman Potret adalah taman tematik yang penuh
+							ikon spot untuk foto agar terlihat Instagramable Di Taman indah ini pengunjung di sambut
+							oleh patung penari lenggang dengan dominasi warna merah. Patung ini sekaligus sebagai
+							penanda area taman ini. Tepat di depan penari Lenggang tersebut terdapat sederet huruf yang
+							bertuliskan Taman Potret.bp</p>
+					</div>
+					<div class="col-md">
+						<!--  https://www.tribunnews.com/metropolitan/2019/11/24/7-destinasi-wisata-kota-tangerang-yang-tak-boleh-kamu-lewati. -->
+						<img src="aset/image/tamanpotret.jfif" width="100%">
 					</div>
 				</div>
 			</div>
+		</div>
 	</section>
 	<!-- Akhir WISATA -->
 
@@ -411,7 +480,9 @@
 				</div>
 				<div class="col-md bg-warning p-5">
 					<h4>Pecak Bandeng</h4>
-					<p class="lead" style="font-size: 20px">pecak bandeng merupakan makanan yang terbuat dari bahan dasar ikan bandeng. daya tarik dari makanan ini adalah sambal pecaknya yang membuat setiap orang yang sudah mencicipi makanan ini akan ketagihan.</p>
+					<p class="lead" style="font-size: 20px">pecak bandeng merupakan makanan yang terbuat dari bahan
+						dasar ikan bandeng. daya tarik dari makanan ini adalah sambal pecaknya yang membuat setiap orang
+						yang sudah mencicipi makanan ini akan ketagihan.</p>
 				</div>
 			</div>
 			<div class="row text-light mt-3">
@@ -421,7 +492,8 @@
 				</div>
 				<div class="col-md bg-ungu p-4">
 					<h5>Kue Apem</h5>
-					<p>Apem adalah kue yang terbuat dari tepung beras yang didiamkan semalam dengan mencamourkan telur santan, gula, dan tape serta sedikit garam kemudian dibakar atau dikukus.</p>
+					<p>Apem adalah kue yang terbuat dari tepung beras yang didiamkan semalam dengan mencamourkan telur
+						santan, gula, dan tape serta sedikit garam kemudian dibakar atau dikukus.</p>
 				</div>
 				<div class="col-md">
 					<!--  https://pesona.travel/keajaiban/4729/kue-pasung-si-kerucut-yang-menggoyang-lidah -->
@@ -429,7 +501,8 @@
 				</div>
 				<div class="col-md bg-ungu p-4">
 					<h5>Pasung Merah</h5>
-					<p>Kue Pasung merah adalah kue yang terbuat dari tepung beras yang dicampur dengan gula merah kemudian dibungkus menggunakan daun pisang dan digulung menyerupai terompet.</p>
+					<p>Kue Pasung merah adalah kue yang terbuat dari tepung beras yang dicampur dengan gula merah
+						kemudian dibungkus menggunakan daun pisang dan digulung menyerupai terompet.</p>
 				</div>
 			</div>
 			<div class="row mt-3 text-light">
@@ -439,7 +512,10 @@
 				</div>
 				<div class="col-md bg-warning p-5">
 					<h4>Pecak Gabus</h4>
-					<p style="font-size: 20px;">Pecak gabus yang disajikan dalam piring oval dan kuahanya yang bening kemerahan. Aroma segar cabai dan gurih ikan tercium lamat-lamat. Ikan gabus yang dibelah membujur dan digoreng nyaris tak terlihat. Permukaanya ditutupi potongan belimbng sayur, tomat muda, daun kemangi dan beragam bumbu ulek. pasti akan memanjakan lidah.</p>
+					<p style="font-size: 20px;">Pecak gabus yang disajikan dalam piring oval dan kuahanya yang bening
+						kemerahan. Aroma segar cabai dan gurih ikan tercium lamat-lamat. Ikan gabus yang dibelah
+						membujur dan digoreng nyaris tak terlihat. Permukaanya ditutupi potongan belimbng sayur, tomat
+						muda, daun kemangi dan beragam bumbu ulek. pasti akan memanjakan lidah.</p>
 				</div>
 			</div>
 			<div class="row text-light mt-3">
@@ -456,7 +532,8 @@
 				</div>
 				<div class="col-md bg-ungu p-4">
 					<h5>Gecom</h5>
-					<p>Gecom merupakan makanan yang memiliki singkatan cukup unik makanan ini berasal dari Toge dan Oncom </p>
+					<p>Gecom merupakan makanan yang memiliki singkatan cukup unik makanan ini berasal dari Toge dan
+						Oncom </p>
 				</div>
 			</div>
 		</div>
@@ -469,25 +546,30 @@
 			<div class="row">
 				<div class="col-md">
 					<h1>DISTANG</h1>
-					<p class="lead">Temukan Berbagai Referensi Kebudayaan Tangerang disini, dan bagikan pengalaman mu kepada orang lain </p>
+					<p class="lead">Temukan Berbagai Referensi Kebudayaan Tangerang disini, dan bagikan pengalaman mu
+						kepada orang lain </p>
 				</div>
 				<div class="col-md">
 					<h2>TEMUKAN INFO LAINNYA</h2>
-					<p class="lead">Bergabunglah dengan sosial media tangerang untuk menemukan seputar informasi terbaru tentang Tangerang. Dengan komunitas dan sosialisasi, Tangerang menjadi lebih indah</p>
-					<h3 style="letter-spacing: 12px"><i class="fa fa-facebook"></i> <i class="fa fa-camera"> <i class="fa fa-map-marker"> <i class="fa fa-coffee"></i></i></i></h3>
+					<p class="lead">Bergabunglah dengan sosial media tangerang untuk menemukan seputar informasi terbaru
+						tentang Tangerang. Dengan komunitas dan sosialisasi, Tangerang menjadi lebih indah</p>
+					<h3 style="letter-spacing: 12px"><i class="fa fa-facebook"></i> <i class="fa fa-camera"> <i
+								class="fa fa-map-marker"> <i class="fa fa-coffee"></i></i></i></h3>
 				</div>
 				<div class="col-md">
 					<h2>KOMENTAR</h2>
 					<form>
-					  <div class="form-group">
-					    <label for="exampleInputEmail1">Alamat Email</label>
-					    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="contoh@gmail.com" aria-describedby="emailHelp">
-					  </div>
-					  <div class="form-group">
-					    <label for="exampleInputPassword1">Komentar</label>
-					    <textarea class="form-control" placeholder="*Berkomentarlah sesuai kebijakan dan sopan"></textarea>
-					  </div>
-					  <button type="submit" class="btn btn-primary">Submit</button>
+						<div class="form-group">
+							<label for="exampleInputEmail1">Alamat Email</label>
+							<input type="email" class="form-control" id="exampleInputEmail1"
+								placeholder="contoh@gmail.com" aria-describedby="emailHelp">
+						</div>
+						<div class="form-group">
+							<label for="exampleInputPassword1">Komentar</label>
+							<textarea class="form-control"
+								placeholder="*Berkomentarlah sesuai kebijakan dan sopan"></textarea>
+						</div>
+						<button type="submit" class="btn btn-primary">Submit</button>
 					</form>
 				</div>
 			</div>
@@ -495,7 +577,19 @@
 	</div>
 	<!-- Akhir Footer -->
 
+	<!-- Java enable copas text -->
+	<script>
+		document.addEventListener('contextmenu', function (e) {
+			e.preventDefault();
+		});
+		document.addEventListener('keydown', function (e) {
+			if (e.ctrlKey && (e.key === 'a' || e.key === 'c')) {
+				e.preventDefault();
+			}
+		});
+	</script>
 
+	<!-- End Java -->
 
 	<script type="text/javascript" src="aset/bootstrap/js/jquery.js"></script>
 	<script type="text/javascript" src="aset/bootstrap/js/bootstrap.min.js"></script>
@@ -503,4 +597,5 @@
 	<script type="text/javascript" src="aset/bootstrap/js/script.js"></script>
 
 </body>
+
 </html>

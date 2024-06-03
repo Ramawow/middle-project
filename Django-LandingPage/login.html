@@ -1,38 +1,62 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<title>Login</title>
 	<link rel="stylesheet" type="text/css" href="aset/style.css">
 	<script type="text/javascript">
-	function login(){
-		var nam = document.formm.username.value;
-		var pass = document.formm.password.value;
+		function login() {
+			var nam = document.formm.username.value;
+			var pass = document.formm.password.value;
 
-		if (nam =="admin") {
-			if (pass =="admin") {
-				alert("Selamat Datang "+nam);
-				location.replace("index.html");
-			}else{
-				alert('Password Salah');
+			if (nam == "admin") {
+				if (pass == "admin") {
+					alert("Selamat Datang " + nam);
+					location.replace("index.html");
+				} else {
+					alert('Password Salah');
+				}
+			} else {
+				alert('Username Salah');
 			}
-		}else{
-			alert('Username Salah');
 		}
-	}
-</script>
+	</script>
 </head>
-<body>
+
+<!-- return false Tidak bisa klik kanan, ctrl A & C -->
+
+<body oncontextmenu="return false" onselectstart="return false"
+	onkeydown="if ((arguments[0] || window.event).ctrlKey) return false">
+
+	<!-- End -->
 
 	<div class="container">
 		<div class="login">
 			<h1>Selamat Datang</h1>
 			<form name="formm">
-				<input class="inputan" type="text" name="username" placeholder="Masukan Username" autocomplete="off"><br>
-				<input class="inputan" type="password" name="password" placeholder="Masukan password" autocomplete="off"><br>
+				<input class="inputan" type="text" name="username" placeholder="Masukan Username"
+					autocomplete="off"><br>
+				<input class="inputan" type="password" name="password" placeholder="Masukan password"
+					autocomplete="off"><br>
 				<input type='button' value="Login" class="button" onclick="login()">
 			</form>
 		</div>
 	</div>
 
+	<!-- Java enable copas text -->
+	<script>
+		document.addEventListener('contextmenu', function (e) {
+			e.preventDefault();
+		});
+		document.addEventListener('keydown', function (e) {
+			if (e.ctrlKey && (e.key === 'a' || e.key === 'c')) {
+				e.preventDefault();
+			}
+		});
+	</script>
+
+	<!-- End Java -->
+
 </body>
+
 </html>

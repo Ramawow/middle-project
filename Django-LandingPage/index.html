@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html id="home">
+
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -8,27 +9,34 @@
 	<link rel="stylesheet" type="text/css" href="aset/css/style.css">
 	<title></title>
 </head>
-<body>
+
+<!-- return false Tidak bisa klik kanan, ctrl A & C -->
+
+<body oncontextmenu="return false" onselectstart="return false"
+	onkeydown="if ((arguments[0] || window.event).ctrlKey) return false">
+
+	<!-- End -->
 
 
 	<!-- Awal Navbar =============================== -->
 	<nav class="navbar navbar-expand-lg navbar-merah shadow-md fixed-top">
 		<div class="container">
-		  <a class="navbar-brand page-scroll" href="#home">DJANGO'S</a>
-		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-		    <span class="fa fa-bars text-light"></span>
-		  </button>
-		  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-			  <div class="navbar-nav ml-auto">
-			    <a class="nav-item nav-link active page-scroll" href="#tentang">TENTANG</a>
-			    <a class="nav-item nav-link active page-scroll" href="#kece">KECE & STYLISH</a>
-			    <a class="nav-item nav-link active page-scroll" href="#promo">PROMO</a>
-			    <a class="nav-item nav-link active page-scroll" href="#">KEKINIAN</a>
-			    <a class="nav-item nav-link active page-scroll" href="login.html">LOGIN</a>
-			  </div>
+			<a class="navbar-brand page-scroll" href="#home">DJANGO'S</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+				aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="fa fa-bars text-light"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+				<div class="navbar-nav ml-auto">
+					<a class="nav-item nav-link active page-scroll" href="#tentang">TENTANG</a>
+					<a class="nav-item nav-link active page-scroll" href="#kece">KECE & STYLISH</a>
+					<a class="nav-item nav-link active page-scroll" href="#promo">PROMO</a>
+					<a class="nav-item nav-link active page-scroll" href="#">KEKINIAN</a>
+					<a class="nav-item nav-link active page-scroll" href="login.html">LOGIN</a>
+				</div>
 			</div>
-		  </div>
-		</nav>
+		</div>
+	</nav>
 	</nav>
 	<!-- Akhir Navbar ============================== -->
 
@@ -51,7 +59,10 @@
 				<div class="col-md"><img src="img/tentang.jpg" class="img-tentang" width="100%"></div>
 				<div class="col-md p-5">
 					<h1>Selamat Datang Di DJANGO'S</h1>
-					<p class="lead">Kami Menyediakan berbagai jenis outfit trendy dan menarik khususnya untuk kaum muda yang selalu mengikuti modernisasi dan perkembangan zaman. Maka dari itu, DJANGO'S menjawab semua kebutuuhan mengenai tampilan dan busana untuk kamu yang ingin terkihat kece di setiap saat dan di setiap tempat </p>
+					<p class="lead">Kami Menyediakan berbagai jenis outfit trendy dan menarik khususnya untuk kaum muda
+						yang selalu mengikuti modernisasi dan perkembangan zaman. Maka dari itu, DJANGO'S menjawab semua
+						kebutuuhan mengenai tampilan dan busana untuk kamu yang ingin terkihat kece di setiap saat dan
+						di setiap tempat </p>
 				</div>
 			</div>
 			<div class="container mt-medium">
@@ -77,16 +88,21 @@
 				<div class="row mt-5 text-center">
 					<div class="col-md card bg-warning text-light p-2 mx-2 my-2 reason1">
 						<h3>Pengguna Baru ?</h3><br>
-						<p class="lead">Bagi kamu pengguna baru, silahkan login terlebih dahulu untuk dapat melakukan pembelian dan pembayaran. Akun kamu di jamin aman 100% oleh sistem pembayaran DJANGO'S</p>
+						<p class="lead">Bagi kamu pengguna baru, silahkan login terlebih dahulu untuk dapat melakukan
+							pembelian dan pembayaran. Akun kamu di jamin aman 100% oleh sistem pembayaran DJANGO'S</p>
 						<a href="#" class="button">LOGIN</a>
 					</div>
 					<div class="col-md card bg-danger text-light p-2 mx-2 my-2 reason2">
 						<h3> Promo setiap saat </h3><br>
-						<p class="lead">Dapatkan even menarik dari kami dan dapatkan promonya. menagkan cashback senilai <b>50%</b> dengan mengikuti even yang di sediakan setiap harinya</p>
+						<p class="lead">Dapatkan even menarik dari kami dan dapatkan promonya. menagkan cashback senilai
+							<b>50%</b> dengan mengikuti even yang di sediakan setiap harinya
+						</p>
 					</div>
 					<div class="col-md card text-light bg-info p-2 mx-2 my-2 reason3">
 						<h3>Dapatkan hadiah menarik</h3><br>
-						<p class="lead">Melalui even yang di selenggarakan setiap bulan, kamu dapat mengambil hadiah mu berupa 3 unit mobil <b> Mercedes-bens SLS AMG , 2 Unit Motor CBR-200 , Iphone 11, dan uang tunai senilai Rp.500 juta</b></p>
+						<p class="lead">Melalui even yang di selenggarakan setiap bulan, kamu dapat mengambil hadiah mu
+							berupa 3 unit mobil <b> Mercedes-bens SLS AMG , 2 Unit Motor CBR-200 , Iphone 11, dan uang
+								tunai senilai Rp.500 juta</b></p>
 					</div>
 				</div>
 			</div>
@@ -98,15 +114,18 @@
 	<!-- Awal Kece dan stylish ================== -->
 	<section id="kece">
 		<div class="container mt-super parallax-kece p-3">
-		<h1 class="text-light">KECE & STYLISH</h1>
-		<p class="lead text-light"><i>Warnai Hari mu dengan tampilan yang kekinian dan modis</i></p>
+			<h1 class="text-light">KECE & STYLISH</h1>
+			<p class="lead text-light"><i>Warnai Hari mu dengan tampilan yang kekinian dan modis</i></p>
 			<div class="row mt-4 text-dark">
 				<div class="col-md-5">
 					<img src="img/kece_stylish.jpg" width="100%">
 				</div>
 				<div class="col-md p-4">
 					<h3><i>Selamat datang Di galeri KECE DAN STYLISH</i></h3>
-					<p class="lead">Mau terlihat modis di manapun dan kapan pun? Kami punya solusi untuk itu. Jika kamu datang di halaman ini, maka kamu termasuk orang yang beruntung. Karena apa? karena pada galeri ini, kamu akan menemukan setumpuk outfit yang pas dengan apa yang kamu inginkan. Jadi, tunggu apa lagi? <i>Keep Scrolling</i>,dan temukan apa yang kamu suka!</p>
+					<p class="lead">Mau terlihat modis di manapun dan kapan pun? Kami punya solusi untuk itu. Jika kamu
+						datang di halaman ini, maka kamu termasuk orang yang beruntung. Karena apa? karena pada galeri
+						ini, kamu akan menemukan setumpuk outfit yang pas dengan apa yang kamu inginkan. Jadi, tunggu
+						apa lagi? <i>Keep Scrolling</i>,dan temukan apa yang kamu suka!</p>
 					<a href="#" class="button2">SELENGKAPNYA</a>
 				</div>
 			</div>
@@ -122,71 +141,79 @@
 			<h1 class="mt-super">PROMO</h1>
 			<p class="lead mb-5">Dapatkan kasual yang pas dengan mu tanpa membuat nangis isi dompet mu</p>
 			<center>
-			<div class="row">
-				<div class="col-md">
-					<div class="card mt-3" style="width: 18rem;">
-					  <img src="img/promo.jpg" class="card-img-top" alt="...">
-					  <div class="card-body">
-					    <h5 class="card-title">Gradient Outfit</h5>
-					    <p class="card-text">IDR.250.000</p>
-					    <a href="#" class="btn btn-danger"><i class="fa fa-cart-plus"></i> Tambahkan ke Troli</a>
-					  </div>
+				<div class="row">
+					<div class="col-md">
+						<div class="card mt-3" style="width: 18rem;">
+							<img src="img/promo.jpg" class="card-img-top" alt="...">
+							<div class="card-body">
+								<h5 class="card-title">Gradient Outfit</h5>
+								<p class="card-text">IDR.250.000</p>
+								<a href="#" class="btn btn-danger"><i class="fa fa-cart-plus"></i> Tambahkan ke
+									Troli</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-md">
+						<div class="card mt-3" style="width: 18rem;">
+							<img src="img/promo1.jpg" class="card-img-top" alt="...">
+							<div class="card-body">
+								<h5 class="card-title">White Uniform</h5>
+								<p class="card-text">IDR.300.000</p>
+								<a href="#" class="btn btn-danger"><i class="fa fa-cart-plus"></i> Tambahkan ke
+									Troli</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-md">
+						<div class="card mt-3" style="width: 18rem;">
+							<img src="img/promo2.jpg" class="card-img-top" alt="...">
+							<div class="card-body">
+								<h5 class="card-title">Red gausion Outfit</h5>
+								<p class="card-text">IDR.620.000</p>
+								<a href="#" class="btn btn-danger"><i class="fa fa-cart-plus"></i> Tambahkan ke
+									Troli</a>
+							</div>
+						</div>
 					</div>
 				</div>
-				<div class="col-md">
-					<div class="card mt-3" style="width: 18rem;">
-					  <img src="img/promo1.jpg" class="card-img-top" alt="...">
-					  <div class="card-body">
-					    <h5 class="card-title">White Uniform</h5>
-					    <p class="card-text">IDR.300.000</p>
-					    <a href="#" class="btn btn-danger"><i class="fa fa-cart-plus"></i> Tambahkan ke Troli</a>
-					  </div>
+				<div class="row">
+					<div class="col-md">
+						<div class="card mt-3" style="width: 18rem;">
+							<img src="img/promo4.jpg" class="card-img-top" alt="...">
+							<div class="card-body">
+								<h5 class="card-title">Style Muslim Al-aqsa</h5>
+								<p class="card-text">IDR.90.000</p>
+								<a href="#" class="btn btn-danger"><i class="fa fa-cart-plus"></i> Tambahkan ke
+									Troli</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-md">
+						<div class="card mt-3" style="width: 18rem;">
+							<img src="img/promo6.jpg" class="card-img-top" alt="...">
+							<div class="card-body">
+								<h5 class="card-title">Supreme Business girls</h5>
+								<p class="card-text">IDR.250.000</p>
+								<a href="#" class="btn btn-danger"><i class="fa fa-cart-plus"></i> Tambahkan ke
+									Troli</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-md">
+						<div class="card mt-3" style="width: 18rem;">
+							<img src="img/promo3.jpg" class="card-img-top" alt="...">
+							<div class="card-body">
+								<h5 class="card-title">Mini Outfit for girl</h5>
+								<p class="card-text">IDR.500.000</p>
+								<a href="#" class="btn btn-danger"><i class="fa fa-cart-plus"></i> Tambahkan ke
+									Troli</a>
+							</div>
+						</div>
 					</div>
 				</div>
-				<div class="col-md">
-					<div class="card mt-3" style="width: 18rem;">
-					  <img src="img/promo2.jpg" class="card-img-top" alt="...">
-					  <div class="card-body">
-					    <h5 class="card-title">Red gausion Outfit</h5>
-					    <p class="card-text">IDR.620.000</p>
-					    <a href="#" class="btn btn-danger"><i class="fa fa-cart-plus"></i> Tambahkan ke Troli</a>
-					  </div>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md">
-					<div class="card mt-3" style="width: 18rem;">
-					  <img src="img/promo4.jpg" class="card-img-top" alt="...">
-					  <div class="card-body">
-					    <h5 class="card-title">Style Muslim Al-aqsa</h5>
-					    <p class="card-text">IDR.90.000</p>
-					    <a href="#" class="btn btn-danger"><i class="fa fa-cart-plus"></i> Tambahkan ke Troli</a>
-					  </div>
-					</div>
-				</div>
-				<div class="col-md">
-					<div class="card mt-3" style="width: 18rem;">
-					  <img src="img/promo6.jpg" class="card-img-top" alt="...">
-					  <div class="card-body">
-					    <h5 class="card-title">Supreme Business girls</h5>
-					    <p class="card-text">IDR.250.000</p>
-					    <a href="#" class="btn btn-danger"><i class="fa fa-cart-plus"></i> Tambahkan ke Troli</a>
-					  </div>
-					</div>
-				</div>
-				<div class="col-md">
-					<div class="card mt-3" style="width: 18rem;">
-					  <img src="img/promo3.jpg" class="card-img-top" alt="...">
-					  <div class="card-body">
-					    <h5 class="card-title">Mini Outfit for girl</h5>
-					    <p class="card-text">IDR.500.000</p>
-					    <a href="#" class="btn btn-danger"><i class="fa fa-cart-plus"></i> Tambahkan ke Troli</a>
-					  </div>
-					</div>
-				</div>
-			</div>
-			<a href="#" class="nav-item nav-link"><h6>Kunjungi Laman Promo Selengkapnya >></h6></a>
+				<a href="#" class="nav-item nav-link">
+					<h6>Kunjungi Laman Promo Selengkapnya >></h6>
+				</a>
 			</center>
 		</div>
 	</section>
@@ -204,18 +231,18 @@
 
 
 	<!-- Awal Footer ============================ -->
-	<div class="bg-danger mt-super p-5" >
+	<div class="bg-danger mt-super p-5">
 		<div class="container text-light">
 			<div class="row">
 				<div class="col-md">
 					<h1>JOIN US</h1>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua.</p>
+						tempor incididunt ut labore et dolore magna aliqua.</p>
 				</div>
 				<div class="col-md">
 					<h1>CONTACT US</h1>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua.</p><br>
+						tempor incididunt ut labore et dolore magna aliqua.</p><br>
 					<h3 style="word-spacing: 10px">
 						<i class="fa fa-facebook-square"></i>
 						<i class="fa fa-whatsapp"></i>
@@ -226,19 +253,22 @@
 				<div class="col-md">
 					<h1>COMMENT</h1>
 					<form class="p-2">
-					  <div class="form-group">
-					    <label for="exampleInputEmail1">Alamat Email</label>
-					    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-					  </div>
-					  <div class="form-group">
-					    <label for="exampleInputPassword1">Komentar</label>
-					    <textarea class="form-control"></textarea>
-					  </div><br>
-					  <a href="#" class="button2">KIRIM</a>
+						<div class="form-group">
+							<label for="exampleInputEmail1">Alamat Email</label>
+							<input type="email" class="form-control" id="exampleInputEmail1"
+								aria-describedby="emailHelp">
+						</div>
+						<div class="form-group">
+							<label for="exampleInputPassword1">Komentar</label>
+							<textarea class="form-control"></textarea>
+						</div><br>
+						<a href="#" class="button2">KIRIM</a>
 					</form>
 				</div>
 			</div>
-				<p class="text-center">Copyright &copy; 2020 Sabiilul hikam - Ilham Aryasa</p>
+			<p class="text-center">Copyright &copy; 2020 by <a
+					style="color: aliceblue; font-size: large; font-weight: bold; text-decoration: none;"
+					href="https://instagram.com/muhammadramadhantaufiq">Ramawow</a></p>
 		</div>
 	</div>
 	<!-- Akhir footer =========================== -->
@@ -247,7 +277,19 @@
 
 
 
+	<!-- Java enable copas text -->
+	<script>
+		document.addEventListener('contextmenu', function (e) {
+			e.preventDefault();
+		});
+		document.addEventListener('keydown', function (e) {
+			if (e.ctrlKey && (e.key === 'a' || e.key === 'c')) {
+				e.preventDefault();
+			}
+		});
+	</script>
 
+	<!-- End Java -->
 
 
 	<!-- Javascript file ============================-->
@@ -257,4 +299,5 @@
 	<script type="text/javascript" src="aset/js/script.js"></script>
 	<!-- =========================================== -->
 </body>
+
 </html>
