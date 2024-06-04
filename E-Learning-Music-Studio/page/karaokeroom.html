@@ -1,13 +1,39 @@
 <html>
 <link rel="stylesheet" type="text/css" href="../css/isi-konten.css" />
-<body>
-<h1>Karaoke Room</h1>
-<h2><center>Fear, and Loathing in Las Vegas - Stay as who you are / short.</center></h2>
+
+<!-- return false Tidak bisa klik kanan, ctrl A & C -->
+
+<body oncontextmenu="return false" onselectstart="return false"
+	onkeydown="if ((arguments[0] || window.event).ctrlKey) return false">
+
+	<!-- End -->
+
+	<h1>Karaoke Room</h1>
+	<h2>
+		<center>Fear, and Loathing in Las Vegas - Stay as who you are / short.</center>
+	</h2>
 	<video width="530" height="190" controls>
 		<source src="../song/falilv_stay_as_who_you_are_short.mp4" type="video/mp4">
 		Browsernya tidak support dengan tag video.
 	</video>
-	<h2><center>Behind the Lyric :</center></h2>
-	<iframe src="../song/falilv_stay_as_who_you_are_short.txt" width="100%" frameborder="0" height="360" name="maknalyrics"></iframe>
+	<h2>
+		<center>Behind the Lyric :</center>
+	</h2>
+	<iframe src="../song/falilv_stay_as_who_you_are_short.txt" width="100%" frameborder="0" height="360"
+		name="maknalyrics"></iframe>
+	<!-- Java enable copas text -->
+	<script>
+		document.addEventListener('contextmenu', function (e) {
+			e.preventDefault();
+		});
+		document.addEventListener('keydown', function (e) {
+			if (e.ctrlKey && (e.key === 'a' || e.key === 'c')) {
+				e.preventDefault();
+			}
+		});
+	</script>
+
+	<!-- End Java -->
 </body>
+
 </html>

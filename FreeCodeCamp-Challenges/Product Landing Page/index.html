@@ -14,7 +14,12 @@
   <title>Product Landing Page</title>
 </head>
 
-<body id="home">
+<!-- return false Tidak bisa klik kanan, ctrl A & C -->
+
+<body id="home" oncontextmenu="return false" onselectstart="return false"
+  onkeydown="if ((arguments[0] || window.event).ctrlKey) return false">
+
+  <!-- End -->
 
   <header id="header">
     <nav class="nav-head" id="nav-bar">
@@ -122,9 +127,23 @@
       </ul>
     </div>
     <div class="copyright">
-      <p>&copy;2021, T-Shirt Store - Made by Ardhi Putra Pradana</p>
+      <p>&copy;2021, T-Shirt Store - Made by Ramawow</p>
     </div>
   </footer>
+
+  <!-- Java enable copas text -->
+  <script>
+    document.addEventListener('contextmenu', function (e) {
+      e.preventDefault();
+    });
+    document.addEventListener('keydown', function (e) {
+      if (e.ctrlKey && (e.key === 'a' || e.key === 'c')) {
+        e.preventDefault();
+      }
+    });
+  </script>
+
+  <!-- End Java -->
 </body>
 
 </html>

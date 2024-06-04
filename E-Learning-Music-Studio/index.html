@@ -1,10 +1,18 @@
 <html>
+
 <head>
 	<title>E-Learning Music Studio</title>
 	<link rel="stylesheet" href="css/style.css" />
 	<link rel="icon" href="img/music_icon.png" />
 </head>
-<body>
+
+<!-- return false Tidak bisa klik kanan, ctrl A & C -->
+
+<body oncontextmenu="return false" onselectstart="return false"
+	onkeydown="if ((arguments[0] || window.event).ctrlKey) return false">
+
+	<!-- End -->
+
 	<div id="body">
 		<!-- HEADER -->
 		<div id="header">
@@ -12,76 +20,93 @@
 			<div id="header2">
 				<div class="rapih"></div>
 				<div class="link-kontak">
-					<a href="http://fb.me/Ravnui.Embassy.us" target="_blank"><img src="img/kontak/facebook.png" width="24" height="24"></a>
-					<a href="http://twitter.com/Syndrom2211" target="_blank"><img src="img/kontak/twitter.png" width="24" height="24"></a>
-					<a href="http://soundcloud.com/firdammitulz" target="_blank"><img src="img/kontak/soundcloud.png" width="24" height="24"></a>
-					<a href="http://youtube.com/user/bangfirdam" target="_blank"><img src="img/kontak/youtube.png" width="24" height="24"></a>
+					<a href="http://fb.me/Ravnui.Embassy.us" target="_blank"><img src="img/kontak/facebook.png"
+							width="24" height="24"></a>
+					<a href="http://twitter.com/Syndrom2211" target="_blank"><img src="img/kontak/twitter.png"
+							width="24" height="24"></a>
+					<a href="http://soundcloud.com/firdammitulz" target="_blank"><img src="img/kontak/soundcloud.png"
+							width="24" height="24"></a>
+					<a href="http://youtube.com/user/bangfirdam" target="_blank"><img src="img/kontak/youtube.png"
+							width="24" height="24"></a>
 				</div>
 				<div class="refresh">
-					<input type="submit" name="proses" value="Refresh Halaman" style="font-weight:bold; font-family:calibri; font-size:14px" onClick="location.reload(true);" />
+					<input type="submit" name="proses" value="Refresh Halaman"
+						style="font-weight:bold; font-family:calibri; font-size:14px"
+						onClick="location.reload(true);" />
 				</div>
-				<div class="rapih"></div>				
+				<div class="rapih"></div>
 			</div>
-			
+
 			<!-- JUDUL WEBSITE -->
 			<div id="judul">
 				<h1><a href="index.html">E-Learning Music Studio</a></h1>
 				<h2>Web yang menyediakan berbagai macam pembelajaran tentang musik</h2>
-			</div>	
+			</div>
 
-		<!-- MENU NAVIGASI-->
-		<div id="menu">
-			<table cellpadding="0" cellspacing="0">
-			<tr>
-				<td valign="top">
-					<ul id="menu2">
-						<li><img style="padding:2px;border-right:1px dotted #333;" src="img/music_icon.png" /></li>
-						<li><a href="page/beranda.html" target="halaman">Beranda</a></li>
-						<li><a href="#">Digital Audio Workstation</a>
-							<ul>
-								<li class="cubase"><a href="page/daw/cubase.html" target="halaman">Cubase</a></li>
-								<li class="flstudio"><a href="page/daw/flstudio.html" target="halaman">FL Studio</a></li>
-								<li class="ableton"><a href="page/daw/ableton.html" target="halaman">Ableton</a></li>
-								<li class="reaper"><a href="page/daw/reaper.html" target="halaman">Reaper</a></li>
-								<li class="sonar"><a href="page/daw/sonar.html" target="halaman">Sonar</a></li>
-								<li class="protools"><a href="page/daw/protools.html" target="halaman">Pro Tools</a></li>
+			<!-- MENU NAVIGASI-->
+			<div id="menu">
+				<table cellpadding="0" cellspacing="0">
+					<tr>
+						<td valign="top">
+							<ul id="menu2">
+								<li><img style="padding:2px;border-right:1px dotted #333;" src="img/music_icon.png" />
+								</li>
+								<li><a href="page/beranda.html" target="halaman">Beranda</a></li>
+								<li><a href="#">Digital Audio Workstation</a>
+									<ul>
+										<li class="cubase"><a href="page/daw/cubase.html" target="halaman">Cubase</a>
+										</li>
+										<li class="flstudio"><a href="page/daw/flstudio.html" target="halaman">FL
+												Studio</a></li>
+										<li class="ableton"><a href="page/daw/ableton.html" target="halaman">Ableton</a>
+										</li>
+										<li class="reaper"><a href="page/daw/reaper.html" target="halaman">Reaper</a>
+										</li>
+										<li class="sonar"><a href="page/daw/sonar.html" target="halaman">Sonar</a></li>
+										<li class="protools"><a href="page/daw/protools.html" target="halaman">Pro
+												Tools</a></li>
+									</ul>
+								</li>
+								<li><a href="#">Digital Tablature</a>
+									<ul>
+										<li class="tuxguitar"><a href="page/tab/tuxguitar.html" target="halaman">Tux
+												Guitar</a></li>
+										<li class="guitarpro"><a href="page/tab/guitarpro.html" target="halaman">Guitar
+												Pro</a></li>
+										<li class="powertab"><a href="page/tab/powertab.html" target="halaman">Power
+												Tab</a></li>
+									</ul>
+								</li>
+								<li><a href="#">Midi Controller</a>
+									<ul>
+										<li class="keyboard"><a href="page/midi/keyboard.html"
+												target="halaman">Keyboard</a></li>
+										<li class="guitar"><a href="page/midi/guitar.html" target="halaman">Guitar</a>
+										</li>
+										<li class="drum"><a href="page/midi/drum.html" target="halaman">Drum</a></li>
+										<li class="pad"><a href="page/midi/pad.html" target="halaman">PAD</a></li>
+										<li class="dj"><a href="page/midi/dj.html" target="halaman">Disk Jockey</a></li>
+										<li class="mixer"><a href="page/midi/mixer.html" target="halaman">Mixer</a></li>
+									</ul>
+								</li>
+								<li><a href="page/karaokeroom.html" target="halaman">Karaoke Room</a></li>
 							</ul>
-						</li>
-						<li><a href="#">Digital Tablature</a>
-							<ul>
-								<li class="tuxguitar"><a href="page/tab/tuxguitar.html" target="halaman">Tux Guitar</a></li>
-								<li class="guitarpro"><a href="page/tab/guitarpro.html" target="halaman">Guitar Pro</a></li>
-								<li class="powertab"><a href="page/tab/powertab.html" target="halaman">Power Tab</a></li>
-							</ul>
-						</li>
-						<li><a href="#">Midi Controller</a>
-							<ul>
-								<li class="keyboard"><a href="page/midi/keyboard.html" target="halaman">Keyboard</a></li>
-								<li class="guitar"><a href="page/midi/guitar.html" target="halaman">Guitar</a></li>
-								<li class="drum"><a href="page/midi/drum.html" target="halaman">Drum</a></li>
-								<li class="pad"><a href="page/midi/pad.html" target="halaman">PAD</a></li>
-								<li class="dj"><a href="page/midi/dj.html" target="halaman">Disk Jockey</a></li>
-								<li class="mixer"><a href="page/midi/mixer.html" target="halaman">Mixer</a></li>
-							</ul>
-						</li>
-						<li><a href="page/karaokeroom.html" target="halaman">Karaoke Room</a></li>
-					</ul>
-				</td>
-			</tr>
-			</table>
-		</div>
+						</td>
+					</tr>
+				</table>
+			</div>
 		</div>
 
 		<div style="background:#000;height:10px;opacity:0.7;"></div>
 		<div class="rapih"></div>
-		
+
 		<!-- SIDEBAR KIRI -->
 		<div id="sidebarkiri">
 			<div class="headerwidget">Advertisement</div>
 			<div class="boxwidget">
 				<img src="img/ads.gif" width="185px" />
 			</div>
-			
+
 			<div class="headerwidget">Vocal Processing</div>
 			<div class="boxwidget">
 				<li><a href="page/voc-proc/teknik-mikro1.html" target="halaman">Teknik Mikrofon Untuk Vokal</a></li>
@@ -89,14 +114,14 @@
 				<li><a href="page/voc-proc/teknikvoc.html" target="halaman">Teknik Vocal </a></li>
 			</div>
 		</div>
-		
+
 		<!-- ISI KONTENT -->
 		<div id="isi">
 			<div class="boxwidget2">
 				<iframe width="100%" name="halaman" src="page/beranda.html" frameborder="0" height="700"></iframe>
 			</div>
 		</div>
-		
+
 		<!-- SIDEBAR KANAN -->
 		<div id="sidebarkanan">
 			<div class="headerwidget">Mengenal Teknik Audio</div>
@@ -105,23 +130,39 @@
 				<li><a href="page/teknik/teknik-mastering.html" target="halaman">Apa itu Mastering ?</a></li>
 				<li><a href="page/teknik/equalizer.html" target="halaman">Apa itu Equalizer ?</a></li>
 			</div>
-			
+
 			<div class="headerwidget">Media Partner</div>
 			<div class="boxwidget">
-			<center>
-				<img src="img/partner/cubase.jpg" width="180px" /><br/><br/>
-				<img src="img/partner/flstudio.png" width="180px" /><br/><br/>
-				<img src="img/partner/lasvegas.png" width="180px" />
-			</center>
+				<center>
+					<img src="img/partner/cubase.jpg" width="180px" /><br /><br />
+					<img src="img/partner/flstudio.png" width="180px" /><br /><br />
+					<img src="img/partner/lasvegas.png" width="180px" />
+				</center>
 			</div>
 		</div>
-		
+
 		<div class="rapih"></div>
-		
+
 		<!-- FOOTER -->
 		<div id="footer">
-				Universitas Komputer Indonesia<br> Copyright &copy 2015 Firdamdam Sasmita<br/>E-Learning Music Studio. Version : 1.0
+			Universitas Komputer Indonesia<br> Copyright &copy 2015 Firdamdam Sasmita<br />E-Learning Music Studio.
+			Version : 1.0
 		</div>
 	</div>
+
+	<!-- Java enable copas text -->
+	<script>
+		document.addEventListener('contextmenu', function (e) {
+			e.preventDefault();
+		});
+		document.addEventListener('keydown', function (e) {
+			if (e.ctrlKey && (e.key === 'a' || e.key === 'c')) {
+				e.preventDefault();
+			}
+		});
+	</script>
+
+	<!-- End Java -->
 </body>
+
 </html>

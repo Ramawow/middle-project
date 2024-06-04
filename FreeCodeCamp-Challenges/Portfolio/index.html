@@ -9,7 +9,12 @@
   <title>Portfolio</title>
 </head>
 
-<body>
+<!-- return false Tidak bisa klik kanan, ctrl A & C -->
+
+<body oncontextmenu="return false" onselectstart="return false"
+  onkeydown="if ((arguments[0] || window.event).ctrlKey) return false">
+
+  <!-- End -->
 
   <nav id="navbar">
     <h1>My Portfolio</h1>
@@ -64,10 +69,10 @@
     <span>you can visit my social media, maybe?</span>
     <div class="sosmed">
       <ul>
-        <li><a href="https://www.instagram.com/ardhi_putra21/" target="_blank"><i class="fab fa-instagram"></i>
+        <li><a href="https://www.instagram.com/muhammadramadhantaufiq/" target="_blank"><i class="fab fa-instagram"></i>
             Instagram</a></li>
-        <li><a href="https://github.com/EliezerDev" target="_blank"><i class="fab fa-github"></i> Github</a></li>
-        <li><a href="https://www.youtube.com/channel/UCrQeCLMu3GGVZp52S8tvaHw" target="_blank"><i
+        <li><a href="https://github.com/Ramawow" target="_blank"><i class="fab fa-github"></i> Github</a></li>
+        <li><a href="https://www.youtube.com/channel/UCzinBrdKGXhaxjkkw8QmOBw" target="_blank"><i
               class="fab fa-youtube"></i> Youtube</a></li>
         <li><a href="https://www.freecodecamp.org/eliezerdev" target="_blank" id="profile-link"><i
               class="fab fa-free-code-camp"></i>
@@ -75,9 +80,22 @@
       </ul>
     </div>
 
-    <h3>&copy; created by ardhi putra</h3>
+    <h3>&copy; created by Ramawow</h3>
   </footer>
 
+  <!-- Java enable copas text -->
+  <script>
+    document.addEventListener('contextmenu', function (e) {
+      e.preventDefault();
+    });
+    document.addEventListener('keydown', function (e) {
+      if (e.ctrlKey && (e.key === 'a' || e.key === 'c')) {
+        e.preventDefault();
+      }
+    });
+  </script>
+
+  <!-- End Java -->
   <script src="https://kit.fontawesome.com/9f28cba828.js" crossorigin="anonymous"></script>
 </body>
 

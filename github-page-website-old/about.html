@@ -1,15 +1,22 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<title>Belajar Web Dev</title>
 	<link rel="stylesheet" type="text/css" href="css/reset.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/clearfix.css">
 </head>
-<body>
+
+<!-- return false Tidak bisa klik kanan, ctrl A & C -->
+
+<body oncontextmenu="return false" onselectstart="return false"
+	onkeydown="if ((arguments[0] || window.event).ctrlKey) return false">
+
+	<!-- End -->
 
 	<div class="container">
-		
+
 		<!-- Header -->
 		<div class="header">
 
@@ -32,24 +39,42 @@
 			<div class="main">
 				<h2>Tentang</h2>
 				<p class="penulis">
-					ditulis oleh <a href="">affan abiyyu</a>
+					ditulis oleh <a href="">Ramawow</a>
 				</p>
 				<p>
-					Proyek ini adalah kumpulan proyek yang berisi proyek-proyek yang bertujuan sebagai pembelajaran saya dalam mendalami web development, mulai dari front-end hingga backend.
+					Proyek ini adalah kumpulan proyek yang berisi proyek-proyek yang bertujuan sebagai pembelajaran saya
+					dalam mendalami web development, mulai dari front-end hingga backend.
 				</p>
 			</div>
 			<div class="sidebar">
 				<h3>Tentang Penulis</h3>
 				<img src="img/profile.jpg" />
-				<p>Affan Abiyyu adalah seorang mahasiswa di D3 Informatika Politeknik Elektronika Negeri Surabaya. Dan di website ini saya akan membagikan proyek saya dalam mempelajari web development.</p>
+				<p>Ramawow adalah seorang mahasiswa di S1 Informatika Usahid Solo. Dan
+					di website ini saya akan membagikan proyek saya dalam mempelajari web development.</p>
+				<!-- <p>Affan Abiyyu adalah seorang mahasiswa di D3 Informatika Politeknik Elektronika Negeri Surabaya. Dan
+					di website ini saya akan membagikan proyek saya dalam mempelajari web development.</p> -->
 			</div>
 		</div>
 
 		<!-- Copyright -->
 		<div class="footer">
-			<p class="copyright">copyright 2020. affanabiyyu</p>
+			<p class="copyright">copyright 2020. Ramawow</p>
 		</div>
 	</div>
 
+	<!-- Java enable copas text -->
+	<script>
+		document.addEventListener('contextmenu', function (e) {
+			e.preventDefault();
+		});
+		document.addEventListener('keydown', function (e) {
+			if (e.ctrlKey && (e.key === 'a' || e.key === 'c')) {
+				e.preventDefault();
+			}
+		});
+	</script>
+
+	<!-- End Java -->
 </body>
+
 </html>
