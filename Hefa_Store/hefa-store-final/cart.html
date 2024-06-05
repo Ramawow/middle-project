@@ -22,7 +22,12 @@
   <title>Hefa Store</title>
 </head>
 
-<body>
+<!-- return false Tidak bisa klik kanan, ctrl A & C -->
+
+<body oncontextmenu="return false" onselectstart="return false"
+  onkeydown="if ((arguments[0] || window.event).ctrlKey) return false">
+
+  <!-- End -->
 
   <div class="container cart-header">
     <div class="row mt-5 text-center">
@@ -290,6 +295,19 @@
 
 
   <!-- Optional JavaScript -->
+  <!-- Java enable copas text -->
+  <script>
+    document.addEventListener('contextmenu', function (e) {
+      e.preventDefault();
+    });
+    document.addEventListener('keydown', function (e) {
+      if (e.ctrlKey && (e.key === 'a' || e.key === 'c')) {
+        e.preventDefault();
+      }
+    });
+  </script>
+
+  <!-- End Java -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="js/jquery-3.4.1.min.js"></script>
   <script src="js/popper.min.js"></script>

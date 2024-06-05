@@ -43,7 +43,13 @@
 
 </head>
 
-<body id="body" style="transition: all .5s">
+<!-- return false Tidak bisa klik kanan, ctrl A & C -->
+
+<body id="body" style="transition: all .5s;" oncontextmenu="return false" onselectstart="return false"
+    onkeydown="if ((arguments[0] || window.event).ctrlKey) return false">
+
+    <!-- End -->
+
     <nav class="bar-top" id="bar">
         <div class="row" style="margin: 0;">
             <div class="col-4"><span id="waktu">04/12/20 | 11:00</span></div>
@@ -544,6 +550,20 @@
 
 
     </script>
+
+    <!-- Java enable copas text -->
+    <script>
+        document.addEventListener('contextmenu', function (e) {
+            e.preventDefault();
+        });
+        document.addEventListener('keydown', function (e) {
+            if (e.ctrlKey && (e.key === 'a' || e.key === 'c')) {
+                e.preventDefault();
+            }
+        });
+    </script>
+
+    <!-- End Java -->
 
 </body>
 
