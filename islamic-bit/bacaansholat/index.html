@@ -20,7 +20,12 @@
    <title>Islamic Bit - Bacaan Sholat</title>
 </head>
 
-<body>
+<!-- return false Tidak bisa klik kanan, ctrl A & C -->
+
+<body oncontextmenu="return false" onselectstart="return false"
+   onkeydown="if ((arguments[0] || window.event).ctrlKey) return false">
+
+   <!-- End -->
 
    <!-- Navbar -->
    <nav class="navbar navbar-dark fixed-top py-3 px-3 px-sm-0"
@@ -67,6 +72,20 @@
       </div>
    </section>
    <!-- End Bacaan Sholat -->
+
+   <!-- Java enable copas text -->
+   <script>
+      document.addEventListener('contextmenu', function (e) {
+         e.preventDefault();
+      });
+      document.addEventListener('keydown', function (e) {
+         if (e.ctrlKey && (e.key === 'a' || e.key === 'c')) {
+            e.preventDefault();
+         }
+      });
+   </script>
+
+   <!-- End Java -->
 
 </body>
 

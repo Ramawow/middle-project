@@ -1,12 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Latihan</title>
 	<link rel="stylesheet" type="text/css" href="aset/style.css">
 </head>
-<body>
+
+<!-- return false Tidak bisa klik kanan, ctrl A & C -->
+
+<body oncontextmenu="return false" onselectstart="return false"
+	onkeydown="if ((arguments[0] || window.event).ctrlKey) return false">
+
+	<!-- End -->
 
 	<nav class="navbar">
 		<a href="#" class="brand">IT HELLO</a>
@@ -33,7 +40,10 @@
 		</div>
 		<div class="col1 s1">
 			<p class="paragraf">
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis laboriosam repudiandae, magnam nostrum incidunt illo a architecto corporis, consequatur unde nobis, voluptate provident quas alias velit quisquam autem dolorum accusamus sapiente, eveniet hic asperiores quia? Sit sequi voluptates praesentium ducimus.
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis laboriosam repudiandae, magnam nostrum
+				incidunt illo a architecto corporis, consequatur unde nobis, voluptate provident quas alias velit
+				quisquam autem dolorum accusamus sapiente, eveniet hic asperiores quia? Sit sequi voluptates praesentium
+				ducimus.
 			</p>
 			<p>CSS3</p>
 			<div class="prog"></div>
@@ -44,7 +54,7 @@
 			<p>PhP 5</p>
 			<div class="prog3"></div>
 		</div>
-		
+
 	</div>
 	<h1 class="title2">Team</h1>
 	<div class="row">
@@ -73,7 +83,14 @@
 		<div class="col1">
 			<h1 class="title2">Business administration</h1>
 			<p class="paragraf" style="padding: 30px; color: white; text-shadow: 1px 1px 1px gray">
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam nemo dicta, omnis, eligendi, est hic excepturi placeat suscipit inventore temporibus optio laudantium. Quam dolorem eveniet libero rerum fugit voluptatem recusandae rem voluptates provident beatae maxime minus ab tempore quo consectetur soluta est enim perferendis blanditiis reprehenderit temporibus cum neque officia, magni doloremque! Excepturi non corporis harum quos, minima, doloribus hic assumenda dolores labore unde perferendis cum ducimus obcaecati nisi ea fugiat laborum atque possimus, quas nihil consequuntur explicabo saepe. Impedit porro numquam delectus itaque, recusandae, velit molestiae neque doloremque voluptatum, nostrum praesentium esse fugiat minus suscipit. Soluta, deleniti est vel.
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam nemo dicta, omnis, eligendi, est hic
+				excepturi placeat suscipit inventore temporibus optio laudantium. Quam dolorem eveniet libero rerum
+				fugit voluptatem recusandae rem voluptates provident beatae maxime minus ab tempore quo consectetur
+				soluta est enim perferendis blanditiis reprehenderit temporibus cum neque officia, magni doloremque!
+				Excepturi non corporis harum quos, minima, doloribus hic assumenda dolores labore unde perferendis cum
+				ducimus obcaecati nisi ea fugiat laborum atque possimus, quas nihil consequuntur explicabo saepe.
+				Impedit porro numquam delectus itaque, recusandae, velit molestiae neque doloremque voluptatum, nostrum
+				praesentium esse fugiat minus suscipit. Soluta, deleniti est vel.
 			</p>
 			<div class="row">
 				<div class="col1 block-quotes">
@@ -92,7 +109,14 @@
 		<div class="col1">
 			<h1 class="title2">Server side technology</h1>
 			<p class="paragraf" style="margin: 30px">
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam maxime, obcaecati error pariatur laboriosam veritatis rem? Veritatis eveniet modi dolor, reiciendis veniam a ipsum, deserunt rem rerum autem quia vero commodi aperiam dolores at eos ex magni iusto quos quis nihil incidunt doloribus. Sequi illo voluptates amet, beatae nisi repellat suscipit. Aperiam ab, quia eius veritatis excepturi facilis nihil ipsa quaerat eaque, harum consectetur, amet odit doloremque atque rerum dolore quidem quo velit asperiores placeat explicabo. Ipsam commodi voluptatum omnis possimus doloremque molestias reprehenderit laborum labore itaque fugiat voluptates aperiam at suscipit vero alias voluptas similique ducimus, accusamus facilis nam?
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam maxime, obcaecati error pariatur
+				laboriosam veritatis rem? Veritatis eveniet modi dolor, reiciendis veniam a ipsum, deserunt rem rerum
+				autem quia vero commodi aperiam dolores at eos ex magni iusto quos quis nihil incidunt doloribus. Sequi
+				illo voluptates amet, beatae nisi repellat suscipit. Aperiam ab, quia eius veritatis excepturi facilis
+				nihil ipsa quaerat eaque, harum consectetur, amet odit doloremque atque rerum dolore quidem quo velit
+				asperiores placeat explicabo. Ipsam commodi voluptatum omnis possimus doloremque molestias reprehenderit
+				laborum labore itaque fugiat voluptates aperiam at suscipit vero alias voluptas similique ducimus,
+				accusamus facilis nam?
 			</p>
 		</div>
 		<div class="col1">
@@ -102,6 +126,20 @@
 	<footer>
 		<h1 class="fText">We Create whatever you want</h1>
 	</footer>
-	
+
+	<!-- Java enable copas text -->
+	<script>
+		document.addEventListener('contextmenu', function (e) {
+			e.preventDefault();
+		});
+		document.addEventListener('keydown', function (e) {
+			if (e.ctrlKey && (e.key === 'a' || e.key === 'c')) {
+				e.preventDefault();
+			}
+		});
+	</script>
+
+	<!-- End Java -->
 </body>
+
 </html>

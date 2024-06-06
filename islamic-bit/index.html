@@ -94,7 +94,12 @@
   <link rel="stylesheet" href="index.css">
 </head>
 
-<body>
+<!-- return false Tidak bisa klik kanan, ctrl A & C -->
+
+<body oncontextmenu="return false" onselectstart="return false"
+  onkeydown="if ((arguments[0] || window.event).ctrlKey) return false">
+
+  <!-- End -->
 
   <!-- Navbar -->
   <nav class="navbar navbar-dark fixed-top py-3" style="color: var(--white); background-color: var(--blue1);">
@@ -487,12 +492,25 @@
     <div>
       <h6 class="m-0 px-4 text-center">
         Made with love by
-        <a href="https://wahyall.netlify.app" style="color: var(--yellow);">Wahyu Agung Laksono</a>
+        <a href="https://instagram.com/muhammadramadhantaufiq" style="color: var(--yellow);">Ramadhan Muhamad Taufiq</a>
       </h6>
     </div>
   </footer>
   <!-- End Footer -->
 
+  <!-- Java enable copas text -->
+  <script>
+    document.addEventListener('contextmenu', function (e) {
+      e.preventDefault();
+    });
+    document.addEventListener('keydown', function (e) {
+      if (e.ctrlKey && (e.key === 'a' || e.key === 'c')) {
+        e.preventDefault();
+      }
+    });
+  </script>
+
+  <!-- End Java -->
 </body>
 
 <!-- JS Source -->

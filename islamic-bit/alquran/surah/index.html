@@ -20,7 +20,12 @@
    <title>Islamic Bit</title>
 </head>
 
-<body>
+<!-- return false Tidak bisa klik kanan, ctrl A & C -->
+
+<body oncontextmenu="return false" onselectstart="return false"
+   onkeydown="if ((arguments[0] || window.event).ctrlKey) return false">
+
+   <!-- End -->
 
    <!-- Navbar -->
    <nav class="navbar navbar-dark fixed-top py-3" style="color: var(--white); background-color: var(--blue1);">
@@ -62,6 +67,19 @@
    <div class="autoplay fas fa-play" style="display: none;"></div>
    <!-- End Autoplay Button -->
 
+   <!-- Java enable copas text -->
+   <script>
+      document.addEventListener('contextmenu', function (e) {
+         e.preventDefault();
+      });
+      document.addEventListener('keydown', function (e) {
+         if (e.ctrlKey && (e.key === 'a' || e.key === 'c')) {
+            e.preventDefault();
+         }
+      });
+   </script>
+
+   <!-- End Java -->
 </body>
 
 <script src="https://code.jquery.com/jquery-3.5.1.min.js"
