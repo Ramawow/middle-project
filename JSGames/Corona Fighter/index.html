@@ -1,40 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Corona Fighter</title>
-    <style>
-      body {
-        overflow: hidden;
-      }
-      .title {
-        display: flex;
-        justify-content: center;
-      }
-      .main {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-      }
-      #mycanvas {
-        background-image: url("Assets/bg.jpg");
-        border: 2px solid black;
-      }
-    </style>
-  </head>
-  <body>
-    <div class="title">
-      <img height="65" width="65" src="Assets/hand-soap.png" alt="hand-soap" />
-      <h1>Corona Fighter</h1>
-      <img height="35" width="35" src="Assets/virus.png" alt="virus" />
-    </div>
-    <div class="main">
-      <canvas id="mycanvas"></canvas>
-      <h3>Made By Pavan Gandhi</h3>
-    </div>
 
-    <script src="script.js"></script>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Corona Fighter</title>
+  <style>
+    body {
+      overflow: hidden;
+    }
+
+    .title {
+      display: flex;
+      justify-content: center;
+    }
+
+    .main {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    #mycanvas {
+      background-image: url("Assets/bg.jpg");
+      border: 2px solid black;
+    }
+  </style>
+</head>
+
+<!-- return false Tidak bisa klik kanan, ctrl A & C -->
+
+<body oncontextmenu="return false" onselectstart="return false"
+  onkeydown="if ((arguments[0] || window.event).ctrlKey) return false">
+
+  <!-- End -->
+
+  <div class="title">
+    <img height="65" width="65" src="Assets/hand-soap.png" alt="hand-soap" />
+    <h1>Corona Fighter</h1>
+    <img height="35" width="35" src="Assets/virus.png" alt="virus" />
+  </div>
+  <div class="main">
+    <canvas id="mycanvas"></canvas>
+    <h3>Made By Ramawow</h3>
+  </div>
+
+  <!-- Java enable copas text -->
+  <script>
+    document.addEventListener('contextmenu', function (e) {
+      e.preventDefault();
+    });
+    document.addEventListener('keydown', function (e) {
+      if (e.ctrlKey && (e.key === 'a' || e.key === 'c')) {
+        e.preventDefault();
+      }
+    });
+  </script>
+
+  <!-- End Java -->
+  <script src="script.js"></script>
+</body>
+
 </html>

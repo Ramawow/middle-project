@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,45 +13,52 @@
     <link rel="stylesheet" href="styles/styles.css">
     <!-- end CSS -->
 </head>
-<body>
+
+<!-- return false Tidak bisa klik kanan, ctrl A & C -->
+
+<body oncontextmenu="return false" onselectstart="return false"
+    onkeydown="if ((arguments[0] || window.event).ctrlKey) return false">
+
+    <!-- End -->
+
     <!-- start logo -->
     <div class="container bg-blue logo">
-    <a href="https://www.youtube.com/" title="yt">
-   <img src="images/logo-jang4rwebtrans.png" alt="Logo jang4r" width="200">
-    </a>
+        <a href="https://www.youtube.com/" title="yt">
+            <img src="images/logo-jang4rwebtrans.png" alt="Logo jang4r" width="200">
+        </a>
     </div>
     <!-- end logo -->
     <!-- start menu prime -->
     <div class="container menu-primer">
-   <ul>
-       <li>
-           <a href="latihan2.html" title="beranda">Beranda</a>
-        </li>
-       <li>
-           <a href="tentang.html" title="tentang">Tentang Kami</a>
-        </li>
-       <li>
-           <a href="layanan.html" title="layanan">Layanan</a>
-        </li>
-       <li>
-           <a href="artikel.html" title="artikel" class="active">Artikel</a>
-        </li>   
-       <li>
-           <a href="pertanyaan.html" title="pertanyaan">Pertanyaan</a>
-        </li>
-        <li>
-            <a href="pembayaran.html" title="pembayaran">Pembayaran</a>
-         </li>
-       <li>
-           <a href="kontak.html" title="kontak">Kontak Kami</a>
-        </li>
-   </ul>
+        <ul>
+            <li>
+                <a href="latihan2.html" title="beranda">Beranda</a>
+            </li>
+            <li>
+                <a href="tentang.html" title="tentang">Tentang Kami</a>
+            </li>
+            <li>
+                <a href="layanan.html" title="layanan">Layanan</a>
+            </li>
+            <li>
+                <a href="artikel.html" title="artikel" class="active">Artikel</a>
+            </li>
+            <li>
+                <a href="pertanyaan.html" title="pertanyaan">Pertanyaan</a>
+            </li>
+            <li>
+                <a href="pembayaran.html" title="pembayaran">Pembayaran</a>
+            </li>
+            <li>
+                <a href="kontak.html" title="kontak">Kontak Kami</a>
+            </li>
+        </ul>
     </div>
     <!-- end menu prime -->
     <!-- start jumbotron -->
     <div class="container jumbotron">
-    <h1>Artikel di Jang4r</h1>
-    <h3>jang4r menyediakan semuanya</h3>
+        <h1>Artikel di Jang4r</h1>
+        <h3>jang4r menyediakan semuanya</h3>
 
     </div>
     <!-- end jumbotron -->
@@ -58,16 +66,16 @@
     <!-- start artikel -->
     <div class="container">
         <div class="main-one">
-        <div class="box-heading">
-        <h4>
-            <a href="latihan2.html" title="Beranda">Beranda</a> > Artikel
-        </h4>
-        </div>
+            <div class="box-heading">
+                <h4>
+                    <a href="latihan2.html" title="Beranda">Beranda</a> > Artikel
+                </h4>
+            </div>
         </div>
         <div class="sidebar-two">
             <!-- start kategori -->
             <div class="box-heading">
-            <h4>Kategori</h4>
+                <h4>Kategori</h4>
             </div>
             <div class="box-isi">
                 <ul>
@@ -90,66 +98,81 @@
     <!-- start menu sekunder -->
     <div class="container-full menu-sekunder">
         <div class="container">
-        <!-- start jang4r -->
-        <div class="menu-sekunder-one">
-        <h4>Jang4r</h4>
-        <p>Menyediakan Semuanya</p>
-        <p>Email : <a href="mailto:aceprohmat04@gmail.com" title="admin@jang4r.com">aceprohmat04@gmail.com</a></p>
-        <p>WA : <a href="+62-838-254-541-33" title="+62-838-254-541-33">+62-838-254-541-33</a></p>
-        </div>
-        <!-- end jang4r -->
-        
-        <!-- start menu -->
-        <div class="menu-sekunder-two">
-        <h4>Menu</h4>
-       <ul>
-            <li>
-                <a href="latihan2.html" title="">Beranda</a>
-             </li>
-            <li>
-                <a href="tentang.html" title="">Tentang Kami</a>
-             </li>
-            <li>
-                <a href="layanan.html" title="">Layanan</a>
-             </li>
-            <li>
-                <a href="artikel.html" title="">Artikel</a>
-             </li>
-            <li>
-                <a href="pertanyaan.html" title="">Pertanyaan</a>
-             </li>
-             <li>
-                <a href="pembayaran.html" title="">Pembayaran</a>
-             </li>
-            <li>
-                <a href="kontak.html" title="">Kontak Kami</a>
-             </li>
-        </ul>
-        </div>
-        <!-- end menu -->
-         
-        <!-- start medsos -->
-        <div class="menu-sekunder-three">
-        <h4>Media Sosial</h4>
-        <ul>
-            <li><a href="https://www.facebook.com/" title="Facebook-jang4r.com">
-                <img src="images/logo-facebook.png" alt="Logo fb" width="20">
-                 Facebook</a></li>
-            <li><a href="https://www.instagram.com/" title="instagram-jang4r.com">
-                <img src="images/logo-instagram.png" alt="Logo ig" width="20">Instagram</a></li>
-            <li><a href="https://www.twitter.com/" title="twitter-jang4r.com">
-                <img src="images/logo-twitter.jpg" alt="Logo twitter" width="20">Twitter</a></li>
-        </ul>
-        </div>
-        <!-- end medsos -->
-        </div>
-        </div>
-        <!-- end menu sekunder -->
-        <!-- start copyright -->
-        <div class="container copyright">
-        <p>copyright &copy; 2019 - jang4r.com</p>
-        </div>
-        <!-- end copyright -->
+            <!-- start jang4r -->
+            <div class="menu-sekunder-one">
+                <h4>Jang4r</h4>
+                <p>Menyediakan Semuanya</p>
+                <p>Email : <a href="mailto:aceprohmat04@gmail.com" title="admin@jang4r.com">aceprohmat04@gmail.com</a>
+                </p>
+                <p>WA : <a href="+62-838-254-541-33" title="+62-838-254-541-33">+62-838-254-541-33</a></p>
+            </div>
+            <!-- end jang4r -->
 
+            <!-- start menu -->
+            <div class="menu-sekunder-two">
+                <h4>Menu</h4>
+                <ul>
+                    <li>
+                        <a href="latihan2.html" title="">Beranda</a>
+                    </li>
+                    <li>
+                        <a href="tentang.html" title="">Tentang Kami</a>
+                    </li>
+                    <li>
+                        <a href="layanan.html" title="">Layanan</a>
+                    </li>
+                    <li>
+                        <a href="artikel.html" title="">Artikel</a>
+                    </li>
+                    <li>
+                        <a href="pertanyaan.html" title="">Pertanyaan</a>
+                    </li>
+                    <li>
+                        <a href="pembayaran.html" title="">Pembayaran</a>
+                    </li>
+                    <li>
+                        <a href="kontak.html" title="">Kontak Kami</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- end menu -->
+
+            <!-- start medsos -->
+            <div class="menu-sekunder-three">
+                <h4>Media Sosial</h4>
+                <ul>
+                    <li><a href="https://www.facebook.com/" title="Facebook-jang4r.com">
+                            <img src="images/logo-facebook.png" alt="Logo fb" width="20">
+                            Facebook</a></li>
+                    <li><a href="https://www.instagram.com/" title="instagram-jang4r.com">
+                            <img src="images/logo-instagram.png" alt="Logo ig" width="20">Instagram</a></li>
+                    <li><a href="https://www.twitter.com/" title="twitter-jang4r.com">
+                            <img src="images/logo-twitter.jpg" alt="Logo twitter" width="20">Twitter</a></li>
+                </ul>
+            </div>
+            <!-- end medsos -->
+        </div>
+    </div>
+    <!-- end menu sekunder -->
+    <!-- start copyright -->
+    <div class="container copyright">
+        <p>copyright &copy; 2019 - jang4r.com</p>
+    </div>
+    <!-- end copyright -->
+
+    <!-- Java enable copas text -->
+    <script>
+        document.addEventListener('contextmenu', function (e) {
+            e.preventDefault();
+        });
+        document.addEventListener('keydown', function (e) {
+            if (e.ctrlKey && (e.key === 'a' || e.key === 'c')) {
+                e.preventDefault();
+            }
+        });
+    </script>
+
+    <!-- End Java -->
 </body>
+
 </html>
