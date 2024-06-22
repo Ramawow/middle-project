@@ -10,7 +10,12 @@
    <title>Music Player</title>
 </head>
 
-<body>
+<!-- return false Tidak bisa klik kanan, ctrl A & C -->
+
+<body oncontextmenu="return false" onselectstart="return false"
+   onkeydown="if ((arguments[0] || window.event).ctrlKey) return false">
+
+   <!-- End -->
 
    <section class="music">
       <audio src="./songs/song-1.mp3" preload="metadata" aria-hidden="true"></audio>
@@ -55,6 +60,20 @@
    </section>
 
    <script src="./app.js"></script>
+
+   <!-- Java enable copas text -->
+   <script>
+      document.addEventListener('contextmenu', function (e) {
+         e.preventDefault();
+      });
+      document.addEventListener('keydown', function (e) {
+         if (e.ctrlKey && (e.key === 'a' || e.key === 'c')) {
+            e.preventDefault();
+         }
+      });
+   </script>
+
+   <!-- End Java -->
 </body>
 
 </html>

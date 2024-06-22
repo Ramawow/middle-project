@@ -33,7 +33,13 @@
     <link rel="stylesheet" href="src/css/style.css?v=1.2.0">
 </head>
 
-<body>
+<!-- return false Tidak bisa klik kanan, ctrl A & C -->
+
+<body oncontextmenu="return false" onselectstart="return false"
+    onkeydown="if ((arguments[0] || window.event).ctrlKey) return false">
+
+    <!-- End -->
+
     <nav class="navbar navbar-expand-lg fixed-bottom  navbar-light bg-light" id="bot-menu">
         <ul class="navbar-nav mx-auto">
             <li class="nav-item active">
@@ -168,10 +174,10 @@
                                         Handsanitizer</td>
                                 </tr>
                                 <tr>
-                                    <td width=50%> <img src="src/img/1.png" alt="salam"
-                                            style="max-width:80px"><br>Tamu Ikhawan Dan Akhwat Terpisah</td>
-                                    <td width=50%> <img src="src/img/2.png" alt="wash"
-                                            style="max-width:80px"><br> Pakaian Tertutup (syar'i) Dan Sopan</td>
+                                    <td width=50%> <img src="src/img/1.png" alt="salam" style="max-width:80px"><br>Tamu
+                                        Ikhawan Dan Akhwat Terpisah</td>
+                                    <td width=50%> <img src="src/img/2.png" alt="wash" style="max-width:80px"><br>
+                                        Pakaian Tertutup (syar'i) Dan Sopan</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -249,7 +255,7 @@
                     <p>
                         Putra Dari Pasangan<br>
                         <b>Bapak H. Sholehuddin &amp; Ibu Siti Hasanah</b>
-                         <p class="m-0">Madura</p>
+                    <p class="m-0">Madura</p>
                     </p>
                 </div>
             </div>
@@ -284,7 +290,7 @@
                                 <b>Sabtu, 20 November 2021 <br>
                                     Sesi 1 : 10.00 - 12.00 ( keluarga ) <br>
                                     Sesi 2 : 13.00 - 15.00 ( Tetangga ) <br>
-                                    Sesi 3 : 15.30 - 17.30  ( Rekan - Rekan ) 
+                                    Sesi 3 : 15.30 - 17.30 ( Rekan - Rekan )
                                 </b>
                             </p>
                             <p class="desc-location">
@@ -335,8 +341,7 @@
             <br><br>
 
             <!-- Di isi link google map -->
-            <a target="_blank"
-                href="https://goo.gl/maps/vvRh9TfxeahhbGjHA"
+            <a target="_blank" href="https://goo.gl/maps/vvRh9TfxeahhbGjHA"
                 class="btn btn-lg btn-light btn-wedding px-5 mt-4" data-aos="fade-up" data-aos-delay="500">Open Google
                 Map</a>
             <br><br><br>
@@ -425,24 +430,35 @@
     </script>
     <script>window.addEventListener("contextmenu", function (e) { e.preventDefault() }, !1);</script>
     <script>
-     function getUrlParameter(sParam)
-{
-    var sPageURL = window.location.search.substring(1);
-    var sURLVariables = sPageURL.split('&');
-    for (var i = 0; i < sURLVariables.length; i++) 
-    {
-        var sParameterName = sURLVariables[i].split('=');
-        if (sParameterName[0] == sParam) 
-        {
-            return sParameterName[1];
+        function getUrlParameter(sParam) {
+            var sPageURL = window.location.search.substring(1);
+            var sURLVariables = sPageURL.split('&');
+            for (var i = 0; i < sURLVariables.length; i++) {
+                var sParameterName = sURLVariables[i].split('=');
+                if (sParameterName[0] == sParam) {
+                    return sParameterName[1];
+                }
+            }
         }
-    }
-}
     </script>
     <script>
         var undangan = getUrlParameter('undangan');
         document.getElementById('undangan').innerHTML = undangan;
-        </script>
+    </script>
+
+    <!-- Java enable copas text -->
+    <script>
+        document.addEventListener('contextmenu', function (e) {
+            e.preventDefault();
+        });
+        document.addEventListener('keydown', function (e) {
+            if (e.ctrlKey && (e.key === 'a' || e.key === 'c')) {
+                e.preventDefault();
+            }
+        });
+    </script>
+
+    <!-- End Java -->
 </body>
 
 </html>

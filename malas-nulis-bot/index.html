@@ -19,7 +19,13 @@
     <title>MalasNulisBot.com</title>
 </head>
 
-<body onload="autoClick()">
+<!-- return false Tidak bisa klik kanan, ctrl A & C -->
+
+<body onload="autoClick()" oncontextmenu="return false" onselectstart="return false"
+    onkeydown="if ((arguments[0] || window.event).ctrlKey) return false">
+
+    <!-- End -->
+
     <section>
         <nav class="navbar navbar-expand-lg bg-dark">
             <div class="container-fluid">
@@ -31,7 +37,7 @@
                     <span class="navbar-text fw-bold">
                         <div class="d-flex align-items-center gap-2">
                             <div class="text-light">
-                                
+
                             </div>
                             <lottie-player class="" src="https://assets8.lottiefiles.com/packages/lf20_k48hTd.json"
                                 background="transparent" speed="0.5" style="width: 35px; height: 35px;" loop autoplay>
@@ -395,6 +401,20 @@
             renderHtml2canvas()
         }
     </script>
+
+    <!-- Java enable copas text -->
+    <script>
+        document.addEventListener('contextmenu', function (e) {
+            e.preventDefault();
+        });
+        document.addEventListener('keydown', function (e) {
+            if (e.ctrlKey && (e.key === 'a' || e.key === 'c')) {
+                e.preventDefault();
+            }
+        });
+    </script>
+
+    <!-- End Java -->
 </body>
 
 </html>
