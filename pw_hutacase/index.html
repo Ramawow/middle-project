@@ -1,214 +1,248 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>HUTACASECUSTOM</title>
-    <link rel="shortcut icon" href="images/icon.png" type="image/x-icon" />
 
-    <link rel="stylesheet" href="css/bootstrap.min.css" />
-    <link rel="stylesheet" href="fontawesome-free/css/all.css" />
-    <link rel="stylesheet" href="css/venom-button.min.css" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HUTACASECUSTOM</title>
+  <link rel="shortcut icon" href="images/icon.png" type="image/x-icon" />
 
-    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="css/owl.carousel.min.css" />
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="fontawesome-free/css/all.css" />
+  <link rel="stylesheet" href="css/venom-button.min.css" />
 
-    <link rel="stylesheet" href="css/lightgallery.css" />
-    <link rel="stylesheet" href="css/aos.css" />
+  <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="css/owl.carousel.min.css" />
 
-    <link rel="stylesheet" href="css/tailwind.css" />
-    <link rel="stylesheet" href="css/main.css" />
-  </head>
-  <body class="home" id="home">
-    <!-- Header Section Begin -->
-    <header class="header">
-      <div class="container">
-        <div class="row justify-content-center" id="mainNav">
-          <div class="col-xl-2 col-lg-2 col-sm-12 items-center justify-center">
-            <div class="header__logo">
-              <a href="./index.html"><img class="icon__logo" src="images/logo.png" alt="" /></a>
-            </div>
-          </div>
-          <div class="col-xl-8 col-lg-8 col-md-10">
-            <nav class="header__menu">
-              <ul>
-                <li class="nav_menu active"><a href="#home">Home</a></li>
-                <li class="nav_menu"><a href="#products">Products</a></li>
-                <li class="nav_menu"><a href="#galery">Galery</a></li>
-                <li class="nav_menu"><a href="#contact">Contact</a></li>
-              </ul>
-            </nav>
-          </div>
-          <div class="col-lg-2">
-            <div class="header__right">
-              <ul class="header__right__widget">
-                <li><i class="fab fa-instagram"></i></li>
-              </ul>
-            </div>
+  <link rel="stylesheet" href="css/lightgallery.css" />
+  <link rel="stylesheet" href="css/aos.css" />
+
+  <link rel="stylesheet" href="css/tailwind.css" />
+  <link rel="stylesheet" href="css/main.css" />
+</head>
+
+<!-- return false Tidak bisa klik kanan, ctrl A & C -->
+
+<body class="home" id="home" oncontextmenu="return false" onselectstart="return false"
+  onkeydown="if ((arguments[0] || window.event).ctrlKey) return false">
+
+  <!-- End -->
+
+  <!-- Header Section Begin -->
+  <header class="header">
+    <div class="container">
+      <div class="row justify-content-center" id="mainNav">
+        <div class="col-xl-2 col-lg-2 col-sm-12 items-center justify-center">
+          <div class="header__logo">
+            <a href="./index.html"><img class="icon__logo" src="images/logo.png" alt="" /></a>
           </div>
         </div>
-        <div class="canvas__open">
-          <i class="fa fa-bars"></i>
+        <div class="col-xl-8 col-lg-8 col-md-10">
+          <nav class="header__menu">
+            <ul>
+              <li class="nav_menu active"><a href="#home">Home</a></li>
+              <li class="nav_menu"><a href="#products">Products</a></li>
+              <li class="nav_menu"><a href="#galery">Galery</a></li>
+              <li class="nav_menu"><a href="#contact">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="col-lg-2">
+          <div class="header__right">
+            <ul class="header__right__widget">
+              <li><i class="fab fa-instagram"></i></li>
+            </ul>
+          </div>
         </div>
       </div>
-    </header>
-    <!-- Header Section End -->
+      <div class="canvas__open">
+        <i class="fa fa-bars"></i>
+      </div>
+    </div>
+  </header>
+  <!-- Header Section End -->
 
-    <!-- Menu Mobile Section Begin -->
-    <section class="nav">
-      <div class="icon active js-scroll-trigger">
-        <a href="#home">
-          <i class="fas fa-home"></i>
-          <p>Home</p>
-        </a>
-      </div>
-      <div class="icon">
-        <a href="#products">
-          <i class="fas fa-images"></i>
-          <p>Products</p>
-        </a>
-      </div>
-      <div class="icon">
-        <a href="#galery">
-          <i class="fas fa-chalkboard"></i>
-          <p>Galery</p>
-        </a>
-      </div>
-      <div class="icon">
-        <a href="#contact">
-            <i class="fas fa-phone"></i>
-            <p>Contacts</p>
-          </a>
-    </section>
-    <!-- Menu Mobile Section Start -->
+  <!-- Menu Mobile Section Begin -->
+  <section class="nav">
+    <div class="icon active js-scroll-trigger">
+      <a href="#home">
+        <i class="fas fa-home"></i>
+        <p>Home</p>
+      </a>
+    </div>
+    <div class="icon">
+      <a href="#products">
+        <i class="fas fa-images"></i>
+        <p>Products</p>
+      </a>
+    </div>
+    <div class="icon">
+      <a href="#galery">
+        <i class="fas fa-chalkboard"></i>
+        <p>Galery</p>
+      </a>
+    </div>
+    <div class="icon">
+      <a href="#contact">
+        <i class="fas fa-phone"></i>
+        <p>Contacts</p>
+      </a>
+  </section>
+  <!-- Menu Mobile Section Start -->
 
-    <!-- Banner Section Begin -->
-    <section class="py-4 banner set-bg" data-setbg="images/banner-1.jpg">
-      <div class="container mx-auto justity-center items-center p-6">
-        <h1 class="banner__text text-center">Buat Case HP sendiri murah dan keren</h1>
-        <div class="lg:w-2/3 mx-auto justity-center items-center">
-          <div class="justity-center">
-            <div class="swiper-container">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide" style="background-image: url(./images/banner/banner-1.jpg)"></div>
-                <div class="swiper-slide" style="background-image: url(./images/banner/banner-2.jpg)"></div>
-                <div class="swiper-slide" style="background-image: url(./images/banner/banner-3.jpg)"></div>
-                <div class="swiper-slide" style="background-image: url(./images/banner/banner-4.png)"></div>
-                <div class="swiper-slide" style="background-image: url(./images/banner/banner-5.jpg)"></div>
-              </div>
-              <!-- Add Pagination -->
-              <div class="swiper-pagination"></div>
-              <!-- Add Arrows -->
-              <!-- <div class="swiper-button-next"></div>
+  <!-- Banner Section Begin -->
+  <section class="py-4 banner set-bg" data-setbg="images/banner-1.jpg">
+    <div class="container mx-auto justity-center items-center p-6">
+      <h1 class="banner__text text-center">Buat Case HP sendiri murah dan keren</h1>
+      <div class="lg:w-2/3 mx-auto justity-center items-center">
+        <div class="justity-center">
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide" style="background-image: url(./images/banner/banner-1.jpg)"></div>
+              <div class="swiper-slide" style="background-image: url(./images/banner/banner-2.jpg)"></div>
+              <div class="swiper-slide" style="background-image: url(./images/banner/banner-3.jpg)"></div>
+              <div class="swiper-slide" style="background-image: url(./images/banner/banner-4.png)"></div>
+              <div class="swiper-slide" style="background-image: url(./images/banner/banner-5.jpg)"></div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- Add Arrows -->
+            <!-- <div class="swiper-button-next"></div>
                   <div class="swiper-button-prev"></div> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Banner Section End -->
+
+  <!-- Services Section Begin -->
+  <section class="services spad">
+    <div class="container">
+      <div class="row d-flex justify-content-center">
+        <div class="col-lg-10">
+          <div class="row info__panel">
+            <div class="col-lg col-md-3 mb-3">
+              <div class="services__item">
+                <i class="fa fa-car"></i>
+                <div class="services__text">
+                  <h6>Free Ongkir Se-Indonesia</h6>
+                  <p>Kami sering mengadakan promo free ongkir se-Indonesia.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg col-md-3  mb-3">
+              <div class="services__item">
+                <i class="fas fa-money-bill"></i>
+                <div class="services__text">
+                  <h6>Customer service</h6>
+                  <p>Punya kendala? customer service kami siap melayani Anda kapanpun.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg col-md-3  mb-3">
+              <div class="services__item">
+                <i class="fas fa-cogs"></i>
+                <div class="services__text">
+                  <h6>Produksi kilat</h6>
+                  <p>Dengan mesin berteknologi canggih,hanya butuh waktu 1 hari.</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </section>
-    <!-- Banner Section End -->
+    </div>
+  </section>
+  <!-- Services Section End -->
 
-    <!-- Services Section Begin -->
-    <section class="services spad">
-      <div class="container">
-        <div class="row d-flex justify-content-center">
-          <div class="col-lg-10">
-            <div class="row info__panel">
-              <div class="col-lg col-md-3 mb-3">
-                <div class="services__item">
-                  <i class="fa fa-car"></i>
-                  <div class="services__text">
-                    <h6>Free Ongkir Se-Indonesia</h6>
-                    <p>Kami sering mengadakan promo free ongkir se-Indonesia.</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg col-md-3  mb-3">
-                <div class="services__item">
-                  <i class="fas fa-money-bill"></i>
-                  <div class="services__text">
-                    <h6>Customer service</h6>
-                    <p>Punya kendala? customer service kami siap melayani Anda kapanpun.</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg col-md-3  mb-3">
-                <div class="services__item">
-                  <i class="fas fa-cogs"></i>
-                  <div class="services__text">
-                    <h6>Produksi kilat</h6>
-                    <p>Dengan mesin berteknologi canggih,hanya butuh waktu 1 hari.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
+  <!-- Discount Section Begin -->
+  <section class="discount">
+    <div class="container">
+      <div class="row">
+        <div class="line">
+          <h1 class="text-center">Flash <span>Sales</span></h1>
+          <div class="underline"></div>
+        </div>
+        <div class="col-md-6 p-0">
+          <div class="discount__pic">
+            <img src="images/discount.jpg" alt="" />
           </div>
         </div>
-      </div>
-    </section>
-    <!-- Services Section End -->
-
-    <!-- Discount Section Begin -->
-    <section class="discount">
-      <div class="container">
-        <div class="row">
-          <div class="line">
-            <h1 class="text-center">Flash <span>Sales</span></h1>
-            <div class="underline"></div>
-          </div>
-          <div class="col-md-6 p-0">
-            <div class="discount__pic">
-              <img src="images/discount.jpg" alt="" />
+        <div class="col-md-6 p-0">
+          <div class="discount__text">
+            <div class="discount__text__title">
+              <span>Discount</span>
+              <h2>Summer 2021</h2>
+              <h5><span>Sale</span> 50%</h5>
             </div>
-          </div>
-          <div class="col-md-6 p-0">
-            <div class="discount__text">
-              <div class="discount__text__title">
-                <span>Discount</span>
-                <h2>Summer 2021</h2>
-                <h5><span>Sale</span> 50%</h5>
-              </div>
-              <div class="discount__countdown" id="countdown-time">
-                <!-- <div class="countdown__item">
+            <div class="discount__countdown" id="countdown-time">
+              <!-- <div class="countdown__item">
                   <span>22</span>
                   <p>Days</p>
                 </div> -->
-                <div class="countdown__item">
-                  <span>18</span>
-                  <p>Hour</p>
-                </div>
-                <div class="countdown__item">
-                  <span>46</span>
-                  <p>Min</p>
-                </div>
-                <div class="countdown__item">
-                  <span>05</span>
-                  <p>Sec</p>
-                </div>
+              <div class="countdown__item">
+                <span>18</span>
+                <p>Hour</p>
               </div>
-              <a href="#">Shop now</a>
+              <div class="countdown__item">
+                <span>46</span>
+                <p>Min</p>
+              </div>
+              <div class="countdown__item">
+                <span>05</span>
+                <p>Sec</p>
+              </div>
             </div>
+            <a href="#">Shop now</a>
           </div>
         </div>
       </div>
-    </section>
-    <!-- Discount Section End -->
+    </div>
+  </section>
+  <!-- Discount Section End -->
 
-    <!-- Products Section Begin -->
-    <section class="products" id="products">
-      <div class="container">
-        <div class="row">
-          <div class="line">
-            <h1 class="text-center">BEST<span> Products</span></h1>
-            <div class="underline"></div>
+  <!-- Products Section Begin -->
+  <section class="products" id="products">
+    <div class="container">
+      <div class="row">
+        <div class="line">
+          <h1 class="text-center">BEST<span> Products</span></h1>
+          <div class="underline"></div>
+        </div>
+      </div>
+
+      <div class="row property__gallery justify-content-center">
+        <div class="col-lg-3 col-md-4 col-sm-6">
+          <div class="product__item" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in-sine">
+            <div class="product__item__pic set-bg" data-setbg="images/product/product-1.jpg">
+              <div class="label new">New</div>
+              <ul class="product__hover">
+                <li>
+                  <a href="https://bit.ly/3bYeOvj" target="blank"><span>SHOP NOW</span></a>
+                </li>
+              </ul>
+            </div>
+            <div class="product__item__text">
+              <div class="product__card__name">
+                <h6><a href="#">Hardcase 3D </a></h6>
+                <div class="rating">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                </div>
+              </div>
+              <div class="product__price">Rp. 100.000 <span>Rp. 120.000</span></div>
+            </div>
           </div>
         </div>
 
-        <div class="row property__gallery justify-content-center">
-          <div class="col-lg-3 col-md-4 col-sm-6">
-            <div class="product__item" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in-sine">
-              <div class="product__item__pic set-bg" data-setbg="images/product/product-1.jpg">
-                <div class="label new">New</div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+          <div class="border-line headline">
+            <div class="product__item" data-aos="fade-up" data-aos-duration="1500" data-aos-easing="ease-in-sine">
+              <div class="product__item__pic set-bg" data-setbg="images/product/product-2.jpg">
                 <ul class="product__hover">
                   <li>
                     <a href="https://bit.ly/3bYeOvj" target="blank"><span>SHOP NOW</span></a>
@@ -217,7 +251,33 @@
               </div>
               <div class="product__item__text">
                 <div class="product__card__name">
-                  <h6><a href="#">Hardcase 3D </a></h6>
+                  <h6><a href="#">Anticrack</a></h6>
+                  <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                  </div>
+                </div>
+                <div class="product__price">Rp. 100.000</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+          <div class="border-line">
+            <div class="product__item" data-aos="fade-up" data-aos-duration="2000" data-aos-easing="ease-in-sine">
+              <div class="product__item__pic set-bg" data-setbg="images/product/product-3.jpg">
+                <ul class="product__hover">
+                  <li>
+                    <a href="https://bit.ly/3bYeOvj" target="blank"><span>SHOP NOW</span></a>
+                  </li>
+                </ul>
+              </div>
+              <div class="product__item__text">
+                <div class="product__card__name">
+                  <h6><a href="#">Fullprint</a></h6>
                   <div class="rating">
                     <i class="fa fa-star"></i>
                     <i class="fa fa-star"></i>
@@ -230,419 +290,360 @@
               </div>
             </div>
           </div>
-
-          <div class="col-lg-3 col-md-4 col-sm-6">
-            <div class="border-line headline">
-              <div class="product__item" data-aos="fade-up" data-aos-duration="1500" data-aos-easing="ease-in-sine">              <div class="product__item__pic set-bg" data-setbg="images/product/product-2.jpg">
-                  <ul class="product__hover">
-                    <li>
-                      <a href="https://bit.ly/3bYeOvj" target="blank"><span>SHOP NOW</span></a>
-                    </li>
-                  </ul>
-                </div>
-                <div class="product__item__text">
-                  <div class="product__card__name">
-                    <h6><a href="#">Anticrack</a></h6>
-                    <div class="rating">
-                      <i class="fa fa-star"></i>
-                      <i class="fa fa-star"></i>
-                      <i class="fa fa-star"></i>
-                      <i class="fa fa-star"></i>
-                      <i class="fa fa-star"></i>
-                    </div>
-                  </div>
-                  <div class="product__price">Rp. 100.000</div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 col-sm-6">
-            <div class="border-line">
-              <div class="product__item" data-aos="fade-up" data-aos-duration="2000" data-aos-easing="ease-in-sine"> 
-                <div class="product__item__pic set-bg" data-setbg="images/product/product-3.jpg">
-                  <ul class="product__hover">
-                    <li>
-                      <a href="https://bit.ly/3bYeOvj" target="blank"><span>SHOP NOW</span></a>
-                    </li>
-                  </ul>
-                </div>
-                <div class="product__item__text">
-                  <div class="product__card__name">
-                    <h6><a href="#">Fullprint</a></h6>
-                    <div class="rating">
-                      <i class="fa fa-star"></i>
-                      <i class="fa fa-star"></i>
-                      <i class="fa fa-star"></i>
-                      <i class="fa fa-star"></i>
-                      <i class="fa fa-star"></i>
-                    </div>
-                  </div>
-                  <div class="product__price">Rp. 100.000 <span>Rp. 120.000</span></div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 col-sm-6">
-            <div class="border-line">
-              <div class="product__item" data-aos="fade-up" data-aos-duration="2500" data-aos-easing="ease-in-sine"> 
-                <div class="product__item__pic set-bg" data-setbg="images/product/product-4.jpg">
-                  <ul class="product__hover">
-                    <li>
-                      <a href="https://bit.ly/3bYeOvj" target="blank"><span>SHOP NOW</span></a>
-                    </li>
-                  </ul>
-                </div>
-                <div class="product__item__text">
-                  <div class="product__card__name">
-                    <h6><a href="#">Blackmatte softcase</a></h6>
-                    <div class="rating">
-                      <i class="fa fa-star"></i>
-                      <i class="fa fa-star"></i>
-                      <i class="fa fa-star"></i>
-                      <i class="fa fa-star"></i>
-                      <i class="fa fa-star"></i>
-                    </div>
-                  </div>
-                  <div class="product__price">Rp. 120.000</div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 col-sm-6">
-            <div class="border-line">
-              <div class="product__item" data-aos="fade-up" data-aos-duration="2500">
-                <div class="product__item__pic set-bg" data-setbg="images/product/product-5.jpg">
-                  <ul class="product__hover">
-                    <li>
-                      <a href="https://bit.ly/3bYeOvj" target="blank"><span>SHOP NOW</span></a>
-                    </li>
-                  </ul>
-                </div>
-                <div class="product__item__text">
-                  <div class="product__card__name">
-                    <h6><a href="#">Softcase FDT</a></h6>
-                    <div class="rating">
-                      <i class="fa fa-star"></i>
-                      <i class="fa fa-star"></i>
-                      <i class="fa fa-star"></i>
-                      <i class="fa fa-star"></i>
-                      <i class="fa fa-star"></i>
-                    </div>
-                  </div>
-                  <div class="product__price">Rp. 120.000</div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 col-sm-6">
-            <div class="border-line">
-              <div class="product__item" data-aos="fade-up" data-aos-duration="2000">
-                <div class="product__item__pic set-bg" data-setbg="images/product/product-6.jpg">
-                  <ul class="product__hover">
-                    <li>
-                      <a href="https://bit.ly/3bYeOvj" target="blank"><span>SHOP NOW</span></a>
-                    </li>
-                  </ul>
-                </div>
-                <div class="product__item__text">
-                  <div class="product__card__name">
-                    <h6><a href="#">Anticrack softcase</a></h6>
-                    <div class="rating">
-                      <i class="fa fa-star"></i>
-                      <i class="fa fa-star"></i>
-                      <i class="fa fa-star"></i>
-                      <i class="fa fa-star"></i>
-                      <i class="fa fa-star"></i>
-                    </div>
-                  </div>
-                  <div class="product__price">Rp. 100.000 <span>Rp. 120.000</span></div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 col-sm-6">
-            <div class="border-line">
-              <div class="product__item" data-aos="fade-up" data-aos-duration="1000">
-                <div class="product__item__pic set-bg" data-setbg="images/product/product-7.jpg">
-                  <ul class="product__hover">
-                    <li>
-                      <a href="https://bit.ly/3bYeOvj" target="blank"><span>SHOP NOW</span></a>
-                    </li>
-                  </ul>
-                </div>
-                <div class="product__item__text">
-                  <div class="product__card__name">
-                    <h6><a href="#">AGS </a></h6>
-                    <div class="rating">
-                      <i class="fa fa-star"></i>
-                      <i class="fa fa-star"></i>
-                      <i class="fa fa-star"></i>
-                      <i class="fa fa-star"></i>
-                      <i class="fa fa-star"></i>
-                    </div>
-                  </div>
-                  <div class="product__price">Rp. 100.000</div>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
-      </div>
-    </section>
-    <!-- Products Section End -->
-
-    <!-- Instagram Begin -->
-    <div class="instagram" id="galery">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="line">
-            <h1 class="text-center">Galeri<span> Products</span></h1>
-            <div class="underline"></div>
-          </div>
-        </div>
-        <div class="row d-flex justify-content-center demo-gallery">
-          <ul id="lightgallery" class="list-unstyled">
-            <li class="col-lg-2 col-md-4 col-sm-4 p-0" data-src="images/product/insta-1.jpg" data-sub-html="<h4>Huta Case Custom</h4><p>Pesan Sekarang Juga.</p>" data-pinterest-text="Pin it1" data-tweet-text="share on twitter 1">
-              <a href="">
-                <img class="img-responsive" src="images/product/insta-1.jpg" alt="Thumb-1" />
-              </a>
-            </li>
-            <li
-              class="col-lg-2 col-md-4 col-sm-4 p-0"
-              data-responsive="img/1-375.jpg 375, img/1-480.jpg 480, img/1.jpg 800"
-              data-src="images/product/insta-2.jpg"
-              data-sub-html="<h4>Huta Case Custom</h4><p>Pesan Sekarang Juga.</p>"
-              data-pinterest-text="Pin it1"
-              data-tweet-text="share on twitter 1"
-            >
-              <a href="">
-                <img class="img-responsive" src="images/product/insta-2.jpg" alt="Thumb-1" />
-              </a>
-            </li>
-            <li
-              class="col-lg-2 col-md-4 col-sm-4 p-0"
-              data-responsive="img/1-375.jpg 375, img/1-480.jpg 480, img/1.jpg 800"
-              data-src="images/product/insta-3.jpg"
-              data-sub-html="<h4>Huta Case Custom</h4><p>Pesan Sekarang Juga.</p>"
-              data-pinterest-text="Pin it1"
-              data-tweet-text="share on twitter 1"
-            >
-              <a href="">
-                <img class="img-responsive" src="images/product/insta-3.jpg" alt="Thumb-1" />
-              </a>
-            </li>
-            <li
-              class="col-lg-2 col-md-4 col-sm-4 p-0"
-              data-responsive="img/1-375.jpg 375, img/1-480.jpg 480, img/1.jpg 800"
-              data-src="images/product/insta-4.jpg"
-              data-sub-html="<h4>Huta Case Custom</h4><p>Pesan Sekarang Juga.</p>"
-              data-pinterest-text="Pin it1"
-              data-tweet-text="share on twitter 1"
-            >
-              <a href="">
-                <img class="img-responsive" src="images/product/insta-4.jpg" alt="Thumb-1" />
-              </a>
-            </li>
-            <li
-              class="col-lg-2 col-md-4 col-sm-4 p-0"
-              data-responsive="img/1-375.jpg 375, img/1-480.jpg 480, img/1.jpg 800"
-              data-src="images/product/insta-5.jpg"
-              data-sub-html="<h4>Huta Case Custom</h4><p>Pesan Sekarang Juga.</p>"
-              data-pinterest-text="Pin it1"
-              data-tweet-text="share on twitter 1"
-            >
-              <a href="">
-                <img class="img-responsive" src="images/product/insta-5.jpg" alt="Thumb-1" />
-              </a>
-            </li>
-            <li
-              class="col-lg-2 col-md-4 col-sm-4 p-0"
-              data-responsive="img/1-375.jpg 375, img/1-480.jpg 480, img/1.jpg 800"
-              data-src="images/product/insta-6.jpg"
-              data-sub-html="<h4>Huta Case Custom</h4><p>Pesan Sekarang Juga.</p>"
-              data-pinterest-text="Pin it1"
-              data-tweet-text="share on twitter 1"
-            >
-              <a href="">
-                <img class="img-responsive" src="images/product/insta-6.jpg" alt="Thumb-1" />
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <!-- Instagram End -->
-
-    <!-- Contact Section Begin -->
-    <section class="contact spad" id="contact">
-      <div class="container">
-        <div class="row">
-          <div class="line">
-            <h1 class="text-center">Contact<span> Person</span></h1>
-            <div class="underline"></div>
-          </div>
-        </div>
-        <div class="row justify-content-center">
-          <div class="col-lg-6 col-md-6">
-            <div class="contact__content">
-              <div class="contact__address">
-                <h5>Contact info</h5>
-                <ul>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+          <div class="border-line">
+            <div class="product__item" data-aos="fade-up" data-aos-duration="2500" data-aos-easing="ease-in-sine">
+              <div class="product__item__pic set-bg" data-setbg="images/product/product-4.jpg">
+                <ul class="product__hover">
                   <li>
-                    <h6><i class="fa fa-map-marker"></i> Address</h6>
-                    <p>Jl. Iskandar Muda No.3, Babura, Kota Medan, Sumatera Utara 20152</p>
-                  </li>
-                  <li>
-                    <h6><i class="fa fa-phone"></i> Phone</h6>
-                    <p>0852 7013 6884</p>
-                  </li>
-                  <li>
-                    <h6><i class="far fa-envelope"></i> Gmail</h6>
-                    <p>ramsonmuara@gmail.com</p>
+                    <a href="https://bit.ly/3bYeOvj" target="blank"><span>SHOP NOW</span></a>
                   </li>
                 </ul>
               </div>
+              <div class="product__item__text">
+                <div class="product__card__name">
+                  <h6><a href="#">Blackmatte softcase</a></h6>
+                  <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                  </div>
+                </div>
+                <div class="product__price">Rp. 120.000</div>
+              </div>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6">
-           
-              <div class="contact__form">
-                <h5>SEND MESSAGE</h5>
-                <div class="alert alert-success alert-dismissible fade show d-none" role="alert">
-                  <strong>Pesan anda berhasil dikirim.</strong>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+          <div class="border-line">
+            <div class="product__item" data-aos="fade-up" data-aos-duration="2500">
+              <div class="product__item__pic set-bg" data-setbg="images/product/product-5.jpg">
+                <ul class="product__hover">
+                  <li>
+                    <a href="https://bit.ly/3bYeOvj" target="blank"><span>SHOP NOW</span></a>
+                  </li>
+                </ul>
+              </div>
+              <div class="product__item__text">
+                <div class="product__card__name">
+                  <h6><a href="#">Softcase FDT</a></h6>
+                  <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                  </div>
                 </div>
-                <form id="signupForm1"  name="casecontact" method="post" >
-                  <div class="shadow overflow-hidden card-form sm:rounded-md">
-                    <div class="px-4 py-5 sm:p-6">
-                      <div class="grid grid-cols-4 gap-6">                      
-                        <div class="col-span-6 sm:col-span-4">
-                          <label for="name" class="block text-sm font-medium text-white">Nama Lengkap</label>
-                            <input type="text" name="nama" id="name" autocomplete="given-name" class=" form-control mt-1  focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md" required/>
+                <div class="product__price">Rp. 120.000</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+          <div class="border-line">
+            <div class="product__item" data-aos="fade-up" data-aos-duration="2000">
+              <div class="product__item__pic set-bg" data-setbg="images/product/product-6.jpg">
+                <ul class="product__hover">
+                  <li>
+                    <a href="https://bit.ly/3bYeOvj" target="blank"><span>SHOP NOW</span></a>
+                  </li>
+                </ul>
+              </div>
+              <div class="product__item__text">
+                <div class="product__card__name">
+                  <h6><a href="#">Anticrack softcase</a></h6>
+                  <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                  </div>
+                </div>
+                <div class="product__price">Rp. 100.000 <span>Rp. 120.000</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+          <div class="border-line">
+            <div class="product__item" data-aos="fade-up" data-aos-duration="1000">
+              <div class="product__item__pic set-bg" data-setbg="images/product/product-7.jpg">
+                <ul class="product__hover">
+                  <li>
+                    <a href="https://bit.ly/3bYeOvj" target="blank"><span>SHOP NOW</span></a>
+                  </li>
+                </ul>
+              </div>
+              <div class="product__item__text">
+                <div class="product__card__name">
+                  <h6><a href="#">AGS </a></h6>
+                  <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                  </div>
+                </div>
+                <div class="product__price">Rp. 100.000</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Products Section End -->
 
+  <!-- Instagram Begin -->
+  <div class="instagram" id="galery">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="line">
+          <h1 class="text-center">Galeri<span> Products</span></h1>
+          <div class="underline"></div>
+        </div>
+      </div>
+      <div class="row d-flex justify-content-center demo-gallery">
+        <ul id="lightgallery" class="list-unstyled">
+          <li class="col-lg-2 col-md-4 col-sm-4 p-0" data-src="images/product/insta-1.jpg"
+            data-sub-html="<h4>Huta Case Custom</h4><p>Pesan Sekarang Juga.</p>" data-pinterest-text="Pin it1"
+            data-tweet-text="share on twitter 1">
+            <a href="">
+              <img class="img-responsive" src="images/product/insta-1.jpg" alt="Thumb-1" />
+            </a>
+          </li>
+          <li class="col-lg-2 col-md-4 col-sm-4 p-0"
+            data-responsive="img/1-375.jpg 375, img/1-480.jpg 480, img/1.jpg 800" data-src="images/product/insta-2.jpg"
+            data-sub-html="<h4>Huta Case Custom</h4><p>Pesan Sekarang Juga.</p>" data-pinterest-text="Pin it1"
+            data-tweet-text="share on twitter 1">
+            <a href="">
+              <img class="img-responsive" src="images/product/insta-2.jpg" alt="Thumb-1" />
+            </a>
+          </li>
+          <li class="col-lg-2 col-md-4 col-sm-4 p-0"
+            data-responsive="img/1-375.jpg 375, img/1-480.jpg 480, img/1.jpg 800" data-src="images/product/insta-3.jpg"
+            data-sub-html="<h4>Huta Case Custom</h4><p>Pesan Sekarang Juga.</p>" data-pinterest-text="Pin it1"
+            data-tweet-text="share on twitter 1">
+            <a href="">
+              <img class="img-responsive" src="images/product/insta-3.jpg" alt="Thumb-1" />
+            </a>
+          </li>
+          <li class="col-lg-2 col-md-4 col-sm-4 p-0"
+            data-responsive="img/1-375.jpg 375, img/1-480.jpg 480, img/1.jpg 800" data-src="images/product/insta-4.jpg"
+            data-sub-html="<h4>Huta Case Custom</h4><p>Pesan Sekarang Juga.</p>" data-pinterest-text="Pin it1"
+            data-tweet-text="share on twitter 1">
+            <a href="">
+              <img class="img-responsive" src="images/product/insta-4.jpg" alt="Thumb-1" />
+            </a>
+          </li>
+          <li class="col-lg-2 col-md-4 col-sm-4 p-0"
+            data-responsive="img/1-375.jpg 375, img/1-480.jpg 480, img/1.jpg 800" data-src="images/product/insta-5.jpg"
+            data-sub-html="<h4>Huta Case Custom</h4><p>Pesan Sekarang Juga.</p>" data-pinterest-text="Pin it1"
+            data-tweet-text="share on twitter 1">
+            <a href="">
+              <img class="img-responsive" src="images/product/insta-5.jpg" alt="Thumb-1" />
+            </a>
+          </li>
+          <li class="col-lg-2 col-md-4 col-sm-4 p-0"
+            data-responsive="img/1-375.jpg 375, img/1-480.jpg 480, img/1.jpg 800" data-src="images/product/insta-6.jpg"
+            data-sub-html="<h4>Huta Case Custom</h4><p>Pesan Sekarang Juga.</p>" data-pinterest-text="Pin it1"
+            data-tweet-text="share on twitter 1">
+            <a href="">
+              <img class="img-responsive" src="images/product/insta-6.jpg" alt="Thumb-1" />
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- Instagram End -->
+
+  <!-- Contact Section Begin -->
+  <section class="contact spad" id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="line">
+          <h1 class="text-center">Contact<span> Person</span></h1>
+          <div class="underline"></div>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-lg-6 col-md-6">
+          <div class="contact__content">
+            <div class="contact__address">
+              <h5>Contact info</h5>
+              <ul>
+                <li>
+                  <h6><i class="fa fa-map-marker"></i> Address</h6>
+                  <p>Jl. Iskandar Muda No.3, Babura, Kota Medan, Sumatera Utara 20152</p>
+                </li>
+                <li>
+                  <h6><i class="fa fa-phone"></i> Phone</h6>
+                  <p>0852 7013 6884</p>
+                </li>
+                <li>
+                  <h6><i class="far fa-envelope"></i> Gmail</h6>
+                  <p>ramsonmuara@gmail.com</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+
+          <div class="contact__form">
+            <h5>SEND MESSAGE</h5>
+            <div class="alert alert-success alert-dismissible fade show d-none" role="alert">
+              <strong>Pesan anda berhasil dikirim.</strong>
+            </div>
+            <form id="signupForm1" name="casecontact" method="post">
+              <div class="shadow overflow-hidden card-form sm:rounded-md">
+                <div class="px-4 py-5 sm:p-6">
+                  <div class="grid grid-cols-4 gap-6">
+                    <div class="col-span-6 sm:col-span-4">
+                      <label for="name" class="block text-sm font-medium text-white">Nama Lengkap</label>
+                      <input type="text" name="nama" id="name" autocomplete="given-name"
+                        class=" form-control mt-1  focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
+                        required />
+
+                    </div>
+
+                    <div class="col-span-6 sm:col-span-4">
+                      <label for="email" class="block text-sm font-medium text-white">Email</label>
+                      <input type="email" name="email" id="email" autocomplete="email"
+                        class="form-control mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
+                        required />
+                    </div>
+
+                    <div class="col-span-6 sm:col-span-4">
+                      <label for="pesan" class="block text-sm font-medium text-white">Pesan</label>
+                      <div class="mt-1">
+                        <textarea id="pesan" name="pesan" rows="3"
+                          class="form-control shadow-sm focus:ring-indigo-500 focus:border-indigo-500 mt-1 block w-full sm:text-sm border-gray-300 rounded-md"
+                          required></textarea>
+                        <div class="invalid-feedback">
+                          Please enter a message in the textarea.
                         </div>
-
-                        <div class="col-span-6 sm:col-span-4">
-                          <label for="email" class="block text-sm font-medium text-white">Email</label>
-                          <input type="email" name="email" id="email" autocomplete="email" class="form-control mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md" required/>
-                        </div>
-
-                        <div class="col-span-6 sm:col-span-4">
-                          <label for="pesan" class="block text-sm font-medium text-white">Pesan</label>
-                          <div class="mt-1">
-                            <textarea id="pesan" name="pesan" rows="3" class="form-control shadow-sm focus:ring-indigo-500 focus:border-indigo-500 mt-1 block w-full sm:text-sm border-gray-300 rounded-md" required></textarea>
-                            <div class="invalid-feedback">
-                              Please enter a message in the textarea.
-                            </div>  
-                          </div>
                       </div>
                     </div>
-
-
-                    <div class="px-4 py-3 text-left sm:px-6">
-                      <button type="submit" class="site-btn btn-kirim">Send Message</button>
-
-                      <button class="site-btn btn-loading d-none" type="button" disabled>
-                        <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
-                        Loading...
-                      </button>
-                    </div>
                   </div>
-                </form>
+
+
+                  <div class="px-4 py-3 text-left sm:px-6">
+                    <button type="submit" class="site-btn btn-kirim">Send Message</button>
+
+                    <button class="site-btn btn-loading d-none" type="button" disabled>
+                      <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                      Loading...
+                    </button>
+                  </div>
+                </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Contact Section End -->
+
+
+  <!-- Footer Section Begin -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row justify-content-evenly">
+        <div class="col-lg-4 col-md-6 col-sm-7">
+          <div class="footer__about">
+            <p>PAYMENT PARTNERS</p>
+            <div class="footer__payment">
+              <a href="#"><img src="images/payment-1.png" alt="" /></a>
+              <a href="#"><img src="images/payment-2.png" alt="" /></a>
+              <a href="#"><img src="images/payment-3.png" alt="" /></a>
+              <a href="#"><img src="images/payment-4.png" alt="" /></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-5">
+          <div class="footer__widget">
+            <p><a href="https://saweria.co/ramsonrjg" target="blank">Kirim dukungan ke ramsonrjg</a></p>
+            <div class="footer__logo">
+              <img src="images/saweria.png" alt="" />
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-8 col-sm-8">
+          <div class="footer__newslatter">
+            <h6>Contact Email</h6>
+            <form action="" target="blank">
+              <input type="text" placeholder="Email" />
+              <button type="submit" class="site-btn"> <a
+                  href="https://www.youtube.com/channel/UCVTCKVQf3deWY7g9WcC3Dzg?sub_confirmation=1"
+                  target="blank">Subscribe</a> </button>
+            </form>
+            <div class="footer__social">
+              <a href="https://www.facebook.com/ramsonrajagukguk/" target="blank"><i class="fab fa-facebook"></i></a>
+              <a href="https://www.youtube.com/channel/UCVTCKVQf3deWY7g9WcC3Dzg" target="blank"><i
+                  class="fab fa-youtube"></i></a>
+              <a href="https://www.instagram.com/hutacasecustom/" target="blank"><i class="fab fa-instagram"></i></a>
             </div>
           </div>
         </div>
       </div>
-    </section>
-    <!-- Contact Section End -->
-  
-
-    <!-- Footer Section Begin -->
-    <footer class="footer">
-      <div class="container">
-        <div class="row justify-content-evenly">
-          <div class="col-lg-4 col-md-6 col-sm-7">
-            <div class="footer__about">
-              <p>PAYMENT PARTNERS</p>
-              <div class="footer__payment">
-                <a href="#"><img src="images/payment-1.png" alt="" /></a>
-                <a href="#"><img src="images/payment-2.png" alt="" /></a>
-                <a href="#"><img src="images/payment-3.png" alt="" /></a>
-                <a href="#"><img src="images/payment-4.png" alt="" /></a>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-3 col-sm-5">
-            <div class="footer__widget">
-                <p><a href="https://saweria.co/ramsonrjg" target="blank">Kirim dukungan ke ramsonrjg</a></p>
-              <div class="footer__logo">
-                <img src="images/saweria.png" alt="" />
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-8 col-sm-8">
-            <div class="footer__newslatter">
-              <h6>Contact Email</h6>
-              <form action="" target="blank">
-                <input type="text" placeholder="Email" />
-                <button type="submit" class="site-btn"> <a href="https://www.youtube.com/channel/UCVTCKVQf3deWY7g9WcC3Dzg?sub_confirmation=1" target="blank">Subscribe</a>  </button>
-              </form>
-              <div class="footer__social">
-                <a href="https://www.facebook.com/ramsonrajagukguk/" target="blank"><i class="fab fa-facebook"></i></a>
-                <a href="https://www.youtube.com/channel/UCVTCKVQf3deWY7g9WcC3Dzg" target="blank"><i class="fab fa-youtube"></i></a>
-                <a href="https://www.instagram.com/hutacasecustom/" target="blank"><i class="fab fa-instagram"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-12">
-            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-            <div class="footer__copyright__text">
-              <p>
-                Copyright &copy;
-                <script>
-                  document.write(new Date().getFullYear());
-                </script>
-               | This made with <i class="fab fa-github" aria-hidden="true"></i> by <a href="https://github.com/ramsonrajagukguk" target="_blank">ramson</a>
-              </p>
-            </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+          <div class="footer__copyright__text">
+            <p>
+              Copyright &copy;
+              <script>
+                document.write(new Date().getFullYear());
+              </script>
+              | This made with <i class="fab fa-github" aria-hidden="true"></i> by <a
+                href="https://github.com/ramsonrajagukguk" target="_blank">ramson</a>
+            </p>
           </div>
         </div>
       </div>
-    </footer>
-    <!-- Footer Section End -->
+    </div>
+  </footer>
+  <!-- Footer Section End -->
 
-    <!-- WA -->
-    <div class="wa" id="myDiv"></div>
+  <!-- WA -->
+  <div class="wa" id="myDiv"></div>
 
-    <!-- Js Plugins -->
-    <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/swiper-bundle.min.js"></script>
-    <script src="js/anime.min.js"></script>
-    <script src="js/venom-button.min.js"></script>
-    <script src="js/lightgallery.js"></script>
-    <script src="js/lg-pager.js"></script>
-    <script src="js/lg-autoplay.js"></script>
-    <script src="js/lg-fullscreen.js"></script>
-    <script src="js/lg-zoom.js"></script>
-    <script src="js/lg-share.js"></script>
-    <script src="js/jquery.countdown.min.js"></script>
-    <script src="js/jquery.validate.js"></script>
-    <script src="js/aos.js"></script>
-    <script>
-      lightGallery(document.getElementById('lightgallery'));
-    </script>
-    <script src="js/main.js"></script>
+  <!-- Js Plugins -->
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/swiper-bundle.min.js"></script>
+  <script src="js/anime.min.js"></script>
+  <script src="js/venom-button.min.js"></script>
+  <script src="js/lightgallery.js"></script>
+  <script src="js/lg-pager.js"></script>
+  <script src="js/lg-autoplay.js"></script>
+  <script src="js/lg-fullscreen.js"></script>
+  <script src="js/lg-zoom.js"></script>
+  <script src="js/lg-share.js"></script>
+  <script src="js/jquery.countdown.min.js"></script>
+  <script src="js/jquery.validate.js"></script>
+  <script src="js/aos.js"></script>
+  <script>
+    lightGallery(document.getElementById('lightgallery'));
+  </script>
+  <script src="js/main.js"></script>
 
-    <script>    
-      AOS.init();
+  <script>
+    AOS.init();
 
-     
-			
-	
-     
+
+
+
+
     /*------------------
         CountDown
     --------------------*/
@@ -652,12 +653,12 @@
     var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
     var yyyy = today.getFullYear();
 
-    if(mm == 12) {
-        mm = '01';
-        yyyy = yyyy + 1;
+    if (mm == 12) {
+      mm = '01';
+      yyyy = yyyy + 1;
     } else {
-        mm = parseInt(mm) + 1;
-        mm = String(mm).padStart(2, '0');
+      mm = parseInt(mm) + 1;
+      mm = String(mm).padStart(2, '0');
     }
     var timerdate = mm + '/' + dd + '/' + yyyy;
     // For demo preview end
@@ -667,11 +668,26 @@
 
     /* var timerdate = "2020/12/30" */
 
-	$("#countdown-time").countdown(timerdate, function(event) {
-        $(this).html(event.strftime("<div class='countdown__item'><span>%D</span> <p>Day</p> </div>" + "<div class='countdown__item'><span>%H</span> <p>Hour</p> </div>" + "<div class='countdown__item'><span>%M</span> <p>Min</p> </div>" + "<div class='countdown__item'><span>%S</span> <p>Sec</p> </div>"));
+    $("#countdown-time").countdown(timerdate, function (event) {
+      $(this).html(event.strftime("<div class='countdown__item'><span>%D</span> <p>Day</p> </div>" + "<div class='countdown__item'><span>%H</span> <p>Hour</p> </div>" + "<div class='countdown__item'><span>%M</span> <p>Min</p> </div>" + "<div class='countdown__item'><span>%S</span> <p>Sec</p> </div>"));
     });
 
-    </script>
+  </script>
 
-  </body>
+  <!-- Java enable copas text -->
+  <script>
+    document.addEventListener('contextmenu', function (e) {
+      e.preventDefault();
+    });
+    document.addEventListener('keydown', function (e) {
+      if (e.ctrlKey && (e.key === 'a' || e.key === 'c')) {
+        e.preventDefault();
+      }
+    });
+  </script>
+
+  <!-- End Java -->
+
+</body>
+
 </html>

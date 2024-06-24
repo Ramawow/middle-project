@@ -26,7 +26,13 @@
   <link href="css/responsive.css" rel="stylesheet" />
 </head>
 
-<body class="sub_page">
+<!-- return false Tidak bisa klik kanan, ctrl A & C -->
+
+<body class="sub_page" oncontextmenu="return false" onselectstart="return false"
+  onkeydown="if ((arguments[0] || window.event).ctrlKey) return false">
+
+  <!-- End -->
+
   <div class="hero_area ">
     <!-- header section strats -->
     <header class="header_section">
@@ -248,6 +254,19 @@
   <script type="text/javascript" src="js/bootstrap.js"></script>
   <script type="text/javascript" src="js/custom.js"></script>
 
+  <!-- Java enable copas text -->
+  <script>
+    document.addEventListener('contextmenu', function (e) {
+      e.preventDefault();
+    });
+    document.addEventListener('keydown', function (e) {
+      if (e.ctrlKey && (e.key === 'a' || e.key === 'c')) {
+        e.preventDefault();
+      }
+    });
+  </script>
+
+  <!-- End Java -->
 </body>
 
 </html>

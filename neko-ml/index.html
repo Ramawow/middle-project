@@ -1,224 +1,247 @@
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"
-      integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
-    <title>Neko - Jasa joki Mobile Legends</title>
-  </head>
-  <body>
-    <!-- Background navbar & main-->
-    <div class="bg-awal">
-      <div class="container">
-        <!-- Navbar -->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-transparant">
-          <div class="container-fluid">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav nav">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#">Home</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#harga">Harga</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#ketentuan">Ketentuan</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#hubungi-kami">Hubungi Kami</a>
-                </li>
-              </ul>
-            </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"
+    integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+  <title>Neko - Jasa joki Mobile Legends</title>
+</head>
+
+<!-- return false Tidak bisa klik kanan, ctrl A & C -->
+
+<body oncontextmenu="return false" onselectstart="return false"
+  onkeydown="if ((arguments[0] || window.event).ctrlKey) return false">
+
+  <!-- End -->
+
+  <!-- Background navbar & main-->
+  <div class="bg-awal">
+    <div class="container">
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg navbar-dark bg-transparant">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#harga">Harga</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#ketentuan">Ketentuan</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#hubungi-kami">Hubungi Kami</a>
+              </li>
+            </ul>
           </div>
-        </nav>
-        <!-- Hero main -->
-        <section class="main">
-          <div class="row text-light justify-content-between">
-            <div class="col-md-5">
-              <h1>JASA JOKI MOBILE LEGENDS</h1>
-              <p>Kami dari Jasa Joki ML Mobile Legend Neko mau nawarin Solusi bagi kalian yang pengen push rank mobile legend secara Cepat , aman , Murah dan terpercaya.</p>
-              <a href="http://wa.me/6282271148760?text=Halo%20saya%20ingin%20pesan%20jasa%20joki%20mobie%20legends" class="btn-wa" target="_blank"><img src="./img/wa.png" alt="logo-wa" /> Pesan</a>
-            </div>
-            <div class="col-md-7">
-              <img class="hero-img" src="./img/bg.png" alt="gambar-background" />
-            </div>
+        </div>
+      </nav>
+      <!-- Hero main -->
+      <section class="main">
+        <div class="row text-light justify-content-between">
+          <div class="col-md-5">
+            <h1>JASA JOKI MOBILE LEGENDS</h1>
+            <p>Kami dari Jasa Joki ML Mobile Legend Neko mau nawarin Solusi bagi kalian yang pengen push rank mobile
+              legend secara Cepat , aman , Murah dan terpercaya.</p>
+            <a href="http://wa.me/6282271148760?text=Halo%20saya%20ingin%20pesan%20jasa%20joki%20mobie%20legends"
+              class="btn-wa" target="_blank"><img src="./img/wa.png" alt="logo-wa" /> Pesan</a>
           </div>
-        </section>
+          <div class="col-md-7">
+            <img class="hero-img" src="./img/bg.png" alt="gambar-background" />
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+  <!-- Pembatas -->
+  <div class="batas"></div>
+  <!-- Section harga -->
+  <section class="text-center harga my-5" id="harga">
+    <div class="container">
+      <h2 class="title">Harga</h2>
+      <p class="cap">Berikut harga-harga yang kami sediakan</p>
+      <div class="row text-light p-4 justify-content-center">
+        <div class="col-md-3 m-3 box-harga">
+          <img src="./img/elite.png" alt="" />
+          <h2>Elite ke Master Rp 50.000 </h2>
+          <p><span>Rp 3.000</span>,- per Star/Bintang</p>
+          <p>dibutuhkan 4 star untuk naik 1 grade total 3 grade Total 12 bintang</p>
+        </div>
+        <div class="col-md-3 m-3 box-harga">
+          <img src="./img/master.png" class="master" alt="" />
+          <h2>Master ke Grandmaster Rp 100.000 </h2>
+          <p><span>Rp 4.000</span>,- per Star/Bintang</p>
+          <p>( dibutuhkan 4 star untuk naik 1 grade total 4 grade total 16 bintang )</p>
+        </div>
+        <div class="col-md-3 m-3 box-harga">
+          <img src="./img/gm.png" alt="" />
+          <h2>Grandmaster ke Epic Rp 150.000</h2>
+          <p><span>Rp 5.000</span>,- per Star/Bintang</p>
+          <p>( dibutuhkan 5 star untuk naik 1 grade total 5 grade Total 25 bintang )</p>
+        </div>
+        <div class="col-md-3 m-3 box-harga">
+          <img src="./img/epic.png" alt="" />
+          <h2>Epic ke Legend Rp 250.000 </h2>
+          <p><span>Rp 8.000</span>,- per Star/Bintang</p>
+          <p>( dibutuhkan 5 star untuk naik 1 grade total 5 grade Total 25 bintang )</p>
+        </div>
+        <div class="col-md-3 m-3 box-harga">
+          <img src="./img/legend.png" alt="" />
+          <h2>Legend ke Mytic Rp 250.000 </h2>
+          <p><span>Rp 12.000</span>,- per Star/Bintang</p>
+          <p>( dibutuhkan 5 star untuk naik 1 grade total 5 grade Total 25 bintang )</p>
+        </div>
+        <div class="col-md-3 m-3 box-harga">
+          <img src="./img/mytic.png" alt="" />
+          <h2>Mytic ke mytical glory Rp 500.000 </h2>
+          <p><span>Rp 20.000</span>,- per 10 point</p>
+          <p>(Mythic 5-1)</p>
+        </div>
       </div>
     </div>
-    <!-- Pembatas -->
-    <div class="batas"></div>
-    <!-- Section harga -->
-    <section class="text-center harga my-5" id="harga">
-      <div class="container">
-        <h2 class="title">Harga</h2>
-        <p class="cap">Berikut harga-harga yang kami sediakan</p>
-        <div class="row text-light p-4 justify-content-center">
-          <div class="col-md-3 m-3 box-harga">
-            <img src="./img/elite.png" alt="" />
-            <h2>Elite ke Master Rp 50.000 </h2>
-            <p><span>Rp 3.000</span>,- per Star/Bintang</p>
-            <p>dibutuhkan 4 star untuk naik 1 grade total 3 grade Total 12 bintang</p>
-          </div>
-          <div class="col-md-3 m-3 box-harga">
-            <img src="./img/master.png" class="master" alt="" />
-            <h2>Master ke Grandmaster Rp 100.000 </h2>
-            <p><span>Rp 4.000</span>,- per Star/Bintang</p>
-            <p>( dibutuhkan 4 star untuk naik 1 grade total 4 grade total 16 bintang )</p>
-          </div>
-          <div class="col-md-3 m-3 box-harga">
-            <img src="./img/gm.png" alt="" />
-            <h2>Grandmaster ke Epic Rp 150.000</h2>
-            <p><span>Rp 5.000</span>,- per Star/Bintang</p>
-            <p>( dibutuhkan 5 star untuk naik 1 grade total 5 grade Total 25 bintang )</p>
-          </div>
-          <div class="col-md-3 m-3 box-harga">
-            <img src="./img/epic.png" alt="" />
-            <h2>Epic ke Legend Rp 250.000 </h2>
-            <p><span>Rp 8.000</span>,- per Star/Bintang</p>
-            <p>( dibutuhkan 5 star untuk naik 1 grade total 5 grade Total 25 bintang )</p>
-          </div>
-          <div class="col-md-3 m-3 box-harga">
-            <img src="./img/legend.png" alt="" />
-            <h2>Legend ke Mytic Rp 250.000 </h2>
-            <p><span>Rp 12.000</span>,- per Star/Bintang</p>
-            <p>( dibutuhkan 5 star untuk naik 1 grade total 5 grade Total 25 bintang )</p>
-          </div>
-          <div class="col-md-3 m-3 box-harga">
-            <img src="./img/mytic.png" alt="" />
-            <h2>Mytic ke mytical glory Rp 500.000 </h2>
-            <p><span>Rp 20.000</span>,- per 10 point</p>
-            <p>(Mythic 5-1)</p>
-          </div>
+  </section>
+  <!-- Section Pembayaran -->
+  <section class="pembayaran text-center text-light my-5" id="pembayaran">
+    <div class="container">
+      <h2 class="title">Pembayaran</h2>
+      <p class="cap">Berikut jenis pembayaran yang kami terima</p>
+      <div class="row justify-content-around">
+        <div class="col-md-3 mt-5">
+          <img src="./img/dana.png" alt="logo-dana" />
+        </div>
+        <div class="col-md-3 mt-5">
+          <img src="./img/ovo.png" alt="logo-ovo" />
+        </div>
+        <div class="col-md-3 mt-5">
+          <img src="./img/gopay.png" alt="logo-gopay" />
         </div>
       </div>
-    </section>
-    <!-- Section Pembayaran -->
-    <section class="pembayaran text-center text-light my-5" id="pembayaran">
-      <div class="container">
-        <h2 class="title">Pembayaran</h2>
-        <p class="cap">Berikut jenis pembayaran yang kami terima</p>
-        <div class="row justify-content-around">
-          <div class="col-md-3 mt-5">
-            <img src="./img/dana.png" alt="logo-dana" />
-          </div>
-          <div class="col-md-3 mt-5">
-            <img src="./img/ovo.png" alt="logo-ovo" />
-          </div>
-          <div class="col-md-3 mt-5">
-            <img src="./img/gopay.png" alt="logo-gopay" />
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Testi -->
-    <section class="testi text-center my-5">
-      <div class="container">
-        <h2 class="title">Testimoni</h2>
-        <p class="cap">Berikut testimoni yang sudah selesai kami kerjakan</p>
-        <div class="row p-3">
-          <div class="slider">
-            <!-- Untuk masukin test             <div class="col"><img src="#" alt="foto-testimoni" /></div>
+    </div>
+  </section>
+  <!-- Testi -->
+  <section class="testi text-center my-5">
+    <div class="container">
+      <h2 class="title">Testimoni</h2>
+      <p class="cap">Berikut testimoni yang sudah selesai kami kerjakan</p>
+      <div class="row p-3">
+        <div class="slider">
+          <!-- Untuk masukin test             <div class="col"><img src="#" alt="foto-testimoni" /></div>
           </div>i baru copy aja <div class="col"  sampai  </div>-->
-            <!-- Untuk masukin gambar di src ny contoh src="linkgambar.jpg" -->
-            <div class="col"><img src="#" /></div>
-            
-             <div class="col"><img src="#" alt="foto-testimoni" /></div>
-             
+          <!-- Untuk masukin gambar di src ny contoh src="linkgambar.jpg" -->
+          <div class="col"><img src="#" /></div>
 
-             <div class="col"><img src="#" alt="foto-testimoni" /></div>
+          <div class="col"><img src="#" alt="foto-testimoni" /></div>
 
-             <div class="col"><img src="#" alt="foto-testimoni" /></div>
-          </div>
+
+          <div class="col"><img src="#" alt="foto-testimoni" /></div>
+
+          <div class="col"><img src="#" alt="foto-testimoni" /></div>
         </div>
       </div>
-    </section>
-    <!-- Ketentuan -->
-    <section class="ketentuan my-5" id="ketentuan">
-      <div class="bg-ketentuan text-light">
-        <div class="container">
-          <h2 class="title text-center pt-3">Ketentuan</h2>
-          <p class="text-center cap">Harap pahami ketentuan yang kami berikan</p>
-          <div class="row justify-content-around p-3 align-items-center">
-            <div class="col-md-5">
-              <p>Dilarang login saat joki sedang melakukan pekerjaan</p>
-              <p>Level akun minimum adalah 8</p>
-              <p>Login via FB, VK, atau Montoon Email. Direkomendasikan email</p>
-              <p>Pembayaran Di Awal atau sebelum Proses</p>
-              <p>Via pulsa harga naik 10% misal 100 ribu jadi 110</p>
-            </div>
-            <div class="col-md-3 text-center"><img src="./img/cat.png" width="280px" alt="" /></div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Hubungi kami -->
-    <section class="hubungi-kami my-5" id="hubungi-kami">
+    </div>
+  </section>
+  <!-- Ketentuan -->
+  <section class="ketentuan my-5" id="ketentuan">
+    <div class="bg-ketentuan text-light">
       <div class="container">
-        <h2 class="text-center title">Hubungi kami</h2>
-        <p class="text-center">Silahkan hubungi kami jika ada pertanyaan</p>
-        <div class="d-flex align-items-center justify-content-center">
-          <div class="hubungi-img mx-4">
-            <a href="#" target="_blank">
-              <img src="./img/fb.png" width="40px" alt="logo-fb" />
-            </a>
+        <h2 class="title text-center pt-3">Ketentuan</h2>
+        <p class="text-center cap">Harap pahami ketentuan yang kami berikan</p>
+        <div class="row justify-content-around p-3 align-items-center">
+          <div class="col-md-5">
+            <p>Dilarang login saat joki sedang melakukan pekerjaan</p>
+            <p>Level akun minimum adalah 8</p>
+            <p>Login via FB, VK, atau Montoon Email. Direkomendasikan email</p>
+            <p>Pembayaran Di Awal atau sebelum Proses</p>
+            <p>Via pulsa harga naik 10% misal 100 ribu jadi 110</p>
           </div>
-          <div class="hubungi-img mx-4">
-            <a href="#" target="_blank">
-              <img src="./img/ig.png" width="40px" alt="logo-instagram" />
-            </a>
-          </div>
-          <div class="hubungi-img mx-4">
-            <a href="#" target="_blank">
-              <img src="./img/wa.svg" width="50px" alt="logo-wa" />
-            </a>
-          </div>
+          <div class="col-md-3 text-center"><img src="./img/cat.png" width="280px" alt="" /></div>
         </div>
       </div>
-    </section>
-    <!-- Footer -->
-    <footer class="footer text-light mt-5">
-      <div class="container">
-        <p>Copyright by Neko</p>
-        <p>Create with &#10084; by KuchingNeko</p>
+    </div>
+  </section>
+  <!-- Hubungi kami -->
+  <section class="hubungi-kami my-5" id="hubungi-kami">
+    <div class="container">
+      <h2 class="text-center title">Hubungi kami</h2>
+      <p class="text-center">Silahkan hubungi kami jika ada pertanyaan</p>
+      <div class="d-flex align-items-center justify-content-center">
+        <div class="hubungi-img mx-4">
+          <a href="#" target="_blank">
+            <img src="./img/fb.png" width="40px" alt="logo-fb" />
+          </a>
+        </div>
+        <div class="hubungi-img mx-4">
+          <a href="#" target="_blank">
+            <img src="./img/ig.png" width="40px" alt="logo-instagram" />
+          </a>
+        </div>
+        <div class="hubungi-img mx-4">
+          <a href="#" target="_blank">
+            <img src="./img/wa.svg" width="50px" alt="logo-wa" />
+          </a>
+        </div>
       </div>
-    </footer>
-    <!-- Js -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/boxicons@2.1.1/dist/boxicons.js"></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
-      integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-    <script type="text/javascript">
-      $(".slider").slick({
-        slidesToShow: window.innerWidth < 1100 ? 1 : 2,
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 4000,
-        prevArrow:
-          "<button type='button' class='slick-prev pull-left'><svg xmlns='http://www.w3.org/2000/svg' width='50' height='50' fill='currentColor' class='bi bi-arrow-left' viewBox='0 0 16 16'><path fill-rule='evenodd' d='M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z'/></svg></i></button>",
-        nextArrow:
-          "<button type='button' class='slick-next pull-right'><svg xmlns='http://www.w3.org/2000/svg' width='50' height='50' fill='currentColor' class='bi bi-arrow-right' viewBox='0 0 16 16'><path fill-rule='evenodd' d='M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z'/></svg></i></button>",
-      });
-      $(".nav-item").on("click", function () {
-        $(".nav").find(".active").removeClass("active");
-        $(this).addClass("active");
-      });
-    </script>
-  </body>
+    </div>
+  </section>
+  <!-- Footer -->
+  <footer class="footer text-light mt-5">
+    <div class="container">
+      <p>Copyright by Neko</p>
+      <p>Create with &#10084; by KuchingNeko</p>
+    </div>
+  </footer>
+  <!-- Js -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/boxicons@2.1.1/dist/boxicons.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+    integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script type="text/javascript">
+    $(".slider").slick({
+      slidesToShow: window.innerWidth < 1100 ? 1 : 2,
+      slidesToScroll: 1,
+      autoplay: true,
+      autoplaySpeed: 4000,
+      prevArrow:
+        "<button type='button' class='slick-prev pull-left'><svg xmlns='http://www.w3.org/2000/svg' width='50' height='50' fill='currentColor' class='bi bi-arrow-left' viewBox='0 0 16 16'><path fill-rule='evenodd' d='M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z'/></svg></i></button>",
+      nextArrow:
+        "<button type='button' class='slick-next pull-right'><svg xmlns='http://www.w3.org/2000/svg' width='50' height='50' fill='currentColor' class='bi bi-arrow-right' viewBox='0 0 16 16'><path fill-rule='evenodd' d='M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z'/></svg></i></button>",
+    });
+    $(".nav-item").on("click", function () {
+      $(".nav").find(".active").removeClass("active");
+      $(this).addClass("active");
+    });
+  </script>
+
+  <!-- Java enable copas text -->
+  <script>
+    document.addEventListener('contextmenu', function (e) {
+      e.preventDefault();
+    });
+    document.addEventListener('keydown', function (e) {
+      if (e.ctrlKey && (e.key === 'a' || e.key === 'c')) {
+        e.preventDefault();
+      }
+    });
+  </script>
+
+  <!-- End Java -->
+</body>
+
 </html>

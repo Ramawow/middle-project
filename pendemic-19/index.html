@@ -17,7 +17,13 @@
   <title>Pendemic-19</title>
 </head>
 
-<body>
+<!-- return false Tidak bisa klik kanan, ctrl A & C -->
+
+<body oncontextmenu="return false" onselectstart="return false"
+  onkeydown="if ((arguments[0] || window.event).ctrlKey) return false">
+
+  <!-- End -->
+
   <!-- Navbar -->
   <nav class="navbar text-light bg-blue">
     <div class="container wrapper">
@@ -391,6 +397,20 @@
     </div>
   </section>
   <!-- End FAQ -->
+
+  <!-- Java enable copas text -->
+  <script>
+    document.addEventListener('contextmenu', function (e) {
+      e.preventDefault();
+    });
+    document.addEventListener('keydown', function (e) {
+      if (e.ctrlKey && (e.key === 'a' || e.key === 'c')) {
+        e.preventDefault();
+      }
+    });
+  </script>
+
+  <!-- End Java -->
 </body>
 <script src="script/index.js" type="module"></script>
 

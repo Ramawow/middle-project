@@ -16,7 +16,12 @@
    <title>Serieaball | Informasi Sepak Bola Liga Serie-A</title>
 </head>
 
-<body>
+<!-- return false Tidak bisa klik kanan, ctrl A & C -->
+
+<body oncontextmenu="return false" onselectstart="return false"
+   onkeydown="if ((arguments[0] || window.event).ctrlKey) return false">
+
+   <!-- End -->
 
    <!-- Header top -->
    <header class="header">
@@ -71,6 +76,21 @@
    <script src="./assets/js/db.js"></script>
    <script src="./assets/js/notification.js"></script>
    <script src="./assets/js/script.js"></script>
+
+
+   <!-- Java enable copas text -->
+   <script>
+      document.addEventListener('contextmenu', function (e) {
+         e.preventDefault();
+      });
+      document.addEventListener('keydown', function (e) {
+         if (e.ctrlKey && (e.key === 'a' || e.key === 'c')) {
+            e.preventDefault();
+         }
+      });
+   </script>
+
+   <!-- End Java -->
 </body>
 
 </html>

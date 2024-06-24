@@ -15,7 +15,12 @@
    <title>Silhouette Forest</title>
 </head>
 
-<body>
+<!-- return false Tidak bisa klik kanan, ctrl A & C -->
+
+<body oncontextmenu="return false" onselectstart="return false"
+   onkeydown="if ((arguments[0] || window.event).ctrlKey) return false">
+
+   <!-- End -->
 
 
    <!-- Navbar -->
@@ -408,8 +413,7 @@
          <div class="row">
             <h6 class="col-md-12 text-center mb-0">&copy; Copyright 2020</h6>
             <p class="col-md-12 text-center text-decoration-none mb-0">Built By <a
-                  href="http://instagram.com/ultimate_wahyu27" target="_blank">Wahyu Agung
-                  Laksono</a></p>
+                  href="http://instagram.com/muhammadramadhantaufiq" target="_blank">Ramawow</a></p>
          </div>
       </div>
    </section>
@@ -422,13 +426,27 @@
 
    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
       integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
-   </script>
+      </script>
    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
       integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
-   </script>
+      </script>
    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
       integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+      </script>
+
+   <!-- Java enable copas text -->
+   <script>
+      document.addEventListener('contextmenu', function (e) {
+         e.preventDefault();
+      });
+      document.addEventListener('keydown', function (e) {
+         if (e.ctrlKey && (e.key === 'a' || e.key === 'c')) {
+            e.preventDefault();
+         }
+      });
    </script>
+
+   <!-- End Java -->
 </body>
 
 </html>
