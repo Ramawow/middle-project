@@ -21,7 +21,7 @@ jobs:
           npm run build  # Sesuaikan dengan perintah build proyek Anda
 
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v1
+        uses: actions/upload-pages-artifact@v3
         with:
           path: ./dist  # Sesuaikan dengan folder hasil build
 
