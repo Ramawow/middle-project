@@ -1,0 +1,10 @@
+theme: jekyll-theme-primer
+plugins:
+  - jekyll-include-cache
+  - jekyll-seo-tag
+  - jekyll-github-metadata
+  - jekyll-relative-links
+  - jekyll-optional-front-matter
+  - jekyll-readme-index
+  - jekyll-default-layout
+  - jekyll-titles-from-headings
