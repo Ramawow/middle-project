@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta content="#AEF2D2" name="theme-color" />
+    <meta content="rsu islam klaten, rsi klaten, rs klaten, rumah sakit klaten, jadwal dokter klaten"
+        name="description" />
+    <meta content="https://twitter.com/eestehh" name="author" />
+    <meta name="csrf-token" content="KodjIdsYxxb34RsZwYLfIlNEjwxJb9d91lPrUFrJ" />
+    <link rel="icon" href="/image/icon-rsi.png" type="image/icon type">
+    <title>RSU ISLAM KLATEN</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://apps.rsuislamklaten.co.id/css/app.css">
+    <script src="https://apps.rsuislamklaten.co.id/js/app.js"></script>
+</head>
+
+<body>
+    <div class="text-center mb-5 pt-3">
+        <img src="https://apps.rsuislamklaten.co.id/image/rsiklaten.png" alt="RSU ISLAM KLATEN" style="height: 5rem"
+            class="mb-3">
+        <h5 class="text-muted">Ramah Amanah Profesional Islami</h5>
+    </div>
+    <div class="container-lg">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card shadow">
+                    <div class="card-header">
+                        <a href="https://apps.rsuislamklaten.co.id" class="text-decoration-none text-reset"><i
+                                class="fas fa-arrow-left mr-1"></i></a>
+                        Antrean
+                    </div>
+                    <div class="card-body">
+                        <div class="form-group">
+                            <div class="input-group input-group">
+                                <input type="text" class="form-control w-25 datetimepicker-input" id="tanggal"
+                                    data-toggle="datetimepicker">
+                            </div>
+                            <div class="input-group input-group">
+                                <div class="spinner-border text-success" id="jadwal_loading"><span
+                                        class="sr-only">Loading...</span></div>
+                                <select class="form-control w-75" id="jadwal">
+                                    <option value=""></option>
+                                </select>
+                            </div>
+                        </div>
+                        <div id="jadwal_detail"></div>
+                        <div class="table-responsive">
+                            <table class="table table-striped table-sm">
+                                <thead>
+                                    <tr>
+
+                                        <th>Antrean</th>
+                                        <th>Keterangan</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="tbl_antrean">
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="text-center mt-4">
+        <p class="font-weight-bold text-white-50" style="font-size: 0.7rem">2022 - 2025 &#169; RSU ISLAM KLATEN</p>
+    </div>
+
+    <script type="text/javascript">
+        $(".my-select2-nc").select2({
+            placeholder: '',
+            theme: 'bootstrap4',
+            allowClear: false
+        })
+    </script>
+    <script type="text/javascript">
+        const riwBooking = (function ($) {
+            const TANGGAL_NOW = moment().startOf("day");
+            const TANGGAL_MIN_INDEN = moment().startOf("day").add(1, 'days');
+            const TANGGAL_MAX_INDEN = moment().startOf("day").add(1, 'months');
+            $(document).ready(e => {
+                $('#tanggal').val(TANGGAL_NOW.format('dddd, DD-MM-YYYY'))
+                $("#jadwal_loading").addClass('d-none')
+                $("#jadwal").removeClass("d-none")
+                getJadwal(TANGGAL_NOW)
+
+            })
+            $('#tanggal').datetimepicker({
+                format: 'dddd, DD-MM-YYYY',
+            })
+            $('#tanggal').on('hide.datetimepicker', function (e) {
+                let tanggal = $('#tanggal').val()
+                getJadwal(tanggal)
+            })
+            function getJadwal(tanggal) {
+                $("#tbl_antrean").html("")
+                $("#jadwal_detail").html("")
+                $("#jadwal option").remove()
+                $("#jadwal").html("<option values=''></option>")
+                if (!tanggal) return
+
+                $.ajax({
+                    method: 'GET',
+                    dataType: 'JSON',
+                    url: window.origin + '/api/jadwal/show-by-tanggal/' + moment(tanggal, "dddd, DD-MM-YYYY").format("YYYY-MM-DD"),
+                    beforeSend(xhr) {
+                        $("#jadwal_loading").removeClass("d-none")
+                        $("#jadwal").addClass("d-none")
+                    },
+                    success: function (result) {
+                        $("#jadwal_loading").addClass("d-none")
+                        $("#jadwal").removeClass("d-none")
+
+                        let data = []
+                        if (result.data.jadwal.length > 0) {
+                            data = result.data.jadwal.map(e => ({
+                                id: e.id,
+                                text: `${e.dokter_nama} <span class="badge badge-success"> ${e.poli_nama} ${e.jam_mulai} - ${e.jam_selesai} (${e.waktu})</span> `
+                            }))
+                        }
+                        $('#jadwal').select2({
+                            placeholder: 'Pilih jadwal dokter',
+                            allowClear: true,
+                            theme: 'bootstrap4',
+                            data: data,
+                            escapeMarkup: (markup) => markup,
+                            templateResult: (data) => data.text,
+                            templateSelection: (data) => data.text
+                        });
+                    },
+                    error: function (jqXHR, textStatus, errorThrown) {
+                        $("#jadwal_loading").addClass("d-none")
+                        $("#jadwal").removeClass("d-none")
+                        toastr.error(jqXHR.responseJSON?.metadata?.message || jqXHR.statusText)
+                    },
+                });
+            }
+            $("#jadwal").change(e => {
+                let jadwal = $("#jadwal").val()
+                let tanggal = $('#tanggal').val()
+
+                getJadwalDetail(jadwal, tanggal)
+                getAntrian(jadwal, tanggal)
+            })
+            function getJadwalDetail(id, tanggal) {
+                $("#jadwal_detail").html("")
+                if (!id) return
+
+                $.ajax({
+                    method: 'GET',
+                    dataType: 'JSON',
+                    url: window.origin + '/api/jadwal/show-by-id/' + id + '/tanggal/' + moment(tanggal, "dddd, DD-MM-YYYY").format("YYYY-MM-DD"),
+                    beforeSend(xhr) {
+                        $("#jadwal_detail").html(`<div class="spinner-border text-success"><span class="sr-only">Loading...</span></div>`)
+                    },
+                    success: function (result) {
+                        let html = ""
+                        if (result.data.jadwal) {
+                            html = `
+                                        <table class="table table-sm">
+                                            <thead>
+                                                <tr>
+                                                    <th colspan=2>Detail Jadwal</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Dokter</td>
+                                                    <td>${result.data.jadwal.dokter_nama}</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Poli</td>
+                                                    <td>${result.data.jadwal.poli_nama}</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Waktu</td>
+                                                    <td>${moment(result.data.jadwal.tanggal, "YYYY-MM-DD").format("dddd, DD-MM-YYYY")} <br/>${result.data.jadwal.jam_mulai} sd ${result.data.jadwal.jam_selesai} </td>
+                                                </tr>
+                                                <tr class="d-none">
+                                                    <td>Kuota</td>
+                                                    <td>${result.data.jadwal.sisa}/${result.data.jadwal.kuota}</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                        `
+                        } else {
+                            html = ""
+                        }
+                        $("#jadwal_detail").html(html)
+                    },
+                    error: function (jqXHR, textStatus, errorThrown) {
+                        $("#jadwal_detail").html("")
+                        toastr.error(jqXHR.responseJSON?.metadata?.message || jqXHR.statusText)
+                    },
+                });
+            }
+            function getAntrian(id, tanggal) {
+                $("#tbl_antrean").html("")
+                if (!id) return
+
+                $.ajax({
+                    method: 'GET',
+                    dataType: 'JSON',
+                    url: window.origin + '/api/antrean/show-by-jadwal/' + id + '/tanggal/' + moment(tanggal, "dddd, DD-MM-YYYY").format("YYYY-MM-DD"),
+                    beforeSend(xhr) {
+                        $("#tbl_antrean").html(`<tr><td  colspan=3>Loading ...</td></tr>`)
+                    },
+                    success: function (result) {
+                        let html = ""
+                        if (result.data.antrean.length > 0) {
+                            result.data.antrean.forEach(e => {
+                                e.antrean_status = '-';
+                                html += `
+                                    <tr>
+                                        <td>${e.antrean}</td>
+                                        <td>${e.antrean_status}</td>
+                                    </tr>
+                            `
+                            })
+                        } else {
+                            html = "<tr><td  colspan=3>data tidak ditemukan</td></tr>"
+                        }
+                        $("#tbl_antrean").html(html)
+                    },
+                    error: function (jqXHR, textStatus, errorThrown) {
+                        $("#tbl_antrean").html(`<tr><td  colspan=3>data tidak ditemukan</td></tr>`)
+                        toastr.error(jqXHR.responseJSON?.metadata?.message || jqXHR.statusText)
+                    },
+                });
+            }
+
+        })(jQuery)
+    </script>
+</body>
+
+</html>

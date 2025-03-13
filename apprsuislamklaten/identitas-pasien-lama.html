@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta content="#AEF2D2" name="theme-color" />
+    <meta content="rsu islam klaten, rsi klaten, rs klaten, rumah sakit klaten, jadwal dokter klaten"
+        name="description" />
+    <meta content="https://twitter.com/eestehh" name="author" />
+    <meta name="csrf-token" content="KodjIdsYxxb34RsZwYLfIlNEjwxJb9d91lPrUFrJ" />
+    <link rel="icon" href="/image/icon-rsi.png" type="image/icon type">
+    <title>Identitas pasien lama</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://apps.rsuislamklaten.co.id/css/app.css">
+    <script src="https://apps.rsuislamklaten.co.id/js/app.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js?" async defer></script>
+
+</head>
+
+<body>
+    <div class="text-center mb-5 pt-3">
+        <img src="https://apps.rsuislamklaten.co.id/image/rsiklaten.png" alt="RSU ISLAM KLATEN" style="height: 5rem"
+            class="mb-3">
+        <h5 class="text-muted">Ramah Amanah Profesional Islami</h5>
+    </div>
+    <div class="container-lg">
+        <div class="row">
+            <div class="col-md-6 mx-auto">
+                <div class="card shadow">
+                    <div class="card-header">
+                        <a href="https://apps.rsuislamklaten.co.id" class="text-decoration-none text-reset"><i
+                                class="fas fa-arrow-left mr-1"></i></a>
+                        Identitas Pasien
+                    </div>
+                    <div class="card-body">
+                        <form id="formulir">
+                            <div class="form-group">
+                                <label class="form-label">NIK / No KTP</label>
+                                <input type="tel" class="form-control" id="no_ktp" name="no_ktp">
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Tanggal lahir</label>
+                                <input type="tel" class="form-control" id="tgl_lahir" name="tgl_lahir"
+                                    placeholder="DD-MM-YYYY">
+                            </div>
+                            <div class="form-group">
+                                <div data-sitekey="6Le4DuYqAAAAAOIXOSzNq9rAWzsUibqXwaram4Rq" class="g-recaptcha"></div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="card-footer">
+                        <div class="text-center">
+                            <button class="btn btn-dark shadow-lg" id="btn_form_cek">Cek Identitas</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="text-center mt-4">
+        <p class="font-weight-bold text-white-50" style="font-size: 0.7rem">2022 - 2025 &#169; RSU ISLAM KLATEN</p>
+    </div>
+
+    <script type="text/javascript">
+        $(".my-select2-nc").select2({
+            placeholder: '',
+            theme: 'bootstrap4',
+            allowClear: false
+        })
+    </script>
+    <script type="text/javascript">
+        const cekIdentitas = (function ($) {
+            $('#no_ktp').inputmask('9999999999999999');
+            $('#tgl_lahir').inputmask('99-99-9999');
+
+            $('#btn_form_cek').click(e => {
+                let form = $("#formulir").serialize();
+
+                $.ajax({
+                    method: 'POST',
+                    dataType: 'JSON',
+                    data: form,
+                    url: window.origin + '/api/cek-pasien',
+                    beforeSend(xhr) {
+                        $('#btn_form_cek').text("Cek Identitas ...")
+                        $('#btn_form_cek').prop("disabled", true)
+                    },
+                    success: function (result) {
+                        $('#btn_form_cek').text("Cek Identitas")
+                        $('#btn_form_cek').prop("disabled", false)
+
+                        let id = result.data?.id
+                        if (id) {
+                            Swal.fire({
+                                icon: 'success',
+                                title: 'Identitas Pasien',
+                                html: `<h5 class="">Data pasien ditemukan</h5>`,
+                                width: 530,
+                                showConfirmButton: false,
+                                allowEscapeKey: false,
+                                allowOutsideClick: false,
+                                timer: 1000
+                            }).then(() => {
+                                window.location.replace(window.origin + '/pendaftaran-pasien-lama?id=' + id);
+                            })
+                        } else {
+                            Swal.fire({
+                                icon: 'error',
+                                width: 530,
+                                title: 'Identitas Pasien',
+                                text: "Data tidak ditemukan",
+                                footer: `Jika ada pertanyaan silahkan hubungi 0857-8641-1210`,
+                                showConfirmButton: false,
+                            })
+                        }
+
+                    },
+                    error: function (jqXHR, textStatus, errorThrown) {
+                        $('#btn_form_cek').text("Cek Identitas")
+                        $('#btn_form_cek').prop("disabled", false)
+                        if (jqXHR.status == 422) {
+                            let error = jqXHR.responseJSON?.data || []
+                            let errorMessage = ''
+                            for (const property in error) {
+                                errorMessage += `${error[property]}, `;
+                            }
+                            Swal.fire({
+                                icon: 'error',
+                                title: 'Form Validasi',
+                                text: errorMessage,
+                                showConfirmButton: false,
+                                footer: `${jqXHR.status} - ${jqXHR.statusText}`
+                            })
+                            return false;
+                        }
+                        toastr.error(jqXHR.responseJSON?.metadata?.message || jqXHR.statusText)
+                    },
+                });
+
+
+            })
+
+        })(jQuery)
+    </script>
+</body>
+
+</html>
