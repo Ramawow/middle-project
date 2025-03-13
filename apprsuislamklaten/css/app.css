@@ -12393,7 +12393,7 @@ input[type=submit].btn-block {
     min-width: 0;
     position: relative;
     height: 100%;
-    border-radius:20px;
+    border-radius: 20px;
 }
 
 .card>hr {
@@ -18246,7 +18246,7 @@ a.text-dark:hover {
     }
 
     abbr[title]:after {
-        content: " ("attr(title) ")"
+        content: " (" attr(title) ")"
     }
 
     pre {
@@ -18523,7 +18523,7 @@ a.text-dark:hover {
     bottom: 0;
     box-sizing: border-box;
     display: grid;
-    grid-template-areas: "top-start     top            top-end""center-start  center         center-end""bottom-start  bottom-center  bottom-end";
+    grid-template-areas: "top-start     top            top-end" "center-start  center         center-end" "bottom-start  bottom-center  bottom-end";
     grid-template-rows: minmax(min-content, auto) minmax(min-content, auto) minmax(min-content, auto);
     height: 100%;
     left: 0;
@@ -19918,9 +19918,9 @@ html {
 }
 
 body {
-    background: linear-gradient(0deg,#008f4c,#66db97 47%,#d5fff2);
+    background: linear-gradient(0deg, #008f4c, #66db97 47%, #d5fff2);
     color: #444;
-    font-family: Roboto,sans-serif;
+    font-family: Roboto, sans-serif;
     min-height: 100vh;
     background-image: url("https://humas.rsuislamklaten.co.id/wp-content/uploads/2025/02/bg-pattern-top-0.3.png");
     background-position: top center;
